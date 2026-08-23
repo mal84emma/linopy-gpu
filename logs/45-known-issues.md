@@ -148,6 +148,11 @@ threshold is `is not None`, deliberately"), so V1-4's model was built bounded in
 instead (`x` in `[0, 5]`, `y` integer in `[0, 9]`, one `<=` row) and the bound is asserted to be a
 bound. Recorded so nobody reads the `nan` as a linopy bug later.
 
+**Now logged in the branch (2026-08-23, post-run, human instruction):** the human lead asked for
+the trap to be visible outside dev-scripts. A one-sentence note was added to the `cuOpt._solve`
+docstring Notes section (amended into commit 7, which created that section) and a two-line comment
+at the `get_milp_stats` call site (amended into commit 1). Branch rewritten 7adc7e8 → e7bef1d.
+
 ## KI10 — V1-6b and V1-13's tolerance constants are not in `test_cuopt.py` yet (WP-F must add them)
 
 *Phase 4, WP-D agent (Opus 5, `claude-opus-5[1m]`), 2026-08-22.* Not a defect — a handover note so

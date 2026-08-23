@@ -1,6 +1,6 @@
 # cuOpt support — handoff
 
-*Run completed: 2026-08-23 · Branch: `feat/cuopt-solver` @ 7adc7e8 (post-run rewrites: extra renamed `cuopt`→`gpu` on user instruction, was a8fb35b) · Lead: Claude Fable 5 (project-lead session)*
+*Run completed: 2026-08-23 · Branch: `feat/cuopt-solver` @ e7bef1d (post-run rewrites: extra renamed `cuopt`→`gpu` on user instruction, was a8fb35b) · Lead: Claude Fable 5 (project-lead session)*
 *Harness record (§6.7): https://github.com/mal84emma/linopy-gpu/tree/harness/cuopt — the
 charter, plans, review rounds and logs behind this run. Not part of the PR.*
 
@@ -64,7 +64,7 @@ All in `logs/45-known-issues.md`: KI1 (46F/28E pre-existing baseline failures, t
 
 ## 8. State of the tree
 
-- Branch pushed: **yes** (`origin/feat/cuopt-solver` @ 7adc7e8; origin only, never upstream) · Commits: **7** · Every author a real Claude model, author matching its Co-Authored-By trailer (I11): **yes** (all 7 `Claude Opus 5`) · Fable-authored commits: **none on this branch** (the harness branch's single commit is `Claude Fable 5` — the lead)
+- Branch pushed: **yes** (`origin/feat/cuopt-solver` @ e7bef1d; origin only, never upstream) · Commits: **7** · Every author a real Claude model, author matching its Co-Authored-By trailer (I11): **yes** (all 7 `Claude Opus 5`) · Fable-authored commits: **none on this branch** (the harness branch's single commit is `Claude Fable 5` — the lead)
 - Merge commits present: **none** — confirmed (checked at every merge and at Gate 6)
 - `git log --stat` shows zero files under `dev-scripts/`: **confirmed** (+ both §6.6b leak checks empty against upstream/master, re-run at push time)
 - `PR_BODY.md` drafted with the `<!-- HUMAN: write your intent here -->` placeholder: **confirmed** (`dev-scripts/cuopt/PR_BODY.md`)
