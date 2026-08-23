@@ -134,3 +134,20 @@ carries the AGENTS.md AI-note alert and follows the repo bug template. One brief
 the agent: KI12's cited fix site `linopy/io.py:copy` is right — `Model.copy` in `model.py` is only
 an alias (`copy = copy`, model.py:2501). Logs updated: KI12 entry (filing record), 99-handoff §9
 item 4 marked done. Harness branch updated with these log changes (commit below).
+
+## 2026-08-23 — Post-run: solver benchmark added to PR_BODY.md (user instruction)
+
+User instruction: build a throwaway HiGHS-vs-cuOpt benchmark (not committed), calibrated so HiGHS
+takes ~1 hour, then summarise the agreed results in PR_BODY.md. Test case: LOPF of the PyPSA
+`scigrid-de` example network (585 buses / 1423 gens / 852 lines), its 24-hour day tiled to scale;
+pypsa 1.3.0 installed into .venv for model building (editable linopy verified untouched). Script:
+`dev-scripts/cuopt/benchmark/bench_one.py` (gitignored, one subprocess per config); raw logs in the
+session scratchpad `bench/`. Calibration per user protocol (3+ points, iterate): HiGHS default
+5.4 s @ 1 d, 115.9 s @ 7 d, 1525.7 s @ 28 d (clean, threads=8/parallel=on — no gain over serial
+1550.8 s) → local exponent ~1.87 → 6 weeks chosen (round number). Final verification, strictly
+sequential on an idle box, 2.50 M vars / 6.0 M cons: HiGHS-lp 3358.6 s, HiGHS-direct 3373.3 s
+(solve-bound, not I/O-bound), cuOpt 20.9 s cold / 19.0 s warm — **161× cold**. Objectives agree to
+≤8e-4 relative at default tolerances; T4 held the barrier factorisation. User agreed the benchmark
+and chose cold values with a note that repeat solves save ~2 s (CUDA init); `## Performance`
+section added to PR_BODY.md accordingly. Benchmark script and network file deliberately left
+uncommitted (throwaway per instruction).
