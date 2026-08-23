@@ -1,0 +1,47 @@
+..s......s....sss..s.sss..s.sss..s.sss..s.sss..s.sss..s...............s......s...........s......s...ssssssss [ 42%]
+ss..............................................................................ssss........................ [ 85%]
+....................................ss                                                                       [100%]
+================================================= warnings summary =================================================
+test/test_solvers.py::test_solver_instance_attached_after_solve[legacy-xpress]
+  /home/azureuser/linopy-gpu/dev-scripts/cuopt/worktrees/wp-f/linopy/solvers.py:3104: LicenseWarning: Using the Community license in this session. If you have a full Xpress license, pass the full path to your license file to xpress.init(). If you want to use the FICO Community license and no longer want to see this message, use the following code before using the xpress module:
+    xpress.init('/home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/xpresslibs/bin/community-xpauth.xpr')
+    m = self._env_stack.enter_context(xpress.problem())
+
+test/test_solvers.py: 12 warnings
+  /home/azureuser/linopy-gpu/dev-scripts/cuopt/worktrees/wp-f/test/test_solvers.py:305: DeprecationWarning: Solver.solve_problem is deprecated and will be removed in a future release. Use Solver.from_name(name, model, ...).solve(...) or Model.solve(...) instead.
+    result = s.solve_problem(problem_fn=mps_file, solution_fn=sol_file)
+
+test/test_solvers.py: 16 warnings
+  /home/azureuser/linopy-gpu/dev-scripts/cuopt/worktrees/wp-f/linopy/solvers.py:1148: DeprecationWarning: Solver.solve_problem_from_file is deprecated and will be removed in a future release. Use Solver.from_name(name, model, problem_fn=..., ...).solve(...) instead.
+    return self.solve_problem_from_file(
+
+test/test_solvers.py::test_gurobi_environment_with_dict[legacy]
+test/test_solvers.py::test_gurobi_environment_with_dict[v1]
+  /home/azureuser/linopy-gpu/dev-scripts/cuopt/worktrees/wp-f/test/test_solvers.py:404: DeprecationWarning: Solver.solve_problem is deprecated and will be removed in a future release. Use Solver.from_name(name, model, ...).solve(...) or Model.solve(...) instead.
+    result = gurobi.solve_problem(
+
+test/test_solvers.py::test_gurobi_environment_with_dict[legacy]
+test/test_solvers.py::test_gurobi_environment_with_dict[v1]
+  /home/azureuser/linopy-gpu/dev-scripts/cuopt/worktrees/wp-f/test/test_solvers.py:412: DeprecationWarning: Solver.solve_problem is deprecated and will be removed in a future release. Use Solver.from_name(name, model, ...).solve(...) or Model.solve(...) instead.
+    gurobi.solve_problem(
+
+test/test_solvers.py::test_gurobi_environment_with_dict[legacy]
+test/test_solvers.py::test_gurobi_environment_with_dict[v1]
+test/test_solvers.py::test_gurobi_environment_with_gurobi_env[legacy]
+test/test_solvers.py::test_gurobi_environment_with_gurobi_env[v1]
+  /home/azureuser/linopy-gpu/dev-scripts/cuopt/worktrees/wp-f/linopy/solvers.py:1138: DeprecationWarning: Solver.solve_problem_from_model is deprecated and will be removed in a future release. Use Solver.from_name(name, model, io_api='direct', ...).solve(...) instead.
+    return self.solve_problem_from_model(
+
+test/test_solvers.py::test_gurobi_environment_with_gurobi_env[legacy]
+test/test_solvers.py::test_gurobi_environment_with_gurobi_env[v1]
+  /home/azureuser/linopy-gpu/dev-scripts/cuopt/worktrees/wp-f/test/test_solvers.py:434: DeprecationWarning: Solver.solve_problem is deprecated and will be removed in a future release. Use Solver.from_name(name, model, ...).solve(...) or Model.solve(...) instead.
+    result = gurobi.solve_problem(
+
+test/test_solvers.py::test_gurobi_environment_with_gurobi_env[legacy]
+test/test_solvers.py::test_gurobi_environment_with_gurobi_env[v1]
+  /home/azureuser/linopy-gpu/dev-scripts/cuopt/worktrees/wp-f/test/test_solvers.py:443: DeprecationWarning: Solver.solve_problem is deprecated and will be removed in a future release. Use Solver.from_name(name, model, ...).solve(...) or Model.solve(...) instead.
+    gurobi.solve_problem(model=model, solution_fn=sol_file, env=env)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+208 passed, 46 skipped, 41 warnings in 6.19s
+PYTEST_EXIT=0

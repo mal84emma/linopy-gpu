@@ -1,0 +1,124 @@
+--- after interpreter start ---
+--- after import numpy+scipy ---
+    /home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/numpy.libs/libscipy_openblas64_-32a4b2a6.so
+--- after import linopy ---
+    /home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/numpy.libs/libscipy_openblas64_-32a4b2a6.so
+--- after import highspy ---
+    /home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/highspy/libhighs.so.1
+    /home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/numpy.libs/libscipy_openblas64_-32a4b2a6.so
+--- after import pyscipopt ---
+    /home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/pyscipopt.libs/libscip-d031042e.so.10.0
+    /home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/highspy/libhighs.so.1
+    /home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/numpy.libs/libscipy_openblas64_-32a4b2a6.so
+--- after import cuopt.linear_programming ---
+    /home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/nvidia/cuda_runtime/lib/libcudart.so.12
+    /home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/libcuopt/lib64/libcuopt.so
+    /home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/libraft_cu12.libs/libgomp-855c301a.so.1.0.0
+    /home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/libcuopt_cu12.libs/libomp-8fe85495.so
+    /home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/librmm/lib64/librmm.so
+    /home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/pyscipopt.libs/libscip-d031042e.so.10.0
+    /home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/highspy/libhighs.so.1
+    /home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/numpy.libs/libscipy_openblas64_-32a4b2a6.so
+--- after HiGHS solve ---
+    /home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/scipy.libs/libscipy_openblas-6cdc3b4a.so
+    /home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/nvidia/cuda_runtime/lib/libcudart.so.12
+    /home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/libcuopt/lib64/libcuopt.so
+    /home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/libraft_cu12.libs/libgomp-855c301a.so.1.0.0
+    /home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/libcuopt_cu12.libs/libomp-8fe85495.so
+    /home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/librmm/lib64/librmm.so
+    /home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/pyscipopt.libs/libscip-d031042e.so.10.0
+    /home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/highspy/libhighs.so.1
+    /home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/numpy.libs/libscipy_openblas64_-32a4b2a6.so
+original problem has 2 variables (0 bin, 0 int, 2 cont) and 2 constraints
+feasible solution found by trivial heuristic after 0.0 seconds, objective value 3.000000e+05
+presolving:
+(round 1, fast)       0 del vars, 0 del conss, 0 add conss, 4 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs, 0 implints
+   (0.0s) symmetry computation started: requiring (bin +, int +, cont +), (fixed: bin -, int -, cont -)
+   (0.0s) no symmetry present (symcode time: 0.00)
+presolving (2 rounds: 2 fast, 1 medium, 1 exhaustive):
+ 0 deleted vars, 0 deleted constraints, 0 added constraints, 4 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques, 0 implied integral variables (0 bin, 0 int, 0 cont)
+presolved problem has 2 variables (0 bin, 0 int, 2 cont) and 2 constraints
+      2 constraints of type <linear>
+Presolving Time: 0.00
+
+ time | node  | left  |LP iter|LP it/n|mem/heur|mdpt |vars |cons |rows |cuts |sepa|confs|strbr|  dualbound   | primalbound  |  gap   | compl. 
+t 0.0s|     1 |     0 |     0 |     - | trivial|   0 |   2 |   2 |   0 |   0 |  0 |   0 |   0 | 0.000000e+00 | 8.333333e+00 |    Inf | unknown
+* 0.0s|     1 |     0 |     1 |     - |    LP  |   0 |   2 |   2 |   2 |   0 |  0 |   0 |   0 | 3.333333e+00 | 3.333333e+00 |   0.00%| unknown
+  0.0s|     1 |     0 |     1 |     - |  1295k |   0 |   2 |   2 |   2 |   0 |  0 |   0 |   0 | 3.333333e+00 | 3.333333e+00 |   0.00%| unknown
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 0.00
+Solving Nodes      : 1
+Primal Bound       : +3.33333333333333e+00 (3 solutions)
+Dual Bound         : +3.33333333333333e+00
+Gap                : 0.00 %
+--- after SCIP solve ---
+    /home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/scipy.libs/libscipy_openblas-6cdc3b4a.so
+    /home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/nvidia/cuda_runtime/lib/libcudart.so.12
+    /home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/libcuopt/lib64/libcuopt.so
+    /home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/libraft_cu12.libs/libgomp-855c301a.so.1.0.0
+    /home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/libcuopt_cu12.libs/libomp-8fe85495.so
+    /home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/librmm/lib64/librmm.so
+    /home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/pyscipopt.libs/libscip-d031042e.so.10.0
+    /home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/highspy/libhighs.so.1
+    /home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/numpy.libs/libscipy_openblas64_-32a4b2a6.so
+--- after cuOpt solve ---
+    /home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/scipy.libs/libscipy_openblas-6cdc3b4a.so
+    /home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/nvidia/cuda_runtime/lib/libcudart.so.12
+    /home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/libcuopt/lib64/libcuopt.so
+    /home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/libraft_cu12.libs/libgomp-855c301a.so.1.0.0
+    /home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/libcuopt_cu12.libs/libomp-8fe85495.so
+    /home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/librmm/lib64/librmm.so
+    /home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/pyscipopt.libs/libscip-d031042e.so.10.0
+    /home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/highspy/libhighs.so.1
+    /home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/numpy.libs/libscipy_openblas64_-32a4b2a6.so
+original problem has 2 variables (0 bin, 0 int, 2 cont) and 2 constraints
+feasible solution found by trivial heuristic after 0.0 seconds, objective value 3.000000e+05
+presolving:
+(round 1, fast)       0 del vars, 0 del conss, 0 add conss, 4 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs, 0 implints
+   (0.0s) symmetry computation started: requiring (bin +, int +, cont +), (fixed: bin -, int -, cont -)
+   (0.0s) no symmetry present (symcode time: 0.00)
+presolving (2 rounds: 2 fast, 1 medium, 1 exhaustive):
+ 0 deleted vars, 0 deleted constraints, 0 added constraints, 4 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques, 0 implied integral variables (0 bin, 0 int, 0 cont)
+presolved problem has 2 variables (0 bin, 0 int, 2 cont) and 2 constraints
+      2 constraints of type <linear>
+Presolving Time: 0.00
+
+ time | node  | left  |LP iter|LP it/n|mem/heur|mdpt |vars |cons |rows |cuts |sepa|confs|strbr|  dualbound   | primalbound  |  gap   | compl. 
+t 0.0s|     1 |     0 |     0 |     - | trivial|   0 |   2 |   2 |   0 |   0 |  0 |   0 |   0 | 0.000000e+00 | 8.333333e+00 |    Inf | unknown
+* 0.0s|     1 |     0 |     1 |     - |    LP  |   0 |   2 |   2 |   2 |   0 |  0 |   0 |   0 | 3.333333e+00 | 3.333333e+00 |   0.00%| unknown
+  0.0s|     1 |     0 |     1 |     - |  1295k |   0 |   2 |   2 |   2 |   0 |  0 |   0 |   0 | 3.333333e+00 | 3.333333e+00 |   0.00%| unknown
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 0.00
+Solving Nodes      : 1
+Primal Bound       : +3.33333333333333e+00 (3 solutions)
+Dual Bound         : +3.33333333333333e+00
+Gap                : 0.00 %
+--- after SCIP solve AFTER cuOpt ---
+    /home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/scipy.libs/libscipy_openblas-6cdc3b4a.so
+    /home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/nvidia/cuda_runtime/lib/libcudart.so.12
+    /home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/libcuopt/lib64/libcuopt.so
+    /home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/libraft_cu12.libs/libgomp-855c301a.so.1.0.0
+    /home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/libcuopt_cu12.libs/libomp-8fe85495.so
+    /home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/librmm/lib64/librmm.so
+    /home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/pyscipopt.libs/libscip-d031042e.so.10.0
+    /home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/highspy/libhighs.so.1
+    /home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/numpy.libs/libscipy_openblas64_-32a4b2a6.so
+
+=== OMP-relevant environment ===
+    CONDA_MKL_INTERFACE_LAYER_BACKUP=
+    CONDA_PROMPT_MODIFIER=(azureml_py38) 
+    MKL_INTERFACE_LAYER=LP64,GNU
+    MKL_THREADING_LAYER=GNU
+(none listed above means unset)
+
+=== does the cuOpt libomp export the GNU libgomp ABI too? ===
+    /home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/libraft_cu12.libs/libgomp-855c301a.so.1.0.0
+      symbol probe count=0 symbols=[]
+    /home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/libcuopt_cu12.libs/libomp-8fe85495.so
+      symbol probe count=0 symbols=[]
+DONE probe 3
+EXIT=0

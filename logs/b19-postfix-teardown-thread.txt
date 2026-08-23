@@ -1,0 +1,19 @@
+[A0] native model released on thread: linopy-cuopt-solve
+[A1] native model released on thread: linopy-cuopt-solve
+[A2] native model released on thread: linopy-cuopt-solve
+[A3] native model released on thread: linopy-cuopt-solve
+[A4] native model released on thread: linopy-cuopt-solve
+
+[A] releasing threads: ['linopy-cuopt-solve']
+[A] releases on a foreign thread: 0/5
+[B0] __del__ handed the DataModel over from thread: foreign-gc-0, foreign-gc-0, foreign-gc-0, foreign-gc-0, foreign-gc-0, foreign-gc-0
+[B1] __del__ handed the DataModel over from thread: foreign-gc-1
+[B2] __del__ handed the DataModel over from thread: foreign-gc-2
+[B3] __del__ handed the DataModel over from thread: foreign-gc-3
+[B4] __del__ handed the DataModel over from thread: foreign-gc-4
+
+[B] iterations whose foreign-thread collection handed over: 5/5
+[B] handovers seen in total: 10 (from MainThread: 0)
+
+A (routing) : PASS
+B (gc path) : PASS

@@ -1,0 +1,1161 @@
+MODE=drop NCUOPT=1 NOTHER=3 pid=641680
+env: MALLOC_CHECK_=None MALLOC_PERTURB_=None PYTHONMALLOC=None LD_PRELOAD=None
+  live threads: ['MainThread', 'bgpool_0', 'bgpool_1', 'bgpool_2', 'bgpool_3', 'bgpool_4']
+Restricted license - for non-production use only - expires 2027-11-29
+### Could not find a valid license.
+    Your machine ID is 78-a6-6c-e8-9a.
+    Please contact licensing@artelys.com or your local distributor to obtain a license.
+    If you already have a license, please execute `get_machine_ID -v` and send the output to support.
+    Go to http://www.artelys.com/knitro for a Knitro student version license or trial.
+MindOpt 2.3.0 | 182d0f81, Jan 28 2026, 19:33:31 | x86_64 - Ubuntu 22.04.5 LTS (Jammy Jellyfish)
+Start license validation (current time : 23-AUG-2026 04:23:49 UTC+0000).
+[INFO ] Looking for license file ...
+[INFO ] Environment variable MINDOPT_LICENSE_PATH not defined
+[INFO ] License file not found in ENV 'MINDOPT_LICENSE_PATH'
+[INFO ] License file not found in '/home/azureuser/mindopt/'
+[INFO ] License file not found in '/home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages'
+[INFO ] Looking for floating license configuration ...
+[INFO ] Environment variable MINDOPT_LICENSE_PATH not defined
+[INFO ] Floating license configuration not found in ENV 'MINDOPT_LICENSE_PATH'
+[INFO ] Floating license configuration not found in '/home/azureuser/mindopt/'
+[INFO ] Floating license configuration not found in '/home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages'
+[INFO ] Looking for community license ...
+[INFO ] Environment variable MINDOPT_LICENSE_PATH not defined
+[INFO ] Community license not found in ENV 'MINDOPT_LICENSE_PATH'
+[INFO ] Community license not found in '/home/azureuser/mindopt/'
+[INFO ] Community license not found in '/home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages'
+[WARN ] No license file is found.
+[ERROR] No valid license was found. Please visit https://opt.aliyun.com/doc/latest/en/html/installation/license.html to apply for and set up your license
+License validation terminated. Time : 0.000s
+
+2026-08-23 04:23:49 [INFO] checks license for COPT v8.0.6 20260807
+2026-08-23 04:23:49 [WARN] no license files in current working folder: /home/azureuser/linopy-gpu
+2026-08-23 04:23:49 [WARN] no license files in binary folder: /home/azureuser/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/bin
+2026-08-23 04:23:49 [WARN] no license files in HOME folder: /home/azureuser/copt
+2026-08-23 04:23:49 [INFO] empty environment variable: COPT_LICENSE_DIR
+2026-08-23 04:23:49 [WARN] no license files in EV 'COPT_LICENSE_DIR': 
+
+No license found. Starting COPT with size limitations for non-commercial use
+Please apply for a license from www.shanshu.ai/copt
+
+Cardinal Optimizer v8.0.6. Build date Aug  7 2026
+Copyright Cardinal Operations 2026. All Rights Reserved
+
+PSLP declares problem as infeasible.
+Optimization potentially failed: 
+Status: warning
+Termination condition: infeasible
+Solution: 0 primals, 0 duals
+Objective: nan
+Solver: cuopt
+Runtime: nans
+Solver model: available
+Solver message: PrimalInfeasible
+
+PSLP declares problem as infeasible or unbounded.
+Optimization potentially failed: 
+Status: warning
+Termination condition: infeasible_or_unbounded
+Solution: 0 primals, 0 duals
+Objective: nan
+Solver: cuopt
+Runtime: nans
+Solver model: available
+Solver message: UnboundedOrInfeasible
+
+Optimization potentially failed: 
+Status: warning
+Termination condition: infeasible
+Solution: 0 primals, 0 duals
+Objective: nan
+Solver: cuopt
+Runtime: 0.00s
+MIP gap: 0.00e+00
+Dual bound: inf
+Solver model: available
+Solver message: Infeasible
+
+Optimization solution is sub-optimal: 
+Status: ok
+Termination condition: suboptimal
+Solution: 60 primals, 0 duals
+Objective: -2.60e+03
+Solver: cuopt
+Runtime: 0.14s
+MIP gap: 5.47e-02
+Dual bound: -2.74e+03
+Solver model: available
+Solver message: FeasibleFound
+
+cuOpt returned 0 primal values for 50 variables (TimeLimit).
+PHASE1 cuOpt solves=14 t=7.9s
+  live threads: ['MainThread', 'bgpool_0', 'bgpool_1', 'bgpool_2', 'bgpool_3', 'bgpool_4', 'linopy-cuopt-solve']
+Running HiGHS 1.15.1 (git hash: 04024d7): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+MIP has 7 rows; 12 cols; 24 nonzeros; 6 integer variables (0 binary)
+Coefficient ranges:
+  Matrix  [1e+00, 1e+00]
+  Cost    [1e+00, 2e+00]
+  Bound   [0e+00, 0e+00]
+  RHS     [3e+00, 4e+01]
+Presolving model
+7 rows, 12 cols, 24 nonzeros 0s
+1 rows, 6 cols, 6 nonzeros 0s
+0 rows, 0 cols, 0 nonzeros 0s
+Presolve reductions: rows 0(-7); columns 0(-12); nonzeros 0(-24) - Reduced to empty
+Presolve: Optimal
+
+Src: B => Branching; C => Central rounding; F => Feasibility pump; H => Heuristic;
+     I => Shifting; J => Feasibility jump; L => Sub-MIP; P => Empty MIP; R => Randomized rounding;
+     S => Solve LP; T => Evaluate node; U => Unbounded; X => User solution; Y => HiGHS solution;
+     Z => ZI Round; l => Trivial lower; p => Trivial point; u => Trivial upper; z => Trivial zero
+
+        Nodes      |    B&B Tree     |            Objective Bounds              |  Dynamic Constraints |       Work      
+Src  Proc. InQueue |  Leaves   Expl. | BestBound       BestSol              Gap |   Cuts   InLp Confl. | LpIters     Time
+
+         0       0         0   0.00%   18              18                 0.00%        0      0      0         0     0.0s
+
+Solving report
+  Status            Optimal
+  Primal bound      18
+  Dual bound        18
+  Gap               0% (tolerance: 0.01%)
+  P-D integral      0
+  Solution status   feasible
+                    18 (objective)
+                    0 (bound viol.)
+                    0 (int. viol.)
+                    0 (row viol.)
+  Timing            0.00
+                    0.00 (Presolve)
+                    0.00 (Solve)
+                    0.00 (Postsolve)
+  Max sub-MIP depth 0
+  Nodes             0
+  Repair LPs        0
+  LP iterations     0
+Running HiGHS 1.15.1 (git hash: 04024d7): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+MIP linopy-problem-xz5gq87u has 7 rows; 12 cols; 24 nonzeros; 6 integer variables (0 binary)
+Coefficient ranges:
+  Matrix  [1e+00, 1e+00]
+  Cost    [1e+00, 2e+00]
+  Bound   [0e+00, 0e+00]
+  RHS     [3e+00, 4e+01]
+Presolving model
+7 rows, 12 cols, 24 nonzeros 0s
+1 rows, 6 cols, 6 nonzeros 0s
+0 rows, 0 cols, 0 nonzeros 0s
+Presolve reductions: rows 0(-7); columns 0(-12); nonzeros 0(-24) - Reduced to empty
+Presolve: Optimal
+
+Src: B => Branching; C => Central rounding; F => Feasibility pump; H => Heuristic;
+     I => Shifting; J => Feasibility jump; L => Sub-MIP; P => Empty MIP; R => Randomized rounding;
+     S => Solve LP; T => Evaluate node; U => Unbounded; X => User solution; Y => HiGHS solution;
+     Z => ZI Round; l => Trivial lower; p => Trivial point; u => Trivial upper; z => Trivial zero
+
+        Nodes      |    B&B Tree     |            Objective Bounds              |  Dynamic Constraints |       Work      
+Src  Proc. InQueue |  Leaves   Expl. | BestBound       BestSol              Gap |   Cuts   InLp Confl. | LpIters     Time
+
+         0       0         0   0.00%   18              18                 0.00%        0      0      0         0     0.0s
+
+Solving report
+  Model             linopy-problem-xz5gq87u
+  Status            Optimal
+  Primal bound      18
+  Dual bound        18
+  Gap               0% (tolerance: 0.01%)
+  P-D integral      0
+  Solution status   feasible
+                    18 (objective)
+                    0 (bound viol.)
+                    0 (int. viol.)
+                    0 (row viol.)
+  Timing            0.00
+                    0.00 (Presolve)
+                    0.00 (Solve)
+                    0.00 (Postsolve)
+  Max sub-MIP depth 0
+  Nodes             0
+  Repair LPs        0
+  LP iterations     0
+original problem has 12 variables (0 bin, 6 int, 6 cont) and 7 constraints
+presolving:
+(round 1, fast)       0 del vars, 0 del conss, 0 add conss, 12 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs, 0 implints
+(round 2, fast)       0 del vars, 0 del conss, 0 add conss, 24 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs, 0 implints
+(round 3, fast)       6 del vars, 7 del conss, 0 add conss, 24 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs, 0 implints
+presolving (4 rounds: 4 fast, 1 medium, 1 exhaustive):
+ 12 deleted vars, 7 deleted constraints, 0 added constraints, 24 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques, 0 implied integral variables (0 bin, 0 int, 0 cont)
+transformed 1/1 original solutions to the transformed problem space
+presolving solved problem
+Presolving Time: 0.00
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 0.00
+Solving Nodes      : 0
+Primal Bound       : +1.80000000000000e+01 (1 solutions)
+Dual Bound         : +1.80000000000000e+01
+Gap                : 0.00 %
+2026-08-23 04:23:56 [INFO] checks license for COPT v8.0.6 20260807
+2026-08-23 04:23:56 [WARN] no license files in current working folder: /home/azureuser/linopy-gpu
+2026-08-23 04:23:56 [WARN] no license files in binary folder: /home/azureuser/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/bin
+2026-08-23 04:23:56 [WARN] no license files in HOME folder: /home/azureuser/copt
+2026-08-23 04:23:56 [INFO] empty environment variable: COPT_LICENSE_DIR
+2026-08-23 04:23:56 [WARN] no license files in EV 'COPT_LICENSE_DIR': 
+
+No license found. Starting COPT with size limitations for non-commercial use
+Please apply for a license from www.shanshu.ai/copt
+
+Cardinal Optimizer v8.0.6. Build date Aug  7 2026
+Copyright Cardinal Operations 2026. All Rights Reserved
+
+Reading from '/tmp/linopy-problem-jdrb4ivz.lp'
+Reading finished (0.00s)
+No license found. The size is limited to 2000 variables and 2000 constraints
+Please apply for a license from www.shanshu.ai/copt
+
+Model fingerprint: 68931193
+
+Using Cardinal Optimizer v8.0.6 on Linux (Ubuntu 22.04.5 LTS - x86_64)
+The CPU model is AMD EPYC 7V12 64-Core Processor
+Hardware has 8 physical cores and 8 logical cores. Using instruction set X86_NATIVE (1)
+Minimizing a MIP problem
+
+The original problem has:
+    7 rows, 12 columns and 24 non-zero elements
+    6 integers
+
+Starting the MIP solver with 8 threads and 32 tasks
+
+Presolving the problem
+
+Problem was solved during presolve
+
+Best solution   : 18.000000000
+Best bound      : 18.000000000
+Best gap        : 0.0000%
+Solve time      : 0.00
+Solve node      : 0
+MIP status      : solved
+Solution status : integer optimal (relative gap limit 0.0001)
+
+Violations      :     absolute     relative
+    bounds      :            0            0
+    rows        :            0            0
+    integrality :            0
+Dual solution is not available for MIP problem
+Dual values of MILP couldn't be parsed
+/home/azureuser/linopy-gpu/linopy/solvers.py:2903: LicenseWarning: Using the Community license in this session. If you have a full Xpress license, pass the full path to your license file to xpress.init(). If you want to use the FICO Community license and no longer want to see this message, use the following code before using the xpress module:
+  xpress.init('/home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/xpresslibs/bin/community-xpauth.xpr')
+  problem = xpress.problem()
+ 
+Reading Problem linopy
+Problem Statistics
+           7 (      0 spare) rows
+          12 (      0 spare) structural columns
+          24 (      0 spare) non-zero elements
+MIP Entity Statistics
+           6 entities        0 sets        0 set members
+FICO Xpress v9.9.1, Community, solve started 4:23:56, Aug 23, 2026
+Heap usage: 433KB (peak 433KB, 58KB system)
+Minimizing MILP linopy using up to 8 threads and up to 54GB memory, with these control settings:
+OUTPUTLOG = 1
+NLPPOSTSOLVE = 1
+XSLP_DELETIONCONTROL = 0
+XSLP_OBJSENSE = 1
+Original problem has:
+         7 rows           12 cols           24 elements         6 entities
+Presolved problem has:
+         0 rows            0 cols            0 elements         0 entities
+LP relaxation tightened
+Presolve finished in 0 seconds
+Heap usage: 1530KB (peak 1544KB, 58KB system)
+Will try to keep branch and bound tree memory usage below 38.4GB
+Starting concurrent solve with dual (1 thread)
+
+ Concurrent-Solve,   0s
+            Dual        
+    objective   dual inf
+                        
+------- optimal --------
+Concurrent statistics:
+           Dual: 0 simplex iterations, 0.00s
+Optimal solution found
+ 
+   Its         Obj Value      S   Ninf  Nneg   Sum Dual Inf  Time
+     0         18.000000      D      0     0        .000000     0
+Dual solved problem
+  0 simplex iterations in 0.00 seconds at time 0
+
+Final objective                       : 1.800000000000000e+01
+  Max primal violation      (abs/rel) :       0.0 /       0.0
+  Max dual violation        (abs/rel) :       0.0 /       0.0
+  Max complementarity viol. (abs/rel) :       0.0 /       0.0
+
+Starting root cutting & heuristics
+ 
+ Its Type    BestSoln    BestBound   Sols    Add    Del     Gap     GInf   Time
+*           18.000000    18.000000      1                  0.00%       0      0
+ *** Search completed ***
+Uncrunching matrix
+Final MIP objective                   : 1.800000000000000e+01
+Final MIP bound                       : 1.800000000000000e+01
+  Solution time / primaldual integral :      0.00s/ 97.870262%
+  Work / work units per second        :      0.00 /      0.11
+  Number of solutions found / nodes   :         1 /         1
+  Max primal violation      (abs/rel) :       0.0 /       0.0
+  Max integer violation     (abs    ) :       0.0
+Dual values of MILP couldn't be parsed
+ 
+Reading Problem linopy-problem-spfrwdf3
+Problem Statistics
+           7 (      0 spare) rows
+          12 (      0 spare) structural columns
+          24 (      0 spare) non-zero elements
+MIP Entity Statistics
+           6 entities        0 sets        0 set members
+FICO Xpress v9.9.1, Community, solve started 4:23:56, Aug 23, 2026
+Heap usage: 433KB (peak 433KB, 102KB system)
+Minimizing MILP linopy-problem-spfrwdf3 using up to 8 threads and up to 54GB memory, with these control settings:
+OUTPUTLOG = 1
+NLPPOSTSOLVE = 1
+XSLP_DELETIONCONTROL = 0
+XSLP_OBJSENSE = 1
+Original problem has:
+         7 rows           12 cols           24 elements         6 entities
+Presolved problem has:
+         0 rows            0 cols            0 elements         0 entities
+LP relaxation tightened
+Presolve finished in 0 seconds
+Heap usage: 1530KB (peak 1544KB, 102KB system)
+Will try to keep branch and bound tree memory usage below 38.4GB
+Starting concurrent solve with dual (1 thread)
+
+ Concurrent-Solve,   0s
+            Dual        
+    objective   dual inf
+                        
+------- optimal --------
+Concurrent statistics:
+           Dual: 0 simplex iterations, 0.00s
+Optimal solution found
+ 
+   Its         Obj Value      S   Ninf  Nneg   Sum Dual Inf  Time
+     0         18.000000      D      0     0        .000000     0
+Dual solved problem
+  0 simplex iterations in 0.00 seconds at time 0
+
+Final objective                       : 1.800000000000000e+01
+  Max primal violation      (abs/rel) :       0.0 /       0.0
+  Max dual violation        (abs/rel) :       0.0 /       0.0
+  Max complementarity viol. (abs/rel) :       0.0 /       0.0
+
+Starting root cutting & heuristics
+ 
+ Its Type    BestSoln    BestBound   Sols    Add    Del     Gap     GInf   Time
+*           18.000000    18.000000      1                  0.00%       0      0
+ *** Search completed ***
+Uncrunching matrix
+Final MIP objective                   : 1.800000000000000e+01
+Final MIP bound                       : 1.800000000000000e+01
+  Solution time / primaldual integral :      0.00s/ 97.371403%
+  Work / work units per second        :      0.00 /      0.11
+  Number of solutions found / nodes   :         1 /         1
+  Max primal violation      (abs/rel) :       0.0 /       0.0
+  Max integer violation     (abs    ) :       0.0
+Dual values of MILP couldn't be parsed
+Version identifier: 22.2.0.0 | 2026-07-01 | 7cae668b4
+CPXPARAM_Read_DataCheck                          1
+Found incumbent of value 18.000000 after 0.00 sec. (0.00 ticks)
+Tried aggregator 1 time.
+MIP Presolve eliminated 1 rows and 0 columns.
+Reduced MIP has 6 rows, 12 columns, and 12 nonzeros.
+Reduced MIP has 0 binaries, 6 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+MIP Presolve eliminated 6 rows and 12 columns.
+All rows and columns eliminated.
+Presolve time = 0.00 sec. (0.01 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.00 sec. (4.82 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.00 sec. (4.82 ticks)
+CPLEX Error  1017: Not available for mixed-integer problems.
+Dual values not available (e.g. barrier solution without crossover)
+Restricted license - for non-production use only - expires 2027-11-29
+Gurobi Optimizer version 13.0.2 build v13.0.2rc1 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: AMD EPYC 7V12 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 7 rows, 12 columns and 24 nonzeros (Min)
+Model fingerprint: 0x7e8056cc
+Model has 12 linear objective coefficients
+Variable types: 6 continuous, 6 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 2e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [3e+00, 4e+01]
+
+Presolve removed 7 rows and 12 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 18 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.800000000000e+01, best bound 1.800000000000e+01, gap 0.0000%
+Dual values of MILP couldn't be parsed
+Restricted license - for non-production use only - expires 2027-11-29
+Read LP format model from file /tmp/linopy-problem-dspo188c.lp
+Reading time = 0.00 seconds
+obj: 7 rows, 12 columns, 24 nonzeros
+Gurobi Optimizer version 13.0.2 build v13.0.2rc1 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: AMD EPYC 7V12 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 7 rows, 12 columns and 24 nonzeros (Min)
+Model fingerprint: 0x7e8056cc
+Model has 12 linear objective coefficients
+Variable types: 6 continuous, 6 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 2e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [3e+00, 4e+01]
+
+Presolve removed 7 rows and 12 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 18 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.800000000000e+01, best bound 1.800000000000e+01, gap 0.0000%
+Dual values of MILP couldn't be parsed
+Running HiGHS 1.15.1 (git hash: 04024d7): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+MIP has 7 rows; 12 cols; 24 nonzeros; 6 integer variables (0 binary)
+Coefficient ranges:
+  Matrix  [1e+00, 1e+00]
+  Cost    [1e+00, 2e+00]
+  Bound   [0e+00, 0e+00]
+  RHS     [3e+00, 4e+01]
+Presolving model
+7 rows, 12 cols, 24 nonzeros 0s
+1 rows, 6 cols, 6 nonzeros 0s
+0 rows, 0 cols, 0 nonzeros 0s
+Presolve reductions: rows 0(-7); columns 0(-12); nonzeros 0(-24) - Reduced to empty
+Presolve: Optimal
+
+Src: B => Branching; C => Central rounding; F => Feasibility pump; H => Heuristic;
+     I => Shifting; J => Feasibility jump; L => Sub-MIP; P => Empty MIP; R => Randomized rounding;
+     S => Solve LP; T => Evaluate node; U => Unbounded; X => User solution; Y => HiGHS solution;
+     Z => ZI Round; l => Trivial lower; p => Trivial point; u => Trivial upper; z => Trivial zero
+
+        Nodes      |    B&B Tree     |            Objective Bounds              |  Dynamic Constraints |       Work      
+Src  Proc. InQueue |  Leaves   Expl. | BestBound       BestSol              Gap |   Cuts   InLp Confl. | LpIters     Time
+
+         0       0         0   0.00%   18              18                 0.00%        0      0      0         0     0.0s
+
+Solving report
+  Status            Optimal
+  Primal bound      18
+  Dual bound        18
+  Gap               0% (tolerance: 0.01%)
+  P-D integral      0
+  Solution status   feasible
+                    18 (objective)
+                    0 (bound viol.)
+                    0 (int. viol.)
+                    0 (row viol.)
+  Timing            0.00
+                    0.00 (Presolve)
+                    0.00 (Solve)
+                    0.00 (Postsolve)
+  Max sub-MIP depth 0
+  Nodes             0
+  Repair LPs        0
+  LP iterations     0
+Running HiGHS 1.15.1 (git hash: 04024d7): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+MIP linopy-problem-1v4yakk8 has 7 rows; 12 cols; 24 nonzeros; 6 integer variables (0 binary)
+Coefficient ranges:
+  Matrix  [1e+00, 1e+00]
+  Cost    [1e+00, 2e+00]
+  Bound   [0e+00, 0e+00]
+  RHS     [3e+00, 4e+01]
+Presolving model
+7 rows, 12 cols, 24 nonzeros 0s
+1 rows, 6 cols, 6 nonzeros 0s
+0 rows, 0 cols, 0 nonzeros 0s
+Presolve reductions: rows 0(-7); columns 0(-12); nonzeros 0(-24) - Reduced to empty
+Presolve: Optimal
+
+Src: B => Branching; C => Central rounding; F => Feasibility pump; H => Heuristic;
+     I => Shifting; J => Feasibility jump; L => Sub-MIP; P => Empty MIP; R => Randomized rounding;
+     S => Solve LP; T => Evaluate node; U => Unbounded; X => User solution; Y => HiGHS solution;
+     Z => ZI Round; l => Trivial lower; p => Trivial point; u => Trivial upper; z => Trivial zero
+
+        Nodes      |    B&B Tree     |            Objective Bounds              |  Dynamic Constraints |       Work      
+Src  Proc. InQueue |  Leaves   Expl. | BestBound       BestSol              Gap |   Cuts   InLp Confl. | LpIters     Time
+
+         0       0         0   0.00%   18              18                 0.00%        0      0      0         0     0.0s
+
+Solving report
+  Model             linopy-problem-1v4yakk8
+  Status            Optimal
+  Primal bound      18
+  Dual bound        18
+  Gap               0% (tolerance: 0.01%)
+  P-D integral      0
+  Solution status   feasible
+                    18 (objective)
+                    0 (bound viol.)
+                    0 (int. viol.)
+                    0 (row viol.)
+  Timing            0.00
+                    0.00 (Presolve)
+                    0.00 (Solve)
+                    0.00 (Postsolve)
+  Max sub-MIP depth 0
+  Nodes             0
+  Repair LPs        0
+  LP iterations     0
+original problem has 12 variables (0 bin, 6 int, 6 cont) and 7 constraints
+presolving:
+(round 1, fast)       0 del vars, 0 del conss, 0 add conss, 12 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs, 0 implints
+(round 2, fast)       0 del vars, 0 del conss, 0 add conss, 24 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs, 0 implints
+(round 3, fast)       6 del vars, 7 del conss, 0 add conss, 24 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs, 0 implints
+presolving (4 rounds: 4 fast, 1 medium, 1 exhaustive):
+ 12 deleted vars, 7 deleted constraints, 0 added constraints, 24 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques, 0 implied integral variables (0 bin, 0 int, 0 cont)
+transformed 1/1 original solutions to the transformed problem space
+presolving solved problem
+Presolving Time: 0.00
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 0.00
+Solving Nodes      : 0
+Primal Bound       : +1.80000000000000e+01 (1 solutions)
+Dual Bound         : +1.80000000000000e+01
+Gap                : 0.00 %
+2026-08-23 04:23:57 [INFO] checks license for COPT v8.0.6 20260807
+2026-08-23 04:23:57 [WARN] no license files in current working folder: /home/azureuser/linopy-gpu
+2026-08-23 04:23:57 [WARN] no license files in binary folder: /home/azureuser/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/bin
+2026-08-23 04:23:57 [WARN] no license files in HOME folder: /home/azureuser/copt
+2026-08-23 04:23:57 [INFO] empty environment variable: COPT_LICENSE_DIR
+2026-08-23 04:23:57 [WARN] no license files in EV 'COPT_LICENSE_DIR': 
+
+No license found. Starting COPT with size limitations for non-commercial use
+Please apply for a license from www.shanshu.ai/copt
+
+Cardinal Optimizer v8.0.6. Build date Aug  7 2026
+Copyright Cardinal Operations 2026. All Rights Reserved
+
+Reading from '/tmp/linopy-problem-57errr2a.lp'
+Reading finished (0.00s)
+No license found. The size is limited to 2000 variables and 2000 constraints
+Please apply for a license from www.shanshu.ai/copt
+
+Model fingerprint: 68931193
+
+Using Cardinal Optimizer v8.0.6 on Linux (Ubuntu 22.04.5 LTS - x86_64)
+The CPU model is AMD EPYC 7V12 64-Core Processor
+Hardware has 8 physical cores and 8 logical cores. Using instruction set X86_NATIVE (1)
+Minimizing a MIP problem
+
+The original problem has:
+    7 rows, 12 columns and 24 non-zero elements
+    6 integers
+
+Starting the MIP solver with 8 threads and 32 tasks
+
+Presolving the problem
+
+Problem was solved during presolve
+
+Best solution   : 18.000000000
+Best bound      : 18.000000000
+Best gap        : 0.0000%
+Solve time      : 0.00
+Solve node      : 0
+MIP status      : solved
+Solution status : integer optimal (relative gap limit 0.0001)
+
+Violations      :     absolute     relative
+    bounds      :            0            0
+    rows        :            0            0
+    integrality :            0
+Dual solution is not available for MIP problem
+Dual values of MILP couldn't be parsed
+ 
+Reading Problem linopy
+Problem Statistics
+           7 (      0 spare) rows
+          12 (      0 spare) structural columns
+          24 (      0 spare) non-zero elements
+MIP Entity Statistics
+           6 entities        0 sets        0 set members
+FICO Xpress v9.9.1, Community, solve started 4:23:57, Aug 23, 2026
+Heap usage: 433KB (peak 433KB, 68KB system)
+Minimizing MILP linopy using up to 8 threads and up to 54GB memory, with these control settings:
+OUTPUTLOG = 1
+NLPPOSTSOLVE = 1
+XSLP_DELETIONCONTROL = 0
+XSLP_OBJSENSE = 1
+Original problem has:
+         7 rows           12 cols           24 elements         6 entities
+Presolved problem has:
+         0 rows            0 cols            0 elements         0 entities
+LP relaxation tightened
+Presolve finished in 0 seconds
+Heap usage: 1530KB (peak 1544KB, 68KB system)
+Will try to keep branch and bound tree memory usage below 38.4GB
+Starting concurrent solve with dual (1 thread)
+
+ Concurrent-Solve,   0s
+            Dual        
+    objective   dual inf
+                        
+------- optimal --------
+Concurrent statistics:
+           Dual: 0 simplex iterations, 0.00s
+Optimal solution found
+ 
+   Its         Obj Value      S   Ninf  Nneg   Sum Dual Inf  Time
+     0         18.000000      D      0     0        .000000     0
+Dual solved problem
+  0 simplex iterations in 0.00 seconds at time 0
+
+Final objective                       : 1.800000000000000e+01
+  Max primal violation      (abs/rel) :       0.0 /       0.0
+  Max dual violation        (abs/rel) :       0.0 /       0.0
+  Max complementarity viol. (abs/rel) :       0.0 /       0.0
+
+Starting root cutting & heuristics
+ 
+ Its Type    BestSoln    BestBound   Sols    Add    Del     Gap     GInf   Time
+*           18.000000    18.000000      1                  0.00%       0      0
+ *** Search completed ***
+Uncrunching matrix
+Final MIP objective                   : 1.800000000000000e+01
+Final MIP bound                       : 1.800000000000000e+01
+  Solution time / primaldual integral :      0.00s/ 97.505882%
+  Work / work units per second        :      0.00 /      0.11
+  Number of solutions found / nodes   :         1 /         1
+  Max primal violation      (abs/rel) :       0.0 /       0.0
+  Max integer violation     (abs    ) :       0.0
+Dual values of MILP couldn't be parsed
+ 
+Reading Problem linopy-problem-1vfyfj5i
+Problem Statistics
+           7 (      0 spare) rows
+          12 (      0 spare) structural columns
+          24 (      0 spare) non-zero elements
+MIP Entity Statistics
+           6 entities        0 sets        0 set members
+FICO Xpress v9.9.1, Community, solve started 4:23:57, Aug 23, 2026
+Heap usage: 433KB (peak 433KB, 72KB system)
+Minimizing MILP linopy-problem-1vfyfj5i using up to 8 threads and up to 54GB memory, with these control settings:
+OUTPUTLOG = 1
+NLPPOSTSOLVE = 1
+XSLP_DELETIONCONTROL = 0
+XSLP_OBJSENSE = 1
+Original problem has:
+         7 rows           12 cols           24 elements         6 entities
+Presolved problem has:
+         0 rows            0 cols            0 elements         0 entities
+LP relaxation tightened
+Presolve finished in 0 seconds
+Heap usage: 1530KB (peak 1544KB, 72KB system)
+Will try to keep branch and bound tree memory usage below 38.4GB
+Starting concurrent solve with dual (1 thread)
+
+ Concurrent-Solve,   0s
+            Dual        
+    objective   dual inf
+                        
+------- optimal --------
+Concurrent statistics:
+           Dual: 0 simplex iterations, 0.00s
+Optimal solution found
+ 
+   Its         Obj Value      S   Ninf  Nneg   Sum Dual Inf  Time
+     0         18.000000      D      0     0        .000000     0
+Dual solved problem
+  0 simplex iterations in 0.00 seconds at time 0
+
+Final objective                       : 1.800000000000000e+01
+  Max primal violation      (abs/rel) :       0.0 /       0.0
+  Max dual violation        (abs/rel) :       0.0 /       0.0
+  Max complementarity viol. (abs/rel) :       0.0 /       0.0
+
+Starting root cutting & heuristics
+ 
+ Its Type    BestSoln    BestBound   Sols    Add    Del     Gap     GInf   Time
+*           18.000000    18.000000      1                  0.00%       0      0
+ *** Search completed ***
+Uncrunching matrix
+Final MIP objective                   : 1.800000000000000e+01
+Final MIP bound                       : 1.800000000000000e+01
+  Solution time / primaldual integral :      0.01s/ 97.396857%
+  Work / work units per second        :      0.00 /      0.00
+  Number of solutions found / nodes   :         1 /         1
+  Max primal violation      (abs/rel) :       0.0 /       0.0
+  Max integer violation     (abs    ) :       0.0
+Dual values of MILP couldn't be parsed
+Version identifier: 22.2.0.0 | 2026-07-01 | 7cae668b4
+CPXPARAM_Read_DataCheck                          1
+Found incumbent of value 18.000000 after 0.00 sec. (0.00 ticks)
+Tried aggregator 1 time.
+MIP Presolve eliminated 1 rows and 0 columns.
+Reduced MIP has 6 rows, 12 columns, and 12 nonzeros.
+Reduced MIP has 0 binaries, 6 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+MIP Presolve eliminated 6 rows and 12 columns.
+All rows and columns eliminated.
+Presolve time = 0.00 sec. (0.01 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.00 sec. (4.82 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.00 sec. (4.82 ticks)
+CPLEX Error  1017: Not available for mixed-integer problems.
+Dual values not available (e.g. barrier solution without crossover)
+Restricted license - for non-production use only - expires 2027-11-29
+Gurobi Optimizer version 13.0.2 build v13.0.2rc1 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: AMD EPYC 7V12 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 7 rows, 12 columns and 24 nonzeros (Min)
+Model fingerprint: 0x7e8056cc
+Model has 12 linear objective coefficients
+Variable types: 6 continuous, 6 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 2e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [3e+00, 4e+01]
+
+Presolve removed 7 rows and 12 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 18 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.800000000000e+01, best bound 1.800000000000e+01, gap 0.0000%
+Dual values of MILP couldn't be parsed
+Restricted license - for non-production use only - expires 2027-11-29
+Read LP format model from file /tmp/linopy-problem-j56hryle.lp
+Reading time = 0.00 seconds
+obj: 7 rows, 12 columns, 24 nonzeros
+Gurobi Optimizer version 13.0.2 build v13.0.2rc1 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: AMD EPYC 7V12 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 7 rows, 12 columns and 24 nonzeros (Min)
+Model fingerprint: 0x7e8056cc
+Model has 12 linear objective coefficients
+Variable types: 6 continuous, 6 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 2e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [3e+00, 4e+01]
+
+Presolve removed 7 rows and 12 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 18 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.800000000000e+01, best bound 1.800000000000e+01, gap 0.0000%
+Dual values of MILP couldn't be parsed
+Running HiGHS 1.15.1 (git hash: 04024d7): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+MIP has 7 rows; 12 cols; 24 nonzeros; 6 integer variables (0 binary)
+Coefficient ranges:
+  Matrix  [1e+00, 1e+00]
+  Cost    [1e+00, 2e+00]
+  Bound   [0e+00, 0e+00]
+  RHS     [3e+00, 4e+01]
+Presolving model
+7 rows, 12 cols, 24 nonzeros 0s
+1 rows, 6 cols, 6 nonzeros 0s
+0 rows, 0 cols, 0 nonzeros 0s
+Presolve reductions: rows 0(-7); columns 0(-12); nonzeros 0(-24) - Reduced to empty
+Presolve: Optimal
+
+Src: B => Branching; C => Central rounding; F => Feasibility pump; H => Heuristic;
+     I => Shifting; J => Feasibility jump; L => Sub-MIP; P => Empty MIP; R => Randomized rounding;
+     S => Solve LP; T => Evaluate node; U => Unbounded; X => User solution; Y => HiGHS solution;
+     Z => ZI Round; l => Trivial lower; p => Trivial point; u => Trivial upper; z => Trivial zero
+
+        Nodes      |    B&B Tree     |            Objective Bounds              |  Dynamic Constraints |       Work      
+Src  Proc. InQueue |  Leaves   Expl. | BestBound       BestSol              Gap |   Cuts   InLp Confl. | LpIters     Time
+
+         0       0         0   0.00%   18              18                 0.00%        0      0      0         0     0.0s
+
+Solving report
+  Status            Optimal
+  Primal bound      18
+  Dual bound        18
+  Gap               0% (tolerance: 0.01%)
+  P-D integral      0
+  Solution status   feasible
+                    18 (objective)
+                    0 (bound viol.)
+                    0 (int. viol.)
+                    0 (row viol.)
+  Timing            0.00
+                    0.00 (Presolve)
+                    0.00 (Solve)
+                    0.00 (Postsolve)
+  Max sub-MIP depth 0
+  Nodes             0
+  Repair LPs        0
+  LP iterations     0
+Running HiGHS 1.15.1 (git hash: 04024d7): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+MIP linopy-problem-xd7ihjj9 has 7 rows; 12 cols; 24 nonzeros; 6 integer variables (0 binary)
+Coefficient ranges:
+  Matrix  [1e+00, 1e+00]
+  Cost    [1e+00, 2e+00]
+  Bound   [0e+00, 0e+00]
+  RHS     [3e+00, 4e+01]
+Presolving model
+7 rows, 12 cols, 24 nonzeros 0s
+1 rows, 6 cols, 6 nonzeros 0s
+0 rows, 0 cols, 0 nonzeros 0s
+Presolve reductions: rows 0(-7); columns 0(-12); nonzeros 0(-24) - Reduced to empty
+Presolve: Optimal
+
+Src: B => Branching; C => Central rounding; F => Feasibility pump; H => Heuristic;
+     I => Shifting; J => Feasibility jump; L => Sub-MIP; P => Empty MIP; R => Randomized rounding;
+     S => Solve LP; T => Evaluate node; U => Unbounded; X => User solution; Y => HiGHS solution;
+     Z => ZI Round; l => Trivial lower; p => Trivial point; u => Trivial upper; z => Trivial zero
+
+        Nodes      |    B&B Tree     |            Objective Bounds              |  Dynamic Constraints |       Work      
+Src  Proc. InQueue |  Leaves   Expl. | BestBound       BestSol              Gap |   Cuts   InLp Confl. | LpIters     Time
+
+         0       0         0   0.00%   18              18                 0.00%        0      0      0         0     0.0s
+
+Solving report
+  Model             linopy-problem-xd7ihjj9
+  Status            Optimal
+  Primal bound      18
+  Dual bound        18
+  Gap               0% (tolerance: 0.01%)
+  P-D integral      0
+  Solution status   feasible
+                    18 (objective)
+                    0 (bound viol.)
+                    0 (int. viol.)
+                    0 (row viol.)
+  Timing            0.00
+                    0.00 (Presolve)
+                    0.00 (Solve)
+                    0.00 (Postsolve)
+  Max sub-MIP depth 0
+  Nodes             0
+  Repair LPs        0
+  LP iterations     0
+original problem has 12 variables (0 bin, 6 int, 6 cont) and 7 constraints
+presolving:
+(round 1, fast)       0 del vars, 0 del conss, 0 add conss, 12 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs, 0 implints
+(round 2, fast)       0 del vars, 0 del conss, 0 add conss, 24 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs, 0 implints
+(round 3, fast)       6 del vars, 7 del conss, 0 add conss, 24 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs, 0 implints
+presolving (4 rounds: 4 fast, 1 medium, 1 exhaustive):
+ 12 deleted vars, 7 deleted constraints, 0 added constraints, 24 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques, 0 implied integral variables (0 bin, 0 int, 0 cont)
+transformed 1/1 original solutions to the transformed problem space
+presolving solved problem
+Presolving Time: 0.00
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 0.00
+Solving Nodes      : 0
+Primal Bound       : +1.80000000000000e+01 (1 solutions)
+Dual Bound         : +1.80000000000000e+01
+Gap                : 0.00 %
+2026-08-23 04:23:57 [INFO] checks license for COPT v8.0.6 20260807
+2026-08-23 04:23:57 [WARN] no license files in current working folder: /home/azureuser/linopy-gpu
+2026-08-23 04:23:57 [WARN] no license files in binary folder: /home/azureuser/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/bin
+2026-08-23 04:23:57 [WARN] no license files in HOME folder: /home/azureuser/copt
+2026-08-23 04:23:57 [INFO] empty environment variable: COPT_LICENSE_DIR
+2026-08-23 04:23:57 [WARN] no license files in EV 'COPT_LICENSE_DIR': 
+
+No license found. Starting COPT with size limitations for non-commercial use
+Please apply for a license from www.shanshu.ai/copt
+
+Cardinal Optimizer v8.0.6. Build date Aug  7 2026
+Copyright Cardinal Operations 2026. All Rights Reserved
+
+Reading from '/tmp/linopy-problem-1uzxmmg0.lp'
+Reading finished (0.00s)
+No license found. The size is limited to 2000 variables and 2000 constraints
+Please apply for a license from www.shanshu.ai/copt
+
+Model fingerprint: 68931193
+
+Using Cardinal Optimizer v8.0.6 on Linux (Ubuntu 22.04.5 LTS - x86_64)
+The CPU model is AMD EPYC 7V12 64-Core Processor
+Hardware has 8 physical cores and 8 logical cores. Using instruction set X86_NATIVE (1)
+Minimizing a MIP problem
+
+The original problem has:
+    7 rows, 12 columns and 24 non-zero elements
+    6 integers
+
+Starting the MIP solver with 8 threads and 32 tasks
+
+Presolving the problem
+
+Problem was solved during presolve
+
+Best solution   : 18.000000000
+Best bound      : 18.000000000
+Best gap        : 0.0000%
+Solve time      : 0.00
+Solve node      : 0
+MIP status      : solved
+Solution status : integer optimal (relative gap limit 0.0001)
+
+Violations      :     absolute     relative
+    bounds      :            0            0
+    rows        :            0            0
+    integrality :            0
+Dual solution is not available for MIP problem
+Dual values of MILP couldn't be parsed
+ 
+Reading Problem linopy
+Problem Statistics
+           7 (      0 spare) rows
+          12 (      0 spare) structural columns
+          24 (      0 spare) non-zero elements
+MIP Entity Statistics
+           6 entities        0 sets        0 set members
+FICO Xpress v9.9.1, Community, solve started 4:23:57, Aug 23, 2026
+Heap usage: 433KB (peak 433KB, 77KB system)
+Minimizing MILP linopy using up to 8 threads and up to 54GB memory, with these control settings:
+OUTPUTLOG = 1
+NLPPOSTSOLVE = 1
+XSLP_DELETIONCONTROL = 0
+XSLP_OBJSENSE = 1
+Original problem has:
+         7 rows           12 cols           24 elements         6 entities
+Presolved problem has:
+         0 rows            0 cols            0 elements         0 entities
+LP relaxation tightened
+Presolve finished in 0 seconds
+Heap usage: 1530KB (peak 1544KB, 77KB system)
+Will try to keep branch and bound tree memory usage below 38.4GB
+Starting concurrent solve with dual (1 thread)
+
+ Concurrent-Solve,   0s
+            Dual        
+    objective   dual inf
+                        
+------- optimal --------
+Concurrent statistics:
+           Dual: 0 simplex iterations, 0.00s
+Optimal solution found
+ 
+   Its         Obj Value      S   Ninf  Nneg   Sum Dual Inf  Time
+     0         18.000000      D      0     0        .000000     0
+Dual solved problem
+  0 simplex iterations in 0.00 seconds at time 0
+
+Final objective                       : 1.800000000000000e+01
+  Max primal violation      (abs/rel) :       0.0 /       0.0
+  Max dual violation        (abs/rel) :       0.0 /       0.0
+  Max complementarity viol. (abs/rel) :       0.0 /       0.0
+
+Starting root cutting & heuristics
+ 
+ Its Type    BestSoln    BestBound   Sols    Add    Del     Gap     GInf   Time
+*           18.000000    18.000000      1                  0.00%       0      0
+ *** Search completed ***
+Uncrunching matrix
+Final MIP objective                   : 1.800000000000000e+01
+Final MIP bound                       : 1.800000000000000e+01
+  Solution time / primaldual integral :      0.00s/ 97.415459%
+  Work / work units per second        :      0.00 /      0.11
+  Number of solutions found / nodes   :         1 /         1
+  Max primal violation      (abs/rel) :       0.0 /       0.0
+  Max integer violation     (abs    ) :       0.0
+Dual values of MILP couldn't be parsed
+ 
+Reading Problem linopy-problem-70cm4e2h
+Problem Statistics
+           7 (      0 spare) rows
+          12 (      0 spare) structural columns
+          24 (      0 spare) non-zero elements
+MIP Entity Statistics
+           6 entities        0 sets        0 set members
+FICO Xpress v9.9.1, Community, solve started 4:23:57, Aug 23, 2026
+Heap usage: 433KB (peak 433KB, 120KB system)
+Minimizing MILP linopy-problem-70cm4e2h using up to 8 threads and up to 54GB memory, with these control settings:
+OUTPUTLOG = 1
+NLPPOSTSOLVE = 1
+XSLP_DELETIONCONTROL = 0
+XSLP_OBJSENSE = 1
+Original problem has:
+         7 rows           12 cols           24 elements         6 entities
+Presolved problem has:
+         0 rows            0 cols            0 elements         0 entities
+LP relaxation tightened
+Presolve finished in 0 seconds
+Heap usage: 1530KB (peak 1544KB, 120KB system)
+Will try to keep branch and bound tree memory usage below 38.4GB
+Starting concurrent solve with dual (1 thread)
+
+ Concurrent-Solve,   0s
+            Dual        
+    objective   dual inf
+                        
+------- optimal --------
+Concurrent statistics:
+           Dual: 0 simplex iterations, 0.00s
+Optimal solution found
+ 
+   Its         Obj Value      S   Ninf  Nneg   Sum Dual Inf  Time
+     0         18.000000      D      0     0        .000000     0
+Dual solved problem
+  0 simplex iterations in 0.00 seconds at time 0
+
+Final objective                       : 1.800000000000000e+01
+  Max primal violation      (abs/rel) :       0.0 /       0.0
+  Max dual violation        (abs/rel) :       0.0 /       0.0
+  Max complementarity viol. (abs/rel) :       0.0 /       0.0
+
+Starting root cutting & heuristics
+ 
+ Its Type    BestSoln    BestBound   Sols    Add    Del     Gap     GInf   Time
+*           18.000000    18.000000      1                  0.00%       0      0
+ *** Search completed ***
+Uncrunching matrix
+Final MIP objective                   : 1.800000000000000e+01
+Final MIP bound                       : 1.800000000000000e+01
+  Solution time / primaldual integral :      0.00s/ 96.704871%
+  Work / work units per second        :      0.00 /      0.11
+  Number of solutions found / nodes   :         1 /         1
+  Max primal violation      (abs/rel) :       0.0 /       0.0
+  Max integer violation     (abs    ) :       0.0
+Dual values of MILP couldn't be parsed
+Version identifier: 22.2.0.0 | 2026-07-01 | 7cae668b4
+CPXPARAM_Read_DataCheck                          1
+Found incumbent of value 18.000000 after 0.00 sec. (0.00 ticks)
+Tried aggregator 1 time.
+MIP Presolve eliminated 1 rows and 0 columns.
+Reduced MIP has 6 rows, 12 columns, and 12 nonzeros.
+Reduced MIP has 0 binaries, 6 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+MIP Presolve eliminated 6 rows and 12 columns.
+All rows and columns eliminated.
+Presolve time = 0.00 sec. (0.01 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.00 sec. (4.82 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.00 sec. (4.82 ticks)
+CPLEX Error  1017: Not available for mixed-integer problems.
+Dual values not available (e.g. barrier solution without crossover)
+Restricted license - for non-production use only - expires 2027-11-29
+Gurobi Optimizer version 13.0.2 build v13.0.2rc1 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: AMD EPYC 7V12 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 7 rows, 12 columns and 24 nonzeros (Min)
+Model fingerprint: 0x7e8056cc
+Model has 12 linear objective coefficients
+Variable types: 6 continuous, 6 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 2e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [3e+00, 4e+01]
+
+Presolve removed 7 rows and 12 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 18 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.800000000000e+01, best bound 1.800000000000e+01, gap 0.0000%
+Dual values of MILP couldn't be parsed
+Restricted license - for non-production use only - expires 2027-11-29
+Read LP format model from file /tmp/linopy-problem-s3x420u1.lp
+Reading time = 0.00 seconds
+obj: 7 rows, 12 columns, 24 nonzeros
+Gurobi Optimizer version 13.0.2 build v13.0.2rc1 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: AMD EPYC 7V12 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 7 rows, 12 columns and 24 nonzeros (Min)
+Model fingerprint: 0x7e8056cc
+Model has 12 linear objective coefficients
+Variable types: 6 continuous, 6 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 2e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [3e+00, 4e+01]
+
+Presolve removed 7 rows and 12 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 18 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.800000000000e+01, best bound 1.800000000000e+01, gap 0.0000%
+Dual values of MILP couldn't be parsed
+PHASE2 other-solver solves={'highs-direct': 3, 'highs-file': 3, 'scip-file': 3, 'copt-file': 3, 'xpress-direct': 3, 'xpress-file': 3, 'cplex-file': 3, 'gurobi-direct': 3, 'gurobi-file': 3} t=9.1s
+TOTAL canary corruptions: 0
+OK mode=drop elapsed=9.1s
+EXIT=0

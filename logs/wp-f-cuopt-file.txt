@@ -1,0 +1,5 @@
+linopy.__file__ = /home/azureuser/linopy-gpu/dev-scripts/cuopt/worktrees/wp-f/linopy/__init__.py
+............................................................................................................ [ 90%]
+............                                                                                                 [100%]
+120 passed in 267.44s (0:04:27)
+PYTEST_EXIT=0

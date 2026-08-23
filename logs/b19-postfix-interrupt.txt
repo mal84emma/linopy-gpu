@@ -1,0 +1,9 @@
+[control] uninterrupted 3.0s callable returned after 3.000s (must be >= 3.0)
+[interrupt] KeyboardInterrupt reached the caller after 0.200s -- under 1s: True
+[interrupt] abandoned solve still running on the worker: True
+[interrupt] abandoned solve completed on the worker: True
+[after] subsequent call returned 'second-call-ok' in 0.000s
+[after] ran on the SAME worker thread as the interrupted solve: True
+[error] worker exception propagated to the caller: ValueError('worker blew up')
+[error] helper still usable: 'reusable-after-error', same worker thread: True
+[threads] after 25 calls, live 'linopy-cuopt-solve' threads: 1

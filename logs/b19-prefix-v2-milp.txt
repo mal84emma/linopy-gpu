@@ -1,0 +1,26 @@
+[00] obj=-15.0000 garbage=0
+[01] obj=-15.0000 garbage=0
+[02] obj=-15.0000 garbage=0
+[03] obj=-15.0000 garbage=0
+[04] obj=-15.0000 garbage=0
+[05] obj=-15.0000 garbage=0
+[06] obj=-15.0000 garbage=0
+[07] obj=-15.0000 garbage=0
+[08] obj=-15.0000 garbage=0
+[09] obj=-15.0000 garbage=0
+[10] obj=-15.0000 garbage=0
+[11] obj=-15.0000 garbage=0
+[12] obj=-15.0000 garbage=0
+[13] obj=-15.0000 garbage=0
+[14] obj=-15.0000 garbage=0
+[15] obj=-15.0000 garbage=0
+[16] obj=-15.0000 garbage=0
+[17] obj=-15.0000 garbage=0
+[18] obj=-15.0000 garbage=0
+[19] obj=-15.0000 garbage=0
+[20] obj=-15.0000 garbage=0
+[21] obj=-15.0000 garbage=0
+[22] obj=-15.0000 garbage=0
+[23] obj=-15.0000 garbage=0
+[24] obj=-15.0000 garbage=0
+DONE 25 iterations kind=milp thread=True

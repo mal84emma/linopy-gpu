@@ -1,0 +1,135 @@
+[b21-pin] SETTINGS_ON_WORKER active: SolverSettings constructed on 'linopy-cuopt-solve' and never freed
+[b21-pin] ACTIVE pid=664282: pinned 20 set_* methods + Solve; nothing handed to cuOpt will be freed
+Restricted license - for non-production use only - expires 2027-11-29
+### Could not find a valid license.
+    Your machine ID is 78-a6-6c-e8-9a.
+    Please contact licensing@artelys.com or your local distributor to obtain a license.
+    If you already have a license, please execute `get_machine_ID -v` and send the output to support.
+    Go to http://www.artelys.com/knitro for a Knitro student version license or trial.
+MindOpt 2.3.0 | 182d0f81, Jan 28 2026, 19:33:31 | x86_64 - Ubuntu 22.04.5 LTS (Jammy Jellyfish)
+Start license validation (current time : 23-AUG-2026 04:36:48 UTC+0000).
+[INFO ] Looking for license file ...
+[INFO ] Environment variable MINDOPT_LICENSE_PATH not defined
+[INFO ] License file not found in ENV 'MINDOPT_LICENSE_PATH'
+[INFO ] License file not found in '/home/azureuser/mindopt/'
+[INFO ] License file not found in '/home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages'
+[INFO ] Looking for floating license configuration ...
+[INFO ] Environment variable MINDOPT_LICENSE_PATH not defined
+[INFO ] Floating license configuration not found in ENV 'MINDOPT_LICENSE_PATH'
+[INFO ] Floating license configuration not found in '/home/azureuser/mindopt/'
+[INFO ] Floating license configuration not found in '/home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages'
+[INFO ] Looking for community license ...
+[INFO ] Environment variable MINDOPT_LICENSE_PATH not defined
+[INFO ] Community license not found in ENV 'MINDOPT_LICENSE_PATH'
+[INFO ] Community license not found in '/home/azureuser/mindopt/'
+[INFO ] Community license not found in '/home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages'
+[WARN ] No license file is found.
+[ERROR] No valid license was found. Please visit https://opt.aliyun.com/doc/latest/en/html/installation/license.html to apply for and set up your license
+License validation terminated. Time : 0.000s
+
+2026-08-23 04:36:48 [INFO] checks license for COPT v8.0.6 20260807
+2026-08-23 04:36:48 [WARN] no license files in current working folder: /home/azureuser/linopy-gpu
+2026-08-23 04:36:48 [WARN] no license files in binary folder: /home/azureuser/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/bin
+2026-08-23 04:36:48 [WARN] no license files in HOME folder: /home/azureuser/copt
+2026-08-23 04:36:48 [INFO] empty environment variable: COPT_LICENSE_DIR
+2026-08-23 04:36:48 [WARN] no license files in EV 'COPT_LICENSE_DIR': 
+
+No license found. Starting COPT with size limitations for non-commercial use
+Please apply for a license from www.shanshu.ai/copt
+
+Cardinal Optimizer v8.0.6. Build date Aug  7 2026
+Copyright Cardinal Operations 2026. All Rights Reserved
+
+........................cuOpt version: 26.8.0, git hash: 400863c1, host arch: x86_64, device archs: 70-real,75-real,80-real,86-real,90a-real,100f-real,120a-real,120
+CPU: AMD EPYC 7V12 64-Core Processor, threads (physical/logical): 8/8, RAM (available/total): 49.44 / 54.92 GiB
+CUDA 12.9, device: Tesla T4 (ID 0), VRAM: 15.57 GiB
+CUDA device UUID: cdac016f-6819-79e4-fc96-90d93ab607ab
+Solving a problem with 1 constraints, 2 variables (0 integers), and 2 nonzeros
+Problem scaling:
+Objective coefficents range:          [2e+00, 2e+00]
+Constraint matrix coefficients range: [1e+00, 2e+00]
+Constraint rhs / bounds range:        [0e+00, 1e+01]
+Variable bounds range:                [0e+00, 1e+02]
+
+Using PSLP presolver
+PSLP Presolved problem: 0 constraints, 0 variables, 0 non-zeros
+Presolve completely solved the problem
+PSLP presolve time: 0.00s
+Status: Optimal  Objective: 18.050029
+.cuOpt version: 26.8.0, git hash: 400863c1, host arch: x86_64, device archs: 70-real,75-real,80-real,86-real,90a-real,100f-real,120a-real,120
+CPU: AMD EPYC 7V12 64-Core Processor, threads (physical/logical): 8/8, RAM (available/total): 49.44 / 54.92 GiB
+CUDA 12.9, device: Tesla T4 (ID 0), VRAM: 15.57 GiB
+CUDA device UUID: cdac016f-6819-79e4-fc96-90d93ab607ab
+Solving a problem with 1 constraints, 2 variables (0 integers), and 2 nonzeros
+Problem scaling:
+Objective coefficents range:          [2e+00, 2e+00]
+Constraint matrix coefficients range: [1e+00, 2e+00]
+Constraint rhs / bounds range:        [0e+00, 1e+01]
+Variable bounds range:                [0e+00, 1e+02]
+
+Using PSLP presolver
+PSLP Presolved problem: 0 constraints, 0 variables, 0 non-zeros
+Presolve completely solved the problem
+PSLP presolve time: 0.00s
+Status: Optimal  Objective: 18.050029
+......PSLP declares problem as infeasible.
+.PSLP declares problem as infeasible or unbounded.
+..........PSLP declares problem as infeasible.
+.PSLP declares problem as infeasible or unbounded.
+.........Setting parameter method to 3
+cuOpt version: 26.8.0, git hash: 400863c1, host arch: x86_64, device archs: 70-real,75-real,80-real,86-real,90a-real,100f-real,120a-real,120
+CPU: AMD EPYC 7V12 64-Core Processor, threads (physical/logical): 8/8, RAM (available/total): 49.16 / 54.92 GiB
+CUDA 12.9, device: Tesla T4 (ID 0), VRAM: 15.57 GiB
+CUDA device UUID: cdac016f-6819-79e4-fc96-90d93ab607ab
+.Error in solve_lp: {"CUOPT_ERROR_TYPE": "ValidationError", "msg": "A_offsets must be set before calling the solver."}
+Setting parameter method to 3
+cuOpt version: 26.8.0, git hash: 400863c1, host arch: x86_64, device archs: 70-real,75-real,80-real,86-real,90a-real,100f-real,120a-real,120
+CPU: AMD EPYC 7V12 64-Core Processor, threads (physical/logical): 8/8, RAM (available/total): 49.16 / 54.92 GiB
+CUDA 12.9, device: Tesla T4 (ID 0), VRAM: 15.57 GiB
+CUDA device UUID: cdac016f-6819-79e4-fc96-90d93ab607ab
+.Error in solve_lp: {"CUOPT_ERROR_TYPE": "ValidationError", "msg": "A_offsets must be set before calling the solver."}
+Setting parameter method to 3
+cuOpt version: 26.8.0, git hash: 400863c1, host arch: x86_64, device archs: 70-real,75-real,80-real,86-real,90a-real,100f-real,120a-real,120
+CPU: AMD EPYC 7V12 64-Core Processor, threads (physical/logical): 8/8, RAM (available/total): 49.16 / 54.92 GiB
+CUDA 12.9, device: Tesla T4 (ID 0), VRAM: 15.57 GiB
+CUDA device UUID: cdac016f-6819-79e4-fc96-90d93ab607ab
+.Error in solve_mip: {"CUOPT_ERROR_TYPE": "ValidationError", "msg": "Sizes for vectors related to the variables are not the same. The objective vector has size 20 and the variable types vector has size 1."}
+Setting parameter method to 3
+cuOpt version: 26.8.0, git hash: 400863c1, host arch: x86_64, device archs: 70-real,75-real,80-real,86-real,90a-real,100f-real,120a-real,120
+CPU: AMD EPYC 7V12 64-Core Processor, threads (physical/logical): 8/8, RAM (available/total): 49.16 / 54.92 GiB
+CUDA 12.9, device: Tesla T4 (ID 0), VRAM: 15.57 GiB
+CUDA device UUID: cdac016f-6819-79e4-fc96-90d93ab607ab
+.Error in solve_mip: {"CUOPT_ERROR_TYPE": "ValidationError", "msg": "Sizes for vectors related to the variables are not the same. The objective vector has size 20 and the variable types vector has size 1."}
+Setting parameter method to 3
+cuOpt version: 26.8.0, git hash: 400863c1, host arch: x86_64, device archs: 70-real,75-real,80-real,86-real,90a-real,100f-real,120a-real,120
+CPU: AMD EPYC 7V12 64-Core Processor, threads (physical/logical): 8/8, RAM (available/total): 49.15 / 54.92 GiB
+CUDA 12.9, device: Tesla T4 (ID 0), VRAM: 15.57 GiB
+CUDA device UUID: cdac016f-6819-79e4-fc96-90d93ab607ab
+Problem has a quadratic objective. Solving with barrier.
+Presolved problem: 2 constraints 5 variables 8 nonzeros
+Skipping Ruiz equilibration (row norm ratio 1.5, column norm ratio 3.0 < 5e4, Q coeff ratio 1.0 < 100)
+Barrier solver started at 0.00 seconds
+Barrier solver: 2 constraints, 5 variables, 8 nonzeros
+
+
+Quadratic objective matrix  : 1 nonzeros
+Q is not positive semidefinite: Q(0, 0) = -2.000000e+00
+Barrier finished in 0.00 seconds
+Barrier Solve status A numerical error was encountered.
+.Setting parameter method to 3
+cuOpt version: 26.8.0, git hash: 400863c1, host arch: x86_64, device archs: 70-real,75-real,80-real,86-real,90a-real,100f-real,120a-real,120
+CPU: AMD EPYC 7V12 64-Core Processor, threads (physical/logical): 8/8, RAM (available/total): 49.15 / 54.92 GiB
+CUDA 12.9, device: Tesla T4 (ID 0), VRAM: 15.57 GiB
+CUDA device UUID: cdac016f-6819-79e4-fc96-90d93ab607ab
+Problem has a quadratic objective. Solving with barrier.
+Presolved problem: 2 constraints 5 variables 8 nonzeros
+Skipping Ruiz equilibration (row norm ratio 1.5, column norm ratio 3.0 < 5e4, Q coeff ratio 1.0 < 100)
+Barrier solver started at 0.00 seconds
+Barrier solver: 2 constraints, 5 variables, 8 nonzeros
+
+
+Quadratic objective matrix  : 1 nonzeros
+Q is not positive semidefinite: Q(0, 0) = -2.000000e+00
+Barrier finished in 0.00 seconds
+Barrier Solve status A numerical error was encountered.
+...............

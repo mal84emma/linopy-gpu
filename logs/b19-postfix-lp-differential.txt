@@ -1,0 +1,91 @@
+Setting parameter method to 3
+cuOpt version: 26.8.0, git hash: 400863c1, host arch: x86_64, device archs: 70-real,75-real,80-real,86-real,90a-real,100f-real,120a-real,120
+CPU: AMD EPYC 7V12 64-Core Processor, threads (physical/logical): 8/8, RAM (available/total): 49.68 / 54.92 GiB
+CUDA 12.9, device: Tesla T4 (ID 0), VRAM: 15.57 GiB
+CUDA device UUID: cdac016f-6819-79e4-fc96-90d93ab607ab
+Solving a problem with 2 constraints, 2 variables (0 integers), and 4 nonzeros
+Problem scaling:
+Objective coefficents range:          [1e+00, 1e+00]
+Constraint matrix coefficients range: [1e+00, 3e+00]
+Constraint rhs / bounds range:        [0e+00, 6e+00]
+Variable bounds range:                [0e+00, 0e+00]
+
+Using PSLP presolver
+PSLP Presolved problem: 2 constraints, 2 variables, 4 non-zeros
+PSLP presolve time: 0.03s
+Objective offset 0.000000 scaling_factor 1.000000
+Folding: Coloring aborted in 0.00 seconds
+Presolved problem: 2 constraints 4 variables 6 nonzeros
+Scaling matrix. Maximum column norm 3.162278e+00, minimum column norm 1.000000e+00
+Barrier solver started at 0.04 seconds
+Barrier solver: 2 constraints, 4 variables, 6 nonzeros
+
+
+Upper bounds                : 2
+Density estimator time      : 0.00s
+Linear system               : ADAT
+cuDSS Version               : 0.7.1
+cuDSS Threading layer       : libcudss_mtlayer_gomp.so.0
+ADAT time                   : 0.02s
+ADAT nonzeros               : 4.00e+00
+ADAT density                : 1.00
+Reordering algorithm        : AMD
+Reordering time             : 0.01s
+Symbolic factorization time : 0.01s
+Total symbolic time         : 0.02s
+Symbolic nonzeros in factor : 2.00e+00
+
+
+                  Objective                         Infeasibility        Time
+Iter   Primal              Dual                Primal   Dual    Compl.   Elapsed
+  0   -2.400000000000e+00 -2.303933196246e+01 0.00e+00 6.91e+00 3.53e+00 0.1
+  1   -2.418656438106e+00 -4.891159806569e+00 1.27e-16 7.19e-01 4.09e-01 0.1
+  2   -2.542410029477e+00 -3.062627146842e+00 0.00e+00 9.33e-02 7.68e-02 0.1
+  3   -2.746090328993e+00 -2.840346343843e+00 1.27e-16 1.28e-02 1.14e-02 0.1
+  4   -2.794452383364e+00 -2.804500691861e+00 1.27e-16 1.29e-03 1.09e-03 0.1
+  5   -2.799444881143e+00 -2.800450748092e+00 0.00e+00 1.29e-04 1.09e-04 0.1
+  6   -2.799944487743e+00 -2.800045075506e+00 6.34e-17 1.29e-05 1.09e-05 0.1
+  7   -2.799994448774e+00 -2.800004507551e+00 1.27e-16 1.29e-06 1.09e-06 0.1
+  8   -2.799999444877e+00 -2.800000450755e+00 0.00e+00 1.29e-07 1.09e-07 0.1
+  9   -2.799999944488e+00 -2.800000045076e+00 0.00e+00 1.29e-08 1.09e-08 0.1
+ 10   -2.799999994449e+00 -2.800000004508e+00 1.27e-16 1.29e-09 1.09e-09 0.1
+
+
+Optimal solution found in 10 iterations and 0.150s
+Objective -2.79999999e+00
+Primal infeasibility (abs/rel): 8.88e-16/1.27e-16
+Dual infeasibility   (abs/rel): 1.87e-09/1.29e-09
+Complementarity gap  (abs/rel): 4.14e-09/1.09e-09
+
+
+Barrier finished in 0.15 seconds
+Running HiGHS 1.15.1 (git hash: 04024d7): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+LP linopy-problem-sh1qgbju has 2 rows; 2 cols; 4 nonzeros
+Coefficient ranges:
+  Matrix  [1e+00, 3e+00]
+  Cost    [1e+00, 1e+00]
+  Bound   [0e+00, 0e+00]
+  RHS     [4e+00, 6e+00]
+Presolving model
+2 rows, 2 cols, 4 nonzeros 0s
+2 rows, 2 cols, 4 nonzeros 0s
+Presolve reductions: rows 2(-0); columns 2(-0); nonzeros 4(-0) - Not reduced
+Problem not reduced by presolve: solving the LP
+Using dual simplex solver
+  Iteration        Objective     Infeasibilities num(sum)
+          0    -1.9999969266e+00 Ph1: 2(7); Du: 2(2) 0.0s
+          2     2.8000000000e+00 Pr: 0(0) 0.0s
+
+Model name          : linopy-problem-sh1qgbju
+Model status        : Optimal
+Simplex   iterations: 2
+Objective value     :  2.8000000000e+00
+P-D objective error :  6.7286243917e-17
+HiGHS run time      :          0.00
+cuopt : obj=2.7999999944487737 primal=[np.float64(1.5999999924202215), np.float64(1.2000000020285524)] duals=[np.float64(0.40000000077826353), np.float64(0.19999999827276196)]
+highs : obj=2.7999999999999994 primal=[np.float64(1.6), np.float64(1.1999999999999993)] duals=[np.float64(0.4), np.float64(0.19999999999999996)]
+|dobj|     = 5.551e-09  (tol 3.800e-06)  PASS
+max|dx|    = 7.580e-09  (tol 2.200e-06)  PASS
+max|ddual| = 1.727e-09  (tol 3.000e-07)  PASS
+V1-1 six-cell-model LP differential: PASS

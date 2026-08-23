@@ -1,0 +1,21 @@
+########## F1: the live fallback warning at b0b18f4, and is the new wording TRUE? ##########
+WARNING:linopy.solvers:cuOpt does not support file IO. Building the model through the direct API instead; pass io_api='direct' to skip this warning. An empty temporary problem file is created and removed either way.
+  io_api=None      -> ok/optimal; get_problem_file=1x [(None, 'linopy-problem-0ot4csvw.lp', True, 0)]; leftovers=[]
+  io_api='direct'  -> ok/optimal; get_problem_file=1x [('direct', 'linopy-problem-nc5kwwsc.lp', True, 0)]; leftovers=[]
+F1_PROBE_EXIT=0
+
+########## F2: reviewer's own fork-after-solve reproducer, unchanged, at b0b18f4 ##########
+parent solve: optimal
+child raised RuntimeError: CUDA error at: /__w/rmm/rmm/cpp/src/cuda_stream.cpp:20: cudaErrorInitializationError initialization error
+child exit code = 4  (0=solved, 3=wrong condition, 4=exception, -14=SIGALRM i.e. HUNG)
+F2_REPRO_EXIT=0
+
+########## F2: mechanism probe, unchanged, at b0b18f4 ##########
+  parent solve: optimal
+  parent threads: ['MainThread', 'linopy-cuopt-solve']
+  parent cache_info: CacheInfo(hits=0, misses=1, maxsize=None, currsize=1)
+  CHILD cache_info (currsize 0 => at-fork handler ran): CacheInfo(hits=0, misses=0, maxsize=None, currsize=0)
+  CHILD threads: ['MainThread']
+  CHILD RuntimeError: CUDA error at: /__w/rmm/rmm/cpp/src/cuda_stream.cpp:20: cudaErrorInitializationError initialization error
+  child exit code = 4  (4=fast explicit failure, -14=SIGALRM i.e. still hanging)
+F2_MECH_EXIT=0

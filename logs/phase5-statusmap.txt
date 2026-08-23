@@ -1,0 +1,96 @@
+Optimization potentially failed: 
+Status: warning
+Termination condition: infeasible
+Solution: 0 primals, 0 duals
+Objective: nan
+Solver: cuopt
+Runtime: nans
+Solver model: available
+Solver message: PrimalInfeasible
+
+PSLP declares problem as infeasible.
+Optimization potentially failed: 
+Status: warning
+Termination condition: infeasible_or_unbounded
+Solution: 0 primals, 0 duals
+Objective: nan
+Solver: cuopt
+Runtime: nans
+Solver model: available
+Solver message: UnboundedOrInfeasible
+
+PSLP declares problem as infeasible or unbounded.
+Optimization solution is sub-optimal: 
+Status: ok
+Termination condition: suboptimal
+Solution: 400 primals, 300 duals
+Objective: -4.19e+02
+Solver: cuopt
+Runtime: 0.28s
+Solver model: available
+Solver message: PrimalFeasible
+
+Optimization potentially failed: 
+Status: warning
+Termination condition: infeasible
+Solution: 0 primals, 0 duals
+Objective: nan
+Solver: cuopt
+Runtime: 0.00s
+MIP gap: 0.00e+00
+Dual bound: inf
+Solver model: available
+Solver message: Infeasible
+
+Optimization potentially failed: 
+Status: warning
+Termination condition: infeasible_or_unbounded
+Solution: 0 primals, 0 duals
+Objective: nan
+Solver: cuopt
+Runtime: 0.00s
+MIP gap: 0.00e+00
+Dual bound: inf
+Solver model: available
+Solver message: UnboundedOrInfeasible
+
+Optimization solution is sub-optimal: 
+Status: ok
+Termination condition: suboptimal
+Solution: 60 primals, 0 duals
+Objective: -2.62e+03
+Solver: cuopt
+Runtime: 0.22s
+MIP gap: 4.78e-02
+Dual bound: -2.74e+03
+Solver model: available
+Solver message: FeasibleFound
+
+cuOpt returned 0 primal values for 50 variables (TimeLimit).
+cuOpt returned 0 primal values for 50 variables (TimeLimit).
+cuOpt returned 0 primal values for 50 variables (TimeLimit).
+=========== status-map rows (LP) ===========
+  [PASS] lp_optimal               legacy='Optimal'                  status='ok'       condition='optimal'                  expected='optimal'                  primal.size=3 (want None)
+  [PASS] lp_infeasible            legacy='PrimalInfeasible'         status='warning'  condition='infeasible'               expected='infeasible'               primal.size=0 (want None)
+  [PASS] lp_unbounded             legacy='UnboundedOrInfeasible'    status='warning'  condition='infeasible_or_unbounded'  expected='infeasible_or_unbounded'  primal.size=0 (want None)
+  [PASS] lp_iteration_limit       legacy='IterationLimit'           status='ok'       condition='iteration_limit'          expected='iteration_limit'          primal.size=400 (want None)
+  [PASS] lp_time_limit            legacy='TimeLimit'                status='ok'       condition='time_limit'               expected='time_limit'               primal.size=400 (want None)
+  [PASS] lp_primal_feasible       legacy='PrimalFeasible'           status='ok'       condition='suboptimal'               expected='suboptimal'               primal.size=400 (want None)
+=========== status-map rows (MILP) ===========
+  [PASS] milp_optimal             legacy='Optimal'                  status='ok'       condition='optimal'                  expected='optimal'                  primal.size=20 (want None)
+  [PASS] milp_infeasible          legacy='Infeasible'               status='warning'  condition='infeasible'               expected='infeasible'               primal.size=0 (want None)
+  [PASS] milp_unbounded           legacy='UnboundedOrInfeasible'    status='warning'  condition='infeasible_or_unbounded'  expected='infeasible_or_unbounded'  primal.size=0 (want None)
+  [PASS] milp_feasible_found      legacy='FeasibleFound'            status='ok'       condition='suboptimal'               expected='suboptimal'               primal.size=60 (want None)
+=========== the B18 MILP TimeLimit recipe (3 fresh solves in this process) ===========
+    fingerprint A[0,:6]=[81, 8, 17, 23, 18, 80] (frozen [81, 8, 17, 23, 18, 80])  A.sum()=14702.0 (frozen 14702.0)
+    rhs=[1182.5, 1292.5, 1369.5, 1122.5, 1279.5, 1106.5] (frozen [1182.5, 1292.5, 1369.5, 1122.5, 1279.5, 1106.5])
+  [PASS] milp_time_limit#1        legacy='TimeLimit'                status='ok'       condition='time_limit'               expected='time_limit'               primal.size=0 (want 0)
+    fingerprint A[0,:6]=[81, 8, 17, 23, 18, 80] (frozen [81, 8, 17, 23, 18, 80])  A.sum()=14702.0 (frozen 14702.0)
+    rhs=[1182.5, 1292.5, 1369.5, 1122.5, 1279.5, 1106.5] (frozen [1182.5, 1292.5, 1369.5, 1122.5, 1279.5, 1106.5])
+  [PASS] milp_time_limit#2        legacy='TimeLimit'                status='ok'       condition='time_limit'               expected='time_limit'               primal.size=0 (want 0)
+    fingerprint A[0,:6]=[81, 8, 17, 23, 18, 80] (frozen [81, 8, 17, 23, 18, 80])  A.sum()=14702.0 (frozen 14702.0)
+    rhs=[1182.5, 1292.5, 1369.5, 1122.5, 1279.5, 1106.5] (frozen [1182.5, 1292.5, 1369.5, 1122.5, 1279.5, 1106.5])
+  [PASS] milp_time_limit#3        legacy='TimeLimit'                status='ok'       condition='time_limit'               expected='time_limit'               primal.size=0 (want 0)
+
+########## TOTAL MISSES: 0 ##########
+EXIT=0

@@ -1,0 +1,81 @@
+=== Phase 6.6 FINDINGS (b0b18f4) — for the fix loop ===
+Verdict: CLEAN (no blocking). 2 should-fix docs, 1 should-fix judgment call, 3 nits.
+
+--- SHOULD-FIX ---
+
+S1  doc/prerequisites.rst:72-79 — install block omits the bare-`cuopt`-package
+    warning and the cu12/cu13 caveat.
+    Charter 6.6b, "Install instructions everywhere": warn that the bare `cuopt`
+    package on PyPI is a different project. That warning exists only at
+    doc/gpu-acceleration.rst:33-35. prerequisites.rst states Linux-only + CC 7.0
+    + driver 525.60.13 inline (:72-75) rather than deferring, so the omission is
+    selective, and this is the page a user installs from.
+    Remedy: one sentence after :79 —
+      "The extra installs ``cuopt-cu12``, the build for CUDA 12 drivers; the
+       bare ``cuopt`` package on PyPI is an unrelated project."
+
+S2  doc/gpu-acceleration.rst:133 and :140 — the generic GPU Prerequisites
+    section now contradicts the cuOpt requirements on the same page.
+      :133  "NVIDIA GPU with CUDA support (compute capability 6.0 or higher
+             recommended)"
+      :140  "**CUDA Toolkit**: Most GPU solvers require CUDA 11.0 or later"
+    vs :31 and :146 (cuOpt: CC >= 7.0, CUDA 12 driver >= 525.60.13). The text
+    is pre-existing but the branch is what makes it wrong for a shipped solver.
+    Remedy: append to each bullet "(cuOpt requires compute capability 7.0 or
+    higher and a CUDA 12 driver, 525.60.13 or newer — see above)".
+
+S3  linopy/solvers.py:4556-4981 — comment density is ~8.5x the file norm.
+    JUDGMENT CALL, not a defect. 73 `#` lines / 391 non-blank = 18.7%, vs
+    cuPDLPx 2.2% (5/225 at :4293-4554), Highs 0.3%, Gurobi 0.5%, Mosek 1.1%,
+    Xpress 0.0%, whole file 2.7% (118/4445). The class holds 62% of
+    solvers.py's comment lines in 8% of its lines, over 21 blocks (the charter
+    grants 9 deliberate WP-G sites). Prose quality is good: every block
+    explains a "why" or an upstream defect, none narrates the code, no
+    tutorial tone, and the file has no precedent for a comment on a `features`
+    block (checked all 12 sibling classes).
+    Remedy — do NOT delete the content. Migrate the near-duplicate expository
+    blocks into the docstrings that already carry the same facts, leaving the
+    one-line operative warning at the site:
+      :4682-4686  overlaps the class docstring Notes (:4579-4583); unique part
+                  is only "Do not replace it with cuPDLPx's `if MAXIMIZE`"
+      :4841-4845  overlaps _cuopt_solve_queue's docstring (:4269-4277); unique
+                  part is only the "settings built inside the job" sentence
+      :4628-4633  restates doc/gpu-acceleration.rst:61-62 limitations
+      :4796-4802  the LP/MILP enum-collision paragraph reads as prose; belongs
+                  in the _solve docstring Notes
+    That is ~22 lines and roughly halves the gap without losing a fact.
+
+--- NITS ---
+
+N1  linopy/solvers.py:4577 / :4589 — numpydoc section order: `Notes` precedes
+    `Attributes`. Every other solver class closes with `Attributes` (:1349,
+    :1520, :1695, :2052, :2491, :2623, :2757, :3255, :3496, :4017, :4152,
+    :4307) and numpydoc's canonical order is Attributes then Notes.
+    Remedy: swap the two sections.
+
+N2  linopy/solvers.py:4634-4637 — cuOpt._build_file duplicates the base's
+    io_api validation, message literal included, from :902-905.
+    Remedy: extract a one-line guard helper on Solver so the string has one
+    home, or call it from the override.
+
+N3  test/test_cuopt_interrupt.py:98-103 (= dispositioned N2, re-raised as
+    optional) — line 98 already reaps the child with os.waitpid, then the
+    `finally` at :101-103 SIGKILLs `pid` and waitpids again; after PID reuse
+    that signal lands on an unrelated process.
+    Remedy: set a `reaped = True` flag after :98 and guard the finally on it.
+
+--- VERIFIED CLEAN (no action) ---
+* ruff check / ruff format clean; mypy 28 errors == 28 baseline, all Xpress,
+  none in any cuopt region.
+* Class shape, method ordering, naming, lazy-import/enum/probe-order
+  placement, error-message phrasing, docstring depth: conform (see
+  phase6-style.txt).
+* _build_file-instead-of-_run_file and the sole close() override: divergences
+  from cuPDLPx, both with an in-code reason and both documented in
+  doc/gpu-acceleration.rst.
+* test_cuopt_interrupt.py's missing module docstring matches its direct
+  precedent test_highs_keyboard_interrupt.py (21/56 test files lack one).
+* examples/using-solvers.ipynb: 1 cuOpt mention (the backend list, :11) plus
+  an added sentence pointing at the GPU guide (:18). Sufficient — the
+  notebook is executed at docs-build time and cuOpt cannot run there.
+* No pypi.nvidia.com and no --index-strategy anywhere in README/doc/pyproject.

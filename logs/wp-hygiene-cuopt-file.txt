@@ -1,0 +1,12 @@
+=============================================== test session starts ================================================
+platform linux -- Python 3.11.15, pytest-9.1.1, pluggy-1.6.0
+rootdir: /home/azureuser/linopy-gpu/dev-scripts/cuopt/worktrees/wp-hygiene
+configfile: pyproject.toml
+plugins: anyio-4.14.2, cov-7.1.0
+collected 102 items
+
+test/test_cuopt.py ......................................................................................... [ 87%]
+.............                                                                                                [100%]
+
+========================================= 102 passed in 279.01s (0:04:39) ==========================================
+PYTEST_EXIT=0

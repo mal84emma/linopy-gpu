@@ -1,0 +1,3 @@
+files touched: ['linopy/solvers.py']
+  linopy/solvers.py: ast.dump(include_attributes=False) equal = True  (len before=538511, after=538511)
+V3-6(a) DIFFERING_FILES = 0

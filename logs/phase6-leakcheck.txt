@@ -1,0 +1,27 @@
+=== Phase 6 leak check (Gate-6 half) ===
+$ git fetch upstream   # PyPSA/linopy, fetch only
+
+$ git diff --name-only upstream/master...feat/cuopt-solver -- dev-scripts/ .claude/ PR_BODY.md
+<<< empty >>>
+
+$ git diff --name-only upstream/master...feat/cuopt-solver | grep -Ei 'PROJECT_LEAD|HARNESS_REVIEW|-TEMPLATE|/logs/|/plans/|/worktrees/'
+<<< empty (grep rc=1) >>>
+
+--- full upstream diff filelist (17) ---
+README.md
+doc/api.rst
+doc/contributing.rst
+doc/gpu-acceleration.rst
+doc/index.rst
+doc/prerequisites.rst
+doc/release_notes.rst
+examples/using-solvers.ipynb
+linopy/io.py
+linopy/model.py
+linopy/solvers.py
+pyproject.toml
+test/test_cuopt.py
+test/test_cuopt_interrupt.py
+test/test_io.py
+test/test_optimization.py
+test/test_solvers.py

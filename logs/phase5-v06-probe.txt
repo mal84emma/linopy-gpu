@@ -1,0 +1,12 @@
+### V0-6: raw probe snippet under CUDA_VISIBLE_DEVICES=''
+from cuda.bindings import runtime;e, c = runtime.cudaGetDeviceCount();raise SystemExit(0 if (int(e) == 0 and bool(c)) else 1)
+PROBE_RETURNCODE=1
+
+### V0-6: 'cuopt' not in available_solvers under CUDA_VISIBLE_DEVICES=''
+WARNING:linopy.solvers:cuOpt is installed but no usable CUDA device was found; cuOpt is not available. It requires an NVIDIA GPU of compute capability 7.0 or higher and driver 525.60.13 or newer.
+cuopt in available_solvers: False
+available: ['gurobi', 'highs', 'scip', 'cplex', 'xpress', 'knitro', 'mosek', 'mindopt', 'copt']
+OUTER_EXIT=0
+
+### control: same probe WITH the device visible
+PROBE_RETURNCODE_WITH_DEVICE=0

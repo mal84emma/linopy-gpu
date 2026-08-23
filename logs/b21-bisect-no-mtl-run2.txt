@@ -1,0 +1,153 @@
+=============================================== test session starts ================================================
+platform linux -- Python 3.11.15, pytest-9.1.1, pluggy-1.6.0
+rootdir: /home/azureuser/linopy-gpu
+configfile: pyproject.toml
+plugins: anyio-4.14.2, cov-7.1.0
+collected 9510 items / 2 deselected / 9508 selected
+
+test/remote/test_oetc.py FFFF........FFFF..FF....FFFFFFFF..........FF..FFFFFF....FF..FF........FF..FFFFFF..F [  0%]
+FFFFF............FF                                                                                          [  1%]
+test/remote/test_oetc_job_polling.py EEEEEEEEEEEEEEEEEEEEEEEEEEEE                                            [  1%]
+test/remote/test_ssh.py ........                                                                             [  1%]
+test/test_alignment.py ..................................................................................... [  2%]
+.........................................................................................s..ss..ss.......... [  3%]
+..ss..ss....ss..ss............................s..                                                            [  3%]
+test/test_available_solvers.py ............................                                                  [  4%]
+test/test_common.py ......................................                                                   [  4%]
+test/test_compatible_arithmetrics.py ................                                                        [  4%]
+test/test_constraint.py .................................................................................... [  5%]
+.........................................s.................................................................. [  6%]
+..............                                                                                               [  7%]
+test/test_constraint_coef_dirty.py ....................                                                      [  7%]
+test/test_constraint_label_index.py ..........                                                               [  7%]
+test/test_constraints.py .......................ss....ss.....................ss......ssssss..ss......ssssss. [  8%]
+...ssss.s.s                                                                                                  [  8%]
+test/test_convention.py .....ss.                                                                             [  8%]
+test/test_cuopt.py ......................................................................................... [  9%]
+...........                                                                                                  [  9%]
+test/test_cuopt_interrupt.py ......                                                                          [  9%]
+test/test_dtypes.py ............................                                                             [  9%]
+test/test_dualization.py ......................................................................              [ 10%]
+test/test_examples.py ........                                                                               [ 10%]
+test/test_expressions.py ..............................                                                      [ 10%]
+test/test_fix_relax.py ..................................................................................... [ 11%]
+...........................................................................                                  [ 12%]
+test/test_highs_keyboard_interrupt.py ..                                                                     [ 12%]
+test/test_inconsistency_checks.py ......                                                                     [ 12%]
+test/test_indicator_constraints.py ....................................................................      [ 13%]
+test/test_infeasibility.py ................................                                                  [ 13%]
+test/test_io.py ...............s.s...........s.s.........s..........................ss...................... [ 14%]
+............                                                                                                 [ 14%]
+test/test_label_position.py ..................................................                               [ 15%]
+test/test_legacy_violations.py ssssssss.........s.s.....ssss...ssssss........s.sss...s.sss...s.s..s.s.s.ssss [ 16%]
+sssssssssssss................s.s...ss..ss.s...sss.s.s.s.sssss........s.s..ss.s.s.s.s.s..s.s.ss..s.s.s.ss.s.s [ 17%]
+sss....s.s.s.s.ssssss.......s.s....ssss.s.s......sssssss.s..s.ss.s.s.s.s..s.s.s.s......s..s...s............s [ 18%]
+..ss.........sss...sss...sss......ssss..s.s.s.sss..s.s...ss.sssss....s.s.....s.ssssss......ssssss........s.. [ 19%]
+s.s..............s.s.s.s.ss..................................................s.........................      [ 20%]
+test/test_linear_expression.py ...................................................ss................s.s..... [ 21%]
+...............................ssss....ssss....ssss....ssss..ss..ss..ss..ss..ss..ss..ss.s.s.s.s........sssss [ 22%]
+sss..ss..ss.s..ss..ss..ss..ss..ss....ssss....ssss....ssss....ssss..ss..ss..ss.s.s.s.s.s.s.s.s.s.s.s.s.s..... [ 23%]
+......................................................................ss..ss..s............................. [ 24%]
+.............ssss.........................................................ss..ss....ss..ss.................. [ 26%]
+.....................................................ss..................................................... [ 27%]
+................s.............................................................................ss..s...ssssss [ 28%]
+sssssss............ssss....s.s.sssssss.......s.s.s.s.s.s.s..s.s                                              [ 28%]
+test/test_matrices.py ..........                                                                             [ 29%]
+test/test_mi_feasibility.py ......................                                                           [ 29%]
+test/test_model.py ........................................................                                  [ 29%]
+test/test_objective.py ....................................................                                  [ 30%]
+test/test_oetc_settings.py ..........................................                                        [ 30%]
+test/test_optimization.py 
+testing solvers: gurobi, highs, scip, cplex, xpress, copt, cuopt
+testing quadratic solvers: gurobi, highs, scip, cplex, xpress, knitro, mosek, mindopt, copt
+.
+testing solvers: gurobi, highs, scip, cplex, xpress, copt, cuopt
+testing quadratic solvers: gurobi, highs, scip, cplex, xpress, knitro, mosek, mindopt, copt
+................................................................................. [ 31%]
+............................................................................................................ [ 32%]
+............................................................................................................ [ 34%]
+............................................................................................................ [ 35%]
+............................................................................................................ [ 36%]
+.........................................................................................................Fatal Python error: Segmentation fault
+
+Thread 0x000070574e7fc640 (most recent call first):
+  File "/home/azureuser/linopy-gpu/linopy/solvers.py", line 282 in _worker
+  File "/home/azureuser/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/threading.py", line 982 in run
+  File "/home/azureuser/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/threading.py", line 1045 in _bootstrap_inner
+  File "/home/azureuser/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/threading.py", line 1002 in _bootstrap
+
+Thread 0x000070574f7fe640 (most recent call first):
+  File "/home/azureuser/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/concurrent/futures/thread.py", line 81 in _worker
+  File "/home/azureuser/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/threading.py", line 982 in run
+  File "/home/azureuser/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/threading.py", line 1045 in _bootstrap_inner
+  File "/home/azureuser/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/threading.py", line 1002 in _bootstrap
+
+Thread 0x000070574effd640 (most recent call first):
+  File "/home/azureuser/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/concurrent/futures/thread.py", line 81 in _worker
+  File "/home/azureuser/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/threading.py", line 982 in run
+  File "/home/azureuser/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/threading.py", line 1045 in _bootstrap_inner
+  File "/home/azureuser/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/threading.py", line 1002 in _bootstrap
+
+Thread 0x000070574ffff640 (most recent call first):
+  File "/home/azureuser/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/concurrent/futures/thread.py", line 81 in _worker
+  File "/home/azureuser/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/threading.py", line 982 in run
+  File "/home/azureuser/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/threading.py", line 1045 in _bootstrap_inner
+  File "/home/azureuser/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/threading.py", line 1002 in _bootstrap
+
+Thread 0x0000705768bff640 (most recent call first):
+  File "/home/azureuser/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/concurrent/futures/thread.py", line 81 in _worker
+  File "/home/azureuser/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/threading.py", line 982 in run
+  File "/home/azureuser/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/threading.py", line 1045 in _bootstrap_inner
+  File "/home/azureuser/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/threading.py", line 1002 in _bootstrap
+
+Current thread 0x00007059d6418740 (most recent call first):
+  File "/home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/numpy/lib/_function_base_impl.py", line 2555 in <listcomp>
+  File "/home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/numpy/lib/_function_base_impl.py", line 2555 in _get_ufunc_and_otypes
+  File "/home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/numpy/lib/_function_base_impl.py", line 2596 in _vectorize_call
+  File "/home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/numpy/lib/_function_base_impl.py", line 2511 in _call_as_normal
+  File "/home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/numpy/lib/_function_base_impl.py", line 2518 in __call__
+  File "/home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/xarray/computation/apply_ufunc.py", line 820 in apply_variable_ufunc
+  File "/home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/xarray/computation/apply_ufunc.py", line 312 in apply_dataarray_vfunc
+  File "/home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/xarray/computation/apply_ufunc.py", line 1267 in apply_ufunc
+  File "/home/azureuser/linopy-gpu/linopy/common.py", line 97 in maybe_replace_signs
+  File "/home/azureuser/linopy-gpu/linopy/model.py", line 1244 in add_constraints
+  File "/home/azureuser/linopy-gpu/test/test_optimization.py", line 99 in model
+  File "/home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/_pytest/fixtures.py", line 1005 in call_fixture_func
+  File "/home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/_pytest/fixtures.py", line 1328 in pytest_fixture_setup
+  File "/home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/pluggy/_callers.py", line 121 in _multicall
+  File "/home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/pluggy/_manager.py", line 120 in _hookexec
+  File "/home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/pluggy/_hooks.py", line 512 in __call__
+  File "/home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/_pytest/fixtures.py", line 1232 in execute
+  File "/home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/_pytest/fixtures.py", line 726 in _get_active_fixturedef
+  File "/home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/_pytest/fixtures.py", line 630 in getfixturevalue
+  File "/home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/_pytest/fixtures.py", line 806 in _fillfixtures
+  File "/home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/_pytest/python.py", line 1710 in setup
+  File "/home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/_pytest/runner.py", line 536 in setup
+  File "/home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/_pytest/runner.py", line 170 in pytest_runtest_setup
+  File "/home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/pluggy/_callers.py", line 121 in _multicall
+  File "/home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/pluggy/_manager.py", line 120 in _hookexec
+  File "/home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/pluggy/_hooks.py", line 512 in __call__
+  File "/home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/_pytest/runner.py", line 250 in <lambda>
+  File "/home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/_pytest/runner.py", line 361 in from_call
+  File "/home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/_pytest/runner.py", line 249 in call_and_report
+  File "/home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/_pytest/runner.py", line 132 in runtestprotocol
+  File "/home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/_pytest/runner.py", line 118 in pytest_runtest_protocol
+  File "/home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/pluggy/_callers.py", line 121 in _multicall
+  File "/home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/pluggy/_manager.py", line 120 in _hookexec
+  File "/home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/pluggy/_hooks.py", line 512 in __call__
+  File "/home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/_pytest/main.py", line 408 in pytest_runtestloop
+  File "/home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/pluggy/_callers.py", line 121 in _multicall
+  File "/home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/pluggy/_manager.py", line 120 in _hookexec
+  File "/home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/pluggy/_hooks.py", line 512 in __call__
+  File "/home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/_pytest/main.py", line 384 in _main
+  File "/home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/_pytest/main.py", line 330 in wrap_session
+  File "/home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/_pytest/main.py", line 377 in pytest_cmdline_main
+  File "/home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/pluggy/_callers.py", line 121 in _multicall
+  File "/home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/pluggy/_manager.py", line 120 in _hookexec
+  File "/home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/pluggy/_hooks.py", line 512 in __call__
+  File "/home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/_pytest/config/__init__.py", line 229 in _main
+  File "/home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/_pytest/config/__init__.py", line 253 in _console_main
+  File "/home/azureuser/linopy-gpu/.venv/bin/pytest", line 10 in <module>
+
+Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_linalg, pyarrow.lib, numpy.random._common, numpy.random.bit_generator, numpy.random._bounded_integers, numpy.random._pcg64, numpy.random._generator, numpy.random._mt19937, numpy.random._philox, numpy.random._sfc64, numpy.random.mtrand, _cyutility, pandas._libs._cyutility, pandas._libs.tslibs.ccalendar, pandas._libs.tslibs.np_datetime, pandas._libs.tslibs.dtypes, pandas._libs.tslibs.base, pandas._libs.tslibs.nattype, pandas._libs.tslibs.timezones, pandas._libs.properties, pandas._libs.tslibs.fields, pandas._libs.tslibs.timedeltas, pandas._libs.tslibs.tzconversion, pandas._libs.tslibs.timestamps, pandas._libs.tslibs.offsets, pandas._libs.tslibs.strptime, pandas._libs.tslibs.parsing, pandas._libs.tslibs.conversion, pandas._libs.tslibs.period, pandas._libs.tslibs.vectorized, pandas._libs.ops_dispatch, pandas._libs.missing, pandas._libs.hashtable, pandas._libs.algos, pandas._libs.interval, pandas._libs.lib, pyarrow._compute, pandas._libs.ops, numexpr.interpreter, bottleneck.move, bottleneck.nonreduce, bottleneck.nonreduce_axis, bottleneck.reduce, pandas._libs.hashing, pandas._libs.arrays, pandas._libs.tslib, pandas._libs.sparse, pandas._libs.internals, pandas._libs.indexing, pandas._libs.index, pandas._libs.writers, pandas._libs.join, pandas._libs.window.aggregations, pandas._libs.window.indexers, pandas._libs.reshape, pandas._libs.groupby, pandas._libs.json, pandas._libs.parsers, pandas._libs.testing, charset_normalizer.md, charset_normalizer.cd, requests.packages.charset_normalizer.md, requests.packages.chardet.md, requests.packages.charset_normalizer.cd, requests.packages.chardet.cd, cftime._cftime, scipy._cyutility, scipy._lib._ccallback_c, scipy.sparse._sparsetools, _csparsetools, scipy.sparse._csparsetools, _xpress, _cffi_backend, yaml._yaml, psutil._psutil_linux, markupsafe._speedups, cupy_backends.cuda._softlink, cupy_backends.cuda.api._runtime_enum, cupy_backends.cuda.api.runtime, cupy._util, cupy.cuda.device, cupy.cuda.memory_hook, cupy_backends.cuda.stream, cupy.cuda.graph, cupy.cuda.stream, cupy_backends.cuda.api._driver_enum, cupy_backends.cuda.api.driver, cupy.cuda.memory, cupy._core.internal, cupy._core._carray, cupy._core._dtype, cupy._core._scalar, cupy.cuda.texture, cupy.cuda.function, cupy_backends.cuda.libs.nvrtc, cupy.cuda.pinned_memory, cupy.cuda.common, cupy.cuda.cub, cupy_backends.cuda.libs.nvtx, cupy.cuda.thrust, cupy._core._accelerator, cupy._core._memory_range, cupy._core._fusion_thread_local, cupy._core._kernel, cupy._core._routines_manipulation, cupy._core._routines_binary, cupy._core._optimize_config, cupy._core._cub_reduction, cupy._core._reduction, cupy._core._routines_math, cupy._core._routines_indexing, cupy._core._routines_linalg, cupy._core._routines_logic, cupy._core._routines_sorting, cupy._core._routines_statistics, cupy._core.dlpack, cupy._core.flags, cupy._core.core, cupy._core._fusion_variable, cupy._core._fusion_trace, cupy._core._fusion_kernel, cupy._core.new_fusion, cupy._core.fusion, cupy._core.raw, cupy.fft._cache, cupy.fft._callback, cupy.random._generator_api, cupy.random._bit_generator, cupy.lib._polynomial, scipy._lib._uarray._uarray, scipy.special._ufuncs_cxx, scipy.special._ellip_harm_2, scipy.special._special_ufuncs, scipy.special._gufuncs, scipy.special._ufuncs, scipy.special._specfun, scipy.special._comb, scipy.fftpack.convolve, gurobipy._util, gurobipy._exception, gurobipy._attrutil, gurobipy._core, gurobipy._batch, gurobipy._matrixapi, gurobipy._helpers, gurobipy._modelutil, gurobipy._model, gurobipy._lowlevel, mindoptpy.mindoptpy, coptpy.coptpywrap, coptcore, coptpy.coptcore, cuopt.linear_programming.internals.internals, numba.core.typeconv._typeconv, numba._helperlib, numba._dynfunc, numba._dispatcher, numba.core.runtime._nrt_python, numba.np.ufunc._internal, numba.experimental.jitclass._box, numba.cuda.types.abstract.itertools, numba.cuda.types.functions.itertools, numba.cuda.cext._typeconv, cuda.bindings._bindings.cydriver, cuda.bindings.cydriver, cuda.bindings.driver, cuda.bindings._bindings.cyruntime_ptds, cuda.bindings._bindings.cyruntime, cuda.bindings.cyruntime, cuda.bindings.runtime, cuda.bindings._internal.utils, cuda.bindings._internal.nvrtc, cuda.bindings.cynvrtc, cuda.bindings._internal.nvvm, cuda.bindings.cynvvm, cuda.bindings._internal.nvjitlink, cuda.bindings.cynvjitlink, cuda.bindings.nvrtc, cuda.bindings.nvvm, cuda.bindings.nvjitlink, cuda.core._utils.cuda_utils, cuda.core._utils.version, cuda.core._resource_handles, cuda.core._device_resources, cuda.core._event, cuda.core._stream, cuda.core._context, cuda.bindings._internal.nvml, cuda.bindings.cynvml, cuda.bindings.nvml, cuda.core.system._nvml_context, cuda.core.system._system, cuda.core.system._device, cuda.core.system._system_events, cuda.core.cu12.system._system, cuda.core.cu12.system._device, cuda.core.cu12.system._system_events, cuda.core._memory._ipc, cuda.core._memory._memory_pool, cuda.core._memory._peer_access_utils, cuda.core._memory._device_memory_resource, cuda.core._memory._pinned_memory_resource, cuda.core._dlpack, cuda.core._device, cuda.core._memory._buffer, cuda.core._memory._graph_memory_resource, cuda.core._memory._managed_memory_ops, cuda.core._memory._managed_memory_resource, cuda.core._layout, cuda.core._memoryview, cuda.core._launch_config, cuda.core._linker, cuda.core._program, cuda.core._module, cuda.core._graphics, cuda.core._tensor_map, cuda.core.graph._host_callback, cuda.core.graph._subclasses, cuda.core.graph._adjacency_set_proxy, cuda.core.graph._graph_node, cuda.core.graph._graph_definition, cuda.core.graph._graph_builder, cuda.core._kernel_arg_handler, cuda.core._launcher, cuda.core.texture._array, cuda.core.texture._mipmapped_array, cuda.core.texture._texture, cuda.core.texture._surface, numba.cuda.cext._helperlib, numba.cuda.cext.mviewbuf, numba.cuda.cext._dispatcher, rmm.pylibrmm.stream, rmm.pylibrmm.utils, rmm.pylibrmm.helper, rmm.pylibrmm.memory_resource._memory_resource, rmm.pylibrmm.memory_resource.experimental, rmm.pylibrmm.cuda_stream_pool, rmm.pylibrmm.device_buffer, rmm.librmm._logger, rmm.pylibrmm.logger, nvtx._lib.time, nvtx._lib.counters, nvtx._lib.lib, nvtx._lib.profiler, pylibcudf.libcudf.types, pylibcudf.types, pylibcudf.libcudf.aggregation, pylibcudf.aggregation, pylibcudf.gpumemoryview, pylibcudf.utils, pylibcudf._interop_helpers, pylibcudf.table, pylibcudf.filling, pylibcudf.traits, pylibcudf.column, pylibcudf.scalar, pylibcudf.libcudf.binaryop, pylibcudf.binaryop, pylibcudf.column_factories, pylibcudf.concatenate, pylibcudf.context, pylibcudf.contiguous_split, pylibcudf.libcudf.copying, pylibcudf.copying, pylibcudf.libcudf.datetime, pylibcudf.datetime, pylibcudf.experimental._join_streams, pylibcudf.libcudf.expressions, pylibcudf.expressions, pylibcudf.groupby, pylibcudf.hashing, pylibcudf.interop, pylibcudf.io.datasource, pylibcudf.libcudf.io.json, pylibcudf.libcudf.io.types, pylibcudf.io.types, pylibcudf.io.avro, pylibcudf.io.csv, pylibcudf.io.parquet_metadata, pylibcudf.io.parquet, pylibcudf.io.text, pylibcudf.libcudf.io.hybrid_scan, pylibcudf.io.experimental.hybrid_scan, pylibcudf.io.json, pylibcudf.io.orc, pylibcudf.io.timezone, pylibcudf.join, pylibcudf.json, pylibcudf.libcudf.labeling, pylibcudf.labeling, pylibcudf.libcudf.lists.combine, pylibcudf.libcudf.lists.contains, pylibcudf.lists, pylibcudf.merge, pylibcudf.null_mask, pylibcudf.nvtext.byte_pair_encode, pylibcudf.nvtext.deduplicate, pylibcudf.nvtext.edit_distance, pylibcudf.nvtext.generate_ngrams, pylibcudf.nvtext.jaccard, pylibcudf.nvtext.minhash, pylibcudf.nvtext.ngrams_tokenize, pylibcudf.nvtext.normalize, pylibcudf.nvtext.replace, pylibcudf.libcudf.nvtext.stemmer, pylibcudf.nvtext.stemmer, pylibcudf.nvtext.tokenize, pylibcudf.nvtext.wordpiece_tokenize, pylibcudf.libcudf.partitioning, pylibcudf.partitioning, pylibcudf.prefetch, pylibcudf.quantiles, pylibcudf.libcudf.reduce, pylibcudf.reduce, pylibcudf.libcudf.replace, pylibcudf.replace, pylibcudf.reshape, pylibcudf.rolling, pylibcudf.libcudf.round, pylibcudf.round, pylibcudf.search, pylibcudf.sorting, pylibcudf.libcudf.stream_compaction, pylibcudf.stream_compaction, pylibcudf.strings.attributes, pylibcudf.libcudf.strings.char_types, pylibcudf.strings.capitalize, pylibcudf.strings.case, pylibcudf.strings.char_types, pylibcudf.libcudf.strings.combine, pylibcudf.strings.combine, pylibcudf.strings.regex_program, pylibcudf.strings.contains, pylibcudf.strings.convert.convert_booleans, pylibcudf.strings.convert.convert_datetime, pylibcudf.strings.convert.convert_durations, pylibcudf.strings.convert.convert_fixed_point, pylibcudf.strings.convert.convert_floats, pylibcudf.strings.convert.convert_integers, pylibcudf.strings.convert.convert_ipv4, pylibcudf.strings.convert.convert_lists, pylibcudf.strings.convert.convert_urls, pylibcudf.strings.extract, pylibcudf.strings.find, pylibcudf.strings.find_multiple, pylibcudf.strings.findall, pylibcudf.strings.padding, pylibcudf.libcudf.strings.regex_flags, pylibcudf.strings.regex_flags, pylibcudf.strings.repeat, pylibcudf.strings.replace, pylibcudf.strings.replace_re, pylibcudf.strings.reverse, pylibcudf.libcudf.strings.side_type, pylibcudf.strings.side_type, pylibcudf.strings.slice, pylibcudf.strings.split.partition, pylibcudf.strings.split.split, pylibcudf.strings.strip, pylibcudf.libcudf.strings.translate, pylibcudf.strings.translate, pylibcudf.strings.wrap, pylibcudf.table_equality, pylibcudf.transform, pylibcudf.transpose, pylibcudf.libcudf.unary, pylibcudf.unary, pylibcudf.utilities, numba.types.itertools, cudf._lib.strings_udf, pyarrow._feather, cuopt.linear_programming.data_model.data_model_wrapper, cuopt.linear_programming.io.parser_wrapper, pylibraft.common.cuda, pylibraft.common.handle, cuopt.linear_programming.solver_settings.solver_settings, cuopt.linear_programming.solver.solver_wrapper, netCDF4._netCDF4, scipy.io.matlab._mio_utils, scipy.io.matlab._streams, scipy.io.matlab._mio5_utils, cplex._internal.py311_cplex2220, pyscipopt.scip (total: 384)
+PYTEST_EXIT=139

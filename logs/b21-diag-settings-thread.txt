@@ -1,0 +1,25 @@
+1. is cuopt's SolverSettings subclassable from Python?
+   yes -- cdef class is not final
+
+2. linopy's actual thread layout for one solve
+   (mirrors cuOpt._solve: settings built on the CALLER thread, the C++
+    object reset+rebuilt on the worker inside Solve, object freed on caller)
+   cuOpt._solve runs on 'MainThread'
+   SolverSettings() constructed  -> new solver_settings_t on 'MainThread'
+   set_solver_setting/prepare_solver_settings on 'linopy-cuopt-solve'
+   -> c_solver_settings.reset(new solver_settings_t()) ran here: the CALLER-allocated object was DELETED on this thread and a NEW one ALLOCATED on this thread
+   dropping the caller-thread reference now:
+   [__del__] SolverSettings(A) finalized on thread 'MainThread'
+   (that __del__ line above, if any, names the freeing thread) on 'MainThread'
+
+3. the same measurement for the linopy worker's identity
+   worker thread names alive: ['MainThread', 'linopy-cuopt-solve']
+
+SUMMARY: per cuOpt solve linopy performs, on solver_settings_t,
+  new  on <caller>   (SolverSettings.__init__, solver_settings.pyx:116)
+  delete+new on 'linopy-cuopt-solve'  (set_solver_setting, solver_wrapper.pyx:186)
+  delete on <caller> (the `settings` local in cuOpt._solve dying)
+i.e. TWO cross-thread native new/delete pairs per solve -- the same
+thread-affinity hazard B19 fixed for DataModel, still open for SolverSettings.
+DONE probe 5
+EXIT=0

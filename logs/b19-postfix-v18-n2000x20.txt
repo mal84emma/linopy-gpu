@@ -1,0 +1,21 @@
+[00] optimal obj=0.000000
+[01] optimal obj=0.000000
+[02] optimal obj=0.000000
+[03] optimal obj=0.000000
+[04] optimal obj=0.000000
+[05] optimal obj=0.000000
+[06] optimal obj=0.000000
+[07] optimal obj=0.000000
+[08] optimal obj=0.000000
+[09] optimal obj=0.000000
+[10] optimal obj=0.000000
+[11] optimal obj=0.000000
+[12] optimal obj=0.000000
+[13] optimal obj=0.000000
+[14] optimal obj=0.000000
+[15] optimal obj=0.000000
+[16] optimal obj=0.000000
+[17] optimal obj=0.000000
+[18] optimal obj=0.000000
+[19] optimal obj=0.000000
+DONE 20/20

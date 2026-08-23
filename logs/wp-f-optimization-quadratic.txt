@@ -1,0 +1,19 @@
+=============================================== test session starts ================================================
+platform linux -- Python 3.11.15, pytest-9.1.1, pluggy-1.6.0 -- /home/azureuser/linopy-gpu/.venv/bin/python3
+cachedir: .pytest_cache
+rootdir: /home/azureuser/linopy-gpu/dev-scripts/cuopt/worktrees/wp-f
+configfile: pyproject.toml
+plugins: anyio-4.14.2, cov-7.1.0
+collecting ... collected 3458 items / 3450 deselected / 8 selected
+
+test/test_optimization.py::test_quadratic_model[legacy-cuopt-direct-False] PASSED                            [ 12%]
+test/test_optimization.py::test_quadratic_model[v1-cuopt-direct-False] PASSED                                [ 25%]
+test/test_optimization.py::test_quadratic_model_cross_terms[legacy-cuopt-direct-False] PASSED                [ 37%]
+test/test_optimization.py::test_quadratic_model_cross_terms[v1-cuopt-direct-False] PASSED                    [ 50%]
+test/test_optimization.py::test_quadratic_model_wo_constraint[legacy-cuopt-direct-False] PASSED              [ 62%]
+test/test_optimization.py::test_quadratic_model_wo_constraint[v1-cuopt-direct-False] PASSED                  [ 75%]
+test/test_optimization.py::test_quadratic_model_unbounded[legacy-cuopt-direct-False] PASSED                  [ 87%]
+test/test_optimization.py::test_quadratic_model_unbounded[v1-cuopt-direct-False] PASSED                      [100%]
+
+======================================== 8 passed, 3450 deselected in 3.54s ========================================
+PYTEST_EXIT=0

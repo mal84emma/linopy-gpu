@@ -1,0 +1,22 @@
+[00] obj=0.0000 live=1
+[01] obj=0.0000 live=2
+[02] obj=0.0000 live=3
+[03] obj=0.0000 live=4
+[04] obj=0.0000 live=4
+[05] obj=0.0000 live=4
+[06] obj=0.0000 live=4
+[07] obj=0.0000 live=4
+[08] obj=0.0000 live=4
+[09] obj=0.0000 live=4
+[10] obj=0.0000 live=4
+[11] obj=0.0000 live=4
+[12] obj=0.0000 live=4
+[13] obj=0.0000 live=4
+[14] obj=0.0000 live=4
+[15] obj=0.0000 live=4
+[16] obj=0.0000 live=4
+[17] obj=0.0000 live=4
+[18] obj=0.0000 live=4
+[19] obj=0.0000 live=4
+DONE 20 iterations n=2000 m=500 ring=4 kind=mixed
+EXIT=0

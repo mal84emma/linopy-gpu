@@ -1,0 +1,38 @@
+### ruff check .
+ruff 0.15.20
+All checks passed!
+RUFF_EXIT=0
+### ruff format --check .
+165 files already formatted
+### mypy linopy
+linopy/solvers.py:2864: error: Module has no attribute "maximize"  [attr-defined]
+linopy/solvers.py:2866: error: Module has no attribute "minimize"  [attr-defined]
+linopy/solvers.py:2889: error: Argument 1 to "enter_context" of "_BaseExitStack" has incompatible type "problem"; expected "AbstractContextManager[Never, bool | None]"  [arg-type]
+linopy/solvers.py:2988: error: Argument "objqcol1" to "loadMIQP" of "problem" has incompatible type "ndarray[tuple[Any, ...], dtype[Any]] | None"; expected "Iterable[var | int | str]"  [arg-type]
+linopy/solvers.py:2989: error: Argument "objqcol2" to "loadMIQP" of "problem" has incompatible type "ndarray[tuple[Any, ...], dtype[Any]] | None"; expected "Iterable[var | int | str]"  [arg-type]
+linopy/solvers.py:2990: error: Argument "objqcoef" to "loadMIQP" of "problem" has incompatible type "ndarray[tuple[Any, ...], dtype[Any]] | None"; expected "Iterable[float]"  [arg-type]
+linopy/solvers.py:2991: error: Argument "coltype" to "loadMIQP" of "problem" has incompatible type "ndarray[tuple[Any, ...], dtype[Any]] | None"; expected "Iterable[str]"  [arg-type]
+linopy/solvers.py:2992: error: Argument "entind" to "loadMIQP" of "problem" has incompatible type "ndarray[tuple[int], dtype[signedinteger[_64Bit]]] | None"; expected "Iterable[var | int | str]"  [arg-type]
+linopy/solvers.py:2997: error: Argument "objqcol1" to "loadQP" of "problem" has incompatible type "ndarray[tuple[Any, ...], dtype[Any]] | None"; expected "Iterable[var | int | str]"  [arg-type]
+linopy/solvers.py:2998: error: Argument "objqcol2" to "loadQP" of "problem" has incompatible type "ndarray[tuple[Any, ...], dtype[Any]] | None"; expected "Iterable[var | int | str]"  [arg-type]
+linopy/solvers.py:2999: error: Argument "objqcoef" to "loadQP" of "problem" has incompatible type "ndarray[tuple[Any, ...], dtype[Any]] | None"; expected "Iterable[float]"  [arg-type]
+linopy/solvers.py:3004: error: Argument "coltype" to "loadMIP" of "problem" has incompatible type "ndarray[tuple[Any, ...], dtype[Any]] | None"; expected "Iterable[str]"  [arg-type]
+linopy/solvers.py:3005: error: Argument "entind" to "loadMIP" of "problem" has incompatible type "ndarray[tuple[int], dtype[signedinteger[_64Bit]]] | None"; expected "Iterable[var | int | str]"  [arg-type]
+linopy/solvers.py:3010: error: "problem" has no attribute "loadproblem"  [attr-defined]
+linopy/solvers.py:3041: error: Module has no attribute "maximize"  [attr-defined]
+linopy/solvers.py:3043: error: "problem" has no attribute "chgobjsense"; maybe "chgObjSense"?  [attr-defined]
+linopy/solvers.py:3043: error: Module has no attribute "maximize"  [attr-defined]
+linopy/solvers.py:3056: error: "problem" has no attribute "addnames"; maybe "addNames"?  [attr-defined]
+linopy/solvers.py:3064: error: "problem" has no attribute "addnames"; maybe "addNames"?  [attr-defined]
+linopy/solvers.py:3112: error: Need type annotation for "m"  [var-annotated]
+linopy/solvers.py:3112: note: See https://mypy.rtfd.io/en/stable/_refs.html#code-var-annotated for more info
+linopy/solvers.py:3112: error: Argument 1 to "enter_context" of "_BaseExitStack" has incompatible type "problem"; expected "AbstractContextManager[Never, bool | None]"  [arg-type]
+linopy/solvers.py:3149: error: Argument 1 to "setControl" of "problem" has incompatible type "dict[str, Any]"; expected "dict[str | int, str | float]"  [arg-type]
+linopy/solvers.py:3155: error: "problem" has no attribute "setlogfile"; maybe "setLogFile"?  [attr-defined]
+linopy/solvers.py:3161: error: "problem" has no attribute "readbasis"; maybe "readBasis"?  [attr-defined]
+linopy/solvers.py:3169: error: "problem" has no attribute "postsolve"; maybe "postSolve"?  [attr-defined]
+linopy/solvers.py:3176: error: "problem" has no attribute "writebasis"; maybe "writeBasis"?  [attr-defined]
+linopy/solvers.py:3185: error: "problem" has no attribute "writebinsol"; maybe "writeBinSol"?  [attr-defined]
+linopy/solvers.py:3214: error: "problem" has no attribute "getDual"; maybe "getDuals"?  [attr-defined]
+Found 28 errors in 1 file (checked 30 source files)
+MYPY_EXIT=1

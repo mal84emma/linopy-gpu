@@ -1,0 +1,15 @@
+=============================================== test session starts ================================================
+platform linux -- Python 3.11.15, pytest-9.1.1, pluggy-1.6.0 -- /home/azureuser/linopy-gpu/.venv/bin/python3
+cachedir: .pytest_cache
+rootdir: /home/azureuser/linopy-gpu/dev-scripts/cuopt/worktrees/wp-tests
+configfile: pyproject.toml
+plugins: anyio-4.14.2, cov-7.1.0
+collecting ... collected 4 items
+
+test/test_cuopt.py::test_repeated_solves_of_a_medium_model[legacy] PASSED                                    [ 25%]
+test/test_cuopt.py::test_repeated_solves_of_a_medium_model[v1] PASSED                                        [ 50%]
+test/test_cuopt.py::test_status_map[legacy-milp_time_limit] PASSED                                           [ 75%]
+test/test_cuopt.py::test_status_map[v1-milp_time_limit] PASSED                                               [100%]
+
+========================================== 4 passed in 238.52s (0:03:58) ===========================================
+PYTEST_EXIT=0

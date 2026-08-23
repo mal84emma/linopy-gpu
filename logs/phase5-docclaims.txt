@@ -1,0 +1,21 @@
+WARNING:linopy.solvers:cuOpt does not support file IO. Building the model through the direct API instead; pass io_api='direct' to skip creating the problem file.
+WARNING:linopy.solvers:cuOpt does not support file IO. Building the model through the direct API instead; pass io_api='direct' to skip creating the problem file.
+WARNING:linopy.solvers:cuOpt does not support file IO. Building the model through the direct API instead; pass io_api='direct' to skip creating the problem file.
+WARNING:linopy.solvers:cuOpt does not support file IO. Building the model through the direct API instead; pass io_api='direct' to skip creating the problem file.
+WARNING:linopy.solvers:cuOpt does not support file IO. Building the model through the direct API instead; pass io_api='direct' to skip creating the problem file.
+### claim: keep_files=True raises NotImplementedError
+  PASS: NotImplementedError: Solution file output is not yet implemented for cuOpt.
+
+### claim: a file io_api still solves through the direct API
+  io_api='lp'         -> ok/optimal   leftovers=[]
+  io_api='lp-polars'  -> ok/optimal   leftovers=[]
+  io_api='mps'        -> ok/optimal   leftovers=[]
+  io_api=None         -> ok/optimal   leftovers=[]
+
+### claim: an unknown io_api is rejected
+  PASS: ValueError: Keyword argument `io_api` has to be one of ['lp', 'lp-polars', 'mps', 'direct'] or None
+
+### claim: 'Pass io_api="direct" to skip writing it' -- does it?
+  io_api='direct' : get_problem_file called 1x -> [('direct', 'linopy-problem-esoobglu.lp', True, 0)]; leftovers=[]
+  io_api=None     : get_problem_file called 1x -> [(None, 'linopy-problem-1z2otd51.lp', True, 0)]; leftovers=[]
+EXIT=0

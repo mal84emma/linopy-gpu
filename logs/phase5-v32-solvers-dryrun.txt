@@ -1,0 +1,7 @@
+### V3-2: repo [solvers] extra, clean venv, --dry-run --report
+Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas>=2.2->xarray>=2024.2.0->linopy==0.9.1.post1.dev9+g8fb66cc36)
+  Using cached six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Collecting xpresslibs==9.9.1 (from xpress->linopy==0.9.1.post1.dev9+g8fb66cc36)
+  Using cached xpresslibs-9.9.1-py3-none-manylinux1_x86_64.whl.metadata (6.3 kB)
+Would install Bottleneck-1.6.0 Mosek-11.2.3 PySCIPOpt-6.2.1 PyYAML-6.0.3 click-8.4.2 cloudpickle-3.1.2 coptpy-8.0.6 cplex-22.2.0.1 dask-2026.7.1 deprecation-2.1.0 fsspec-2026.7.0 gurobipy-13.0.2 highspy-1.15.1 importlib_metadata-9.0.0 knitro-16.0.0 linopy-0.9.1.post1.dev9+g8fb66cc36 locket-1.0.0 mindoptpy-2.3.0 numexpr-2.14.2 numpy-2.4.6 pandas-3.0.5 partd-1.4.2 polars-1.43.2 polars-runtime-32-1.43.2 python-dateutil-2.9.0.post0 scipy-1.17.1 six-1.17.0 toolz-1.1.0 tqdm-4.70.0 xarray-2026.7.0 xpress-9.9.1 xpresslibs-9.9.1 zipp-4.1.0
+PIP_EXIT=0

@@ -1,0 +1,14 @@
+linopy.__file__ = /home/azureuser/linopy-gpu/dev-scripts/cuopt/worktrees/wp-hygiene/linopy/__init__.py
+solve -> ok/optimal, objective = 8.0
+
+solver_settings_t lifecycle events (in order):
+  new solver_settings_t      on 'linopy-cuopt-solve'
+  delete solver_settings_t   on 'linopy-cuopt-solve'
+
+threads touching solver_settings_t: ['linopy-cuopt-solve']
+new on worker:    True
+delete on worker: True
+MainThread events: []
+RESULT: PASS
+DONE
+EXIT=0

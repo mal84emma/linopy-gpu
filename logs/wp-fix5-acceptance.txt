@@ -1,0 +1,36 @@
+WP-FIX5 acceptance, branch wp/wp-fix5 @ b0b18f4
+
+[1] linopy.__file__ = /home/azureuser/linopy-gpu/dev-scripts/cuopt/worktrees/wp-fix5/linopy/__init__.py
+
+[2] F1 live warning (io_api=None, GPU solve):
+WARNING:linopy.solvers:cuOpt does not support file IO. Building the model through the direct API instead; pass io_api='direct' to skip this warning. An empty temporary problem file is created and removed either way.
+status ('ok', 'optimal')
+
+[3] F2 -> see wp-fix5-f2-fork.txt
+
+[4] F3 new test, pytest test/test_io.py --run-gpu -k "to_cuopt or to_cupdlpx" -v
+test/test_io.py ss..
+2 passed, 2 skipped, 102 deselected in 2.04s      (cupdlpx not installed here -> 2 skipped)
+
+[5] F7 split skip reasons:
+$ pytest test/test_optimization.py::test_basis_and_warmstart --run-gpu -rs -q -k cuopt
+SKIPPED [2] test/test_optimization.py:1125: cuOpt's own warm start needs three simultaneous non-default settings and a payload in presolved coordinates, so linopy does not offer it.
+2 skipped, 78 deselected in 2.25s
+$ pytest ... -k cupdlpx   -> 80 deselected (cupdlpx is NOT installed in this env, so no such param exists);
+   calling the test body directly instead:
+cupdlpx   -> cuPDLPx does not yet support warmstart in the Python API.
+cuopt     -> cuOpt's own warm start needs three simultaneous non-default settings and a payload in presolved coordinates, so linopy does not offer it.
+
+[6] pytest test/test_cuopt.py --run-gpu -q        -> 120 passed in 275.18s
+    pytest test/test_io.py --run-gpu -q           -> 99 passed, 7 skipped, 12 warnings in 8.34s
+    pytest test/test_cuopt_interrupt.py -q        -> 8 passed in 1.46s
+    pytest test/test_cuopt.py -q (CPU)            -> 120 skipped in 1.74s
+
+[7] ruff check .                                  -> All checks passed!
+    ruff format --check (4 touched .py files)     -> 4 files already formatted
+      (doc/gpu-acceleration.rst is not Python; ruff format cannot parse .rst -- N/A)
+    mypy linopy                                   -> Found 28 errors in 1 file (checked 29 source files)
+      == KI3 pre-existing count, 0 new (same count/error set as wp-f-mypy.txt, phase5-mypy-branch.txt)
+      CAVEAT: the F8 annotations are documentary, NOT checked -- cuopt ships no py.typed and
+      ignore_missing_imports=true, so mypy erases them to Any, exactly as it already does for the
+      pre-existing cupdlpx.Model annotations. Recorded as B22.

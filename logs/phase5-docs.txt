@@ -1,0 +1,1499 @@
+Running Sphinx v9.0.4
+loading translations [en]... done
+making output directory... done
+[autosummary] generating autosummary for: api.rst, benchmark.rst, contributing.rst, coordinate-alignment.nblink, create-a-model-with-coordinates.nblink, create-a-model.nblink, creating-constraints.nblink, creating-expressions.nblink, creating-variables.nblink, design/convention.rst, ..., release_notes.rst, solve-on-oetc.nblink, solve-on-remote.nblink, sos-constraints.rst, sudoku.nblink, syntax.rst, testing-framework.nblink, transport-tutorial.nblink, user-guide.rst, using-solvers.nblink
+[autosummary] generating autosummary for: /home/azureuser/linopy-gpu/doc/generated/linopy.model.Model.rst, /home/azureuser/linopy-gpu/doc/generated/linopy.model.Model.to_cuopt.rst, /home/azureuser/linopy-gpu/doc/generated/linopy.solvers.cuOpt.rst
+loading intersphinx inventory 'python' from https://docs.python.org/3/objects.inv ...
+loading intersphinx inventory 'numpy' from https://numpy.org/doc/stable/objects.inv ...
+loading intersphinx inventory 'pandas' from https://pandas.pydata.org/docs/objects.inv ...
+loading intersphinx inventory 'xarray' from https://docs.xarray.dev/en/stable/objects.inv ...
+loading intersphinx inventory 'scipy' from https://docs.scipy.org/doc/scipy/objects.inv ...
+loading intersphinx inventory 'dask' from https://docs.dask.org/en/stable/objects.inv ...
+building [mo]: targets for 0 po files that are out of date
+writing output... 
+building [html]: targets for 213 source files that are out of date
+updating environment: [new config] 215 added, 0 changed, 0 removed
+reading sources... [  0%] api
+Restricted license - for non-production use only - expires 2027-11-29
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [  1%] benchmark
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [  1%] contributing
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [  2%] coordinate-alignment
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:566: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  if srcfile.endswith(format):
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[IPKernelApp] WARNING | Unknown error in handling startup files:
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/jinja2/runtime.py:303: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  return __obj(*args, **kwargs)
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [  2%] create-a-model
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:566: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  if srcfile.endswith(format):
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[IPKernelApp] WARNING | Unknown error in handling startup files:
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/jinja2/runtime.py:303: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  return __obj(*args, **kwargs)
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [  3%] create-a-model-with-coordinates
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:566: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  if srcfile.endswith(format):
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[IPKernelApp] WARNING | Unknown error in handling startup files:
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/jinja2/runtime.py:303: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  return __obj(*args, **kwargs)
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [  3%] creating-constraints
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:566: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  if srcfile.endswith(format):
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[IPKernelApp] WARNING | Unknown error in handling startup files:
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/jinja2/runtime.py:303: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  return __obj(*args, **kwargs)
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [  4%] creating-expressions
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:566: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  if srcfile.endswith(format):
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[IPKernelApp] WARNING | Unknown error in handling startup files:
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/jinja2/runtime.py:303: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  return __obj(*args, **kwargs)
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [  4%] creating-variables
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:566: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  if srcfile.endswith(format):
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[IPKernelApp] WARNING | Unknown error in handling startup files:
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/jinja2/runtime.py:303: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  return __obj(*args, **kwargs)
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [  5%] design/convention
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [  5%] design/goals
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [  6%] design/legacy-removal
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [  6%] energy-resource-build
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:566: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  if srcfile.endswith(format):
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[IPKernelApp] WARNING | Unknown error in handling startup files:
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/jinja2/runtime.py:303: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  return __obj(*args, **kwargs)
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [  7%] generated/linopy.ABSENT
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [  7%] generated/linopy.EvolvingAPIWarning
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [  7%] generated/linopy.PerformanceWarning
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [  8%] generated/linopy.align
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [  8%] generated/linopy.constants.PWL_CONVEXITIES
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [  9%] generated/linopy.constants.PWL_CONVEXITY
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [  9%] generated/linopy.constants.PWL_METHOD
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 10%] generated/linopy.constants.PWL_METHODS
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 10%] generated/linopy.constants.Result
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 11%] generated/linopy.constants.Solution
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 11%] generated/linopy.constants.SolverReport
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 12%] generated/linopy.constants.SolverStatus
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 12%] generated/linopy.constants.Status
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 13%] generated/linopy.constants.TerminationCondition
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 13%] generated/linopy.constraints.CSRConstraint
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 13%] generated/linopy.constraints.CSRConstraint.coeffs
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 14%] generated/linopy.constraints.CSRConstraint.dual
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 14%] generated/linopy.constraints.CSRConstraint.ncons
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 15%] generated/linopy.constraints.CSRConstraint.nterm
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 15%] generated/linopy.constraints.CSRConstraint.rhs
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 16%] generated/linopy.constraints.CSRConstraint.sign
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 16%] generated/linopy.constraints.CSRConstraint.to_polars
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 17%] generated/linopy.constraints.CSRConstraint.vars
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 17%] generated/linopy.constraints.Constraint
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 18%] generated/linopy.constraints.Constraint.coeffs
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 18%] generated/linopy.constraints.Constraint.dual
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 19%] generated/linopy.constraints.Constraint.lhs
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 19%] generated/linopy.constraints.Constraint.rhs
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 20%] generated/linopy.constraints.Constraint.sign
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 20%] generated/linopy.constraints.Constraint.to_polars
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 20%] generated/linopy.constraints.Constraint.update
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 21%] generated/linopy.constraints.Constraint.vars
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 21%] generated/linopy.constraints.Constraints
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 22%] generated/linopy.constraints.Constraints.coeffs
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 22%] generated/linopy.constraints.Constraints.dual
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 23%] generated/linopy.constraints.Constraints.equalities
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 23%] generated/linopy.constraints.Constraints.inequalities
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 24%] generated/linopy.constraints.Constraints.rhs
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 24%] generated/linopy.constraints.Constraints.sign
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 25%] generated/linopy.constraints.Constraints.to_matrix
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 25%] generated/linopy.constraints.Constraints.vars
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 26%] generated/linopy.expressions.Expressions
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 26%] generated/linopy.expressions.Expressions.add
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 27%] generated/linopy.expressions.Expressions.remove
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 27%] generated/linopy.expressions.Expressions.solution
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 27%] generated/linopy.expressions.LinearExpression
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 28%] generated/linopy.expressions.LinearExpression.coeffs
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 28%] generated/linopy.expressions.LinearExpression.const
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 29%] generated/linopy.expressions.LinearExpression.from_tuples
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 29%] generated/linopy.expressions.LinearExpression.groupby
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 30%] generated/linopy.expressions.LinearExpression.has_terms
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 30%] generated/linopy.expressions.LinearExpression.name
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 31%] generated/linopy.expressions.LinearExpression.nterm
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 31%] generated/linopy.expressions.LinearExpression.rolling
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 32%] generated/linopy.expressions.LinearExpression.solution
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 32%] generated/linopy.expressions.LinearExpression.sum
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 33%] generated/linopy.expressions.LinearExpression.to_polars
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 33%] generated/linopy.expressions.LinearExpression.vars
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 33%] generated/linopy.expressions.LinearExpression.where
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 34%] generated/linopy.expressions.QuadraticExpression
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 34%] generated/linopy.expressions.QuadraticExpression.coeffs
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 35%] generated/linopy.expressions.QuadraticExpression.const
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 35%] generated/linopy.expressions.QuadraticExpression.has_terms
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 36%] generated/linopy.expressions.QuadraticExpression.name
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 36%] generated/linopy.expressions.QuadraticExpression.nterm
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 37%] generated/linopy.expressions.QuadraticExpression.solution
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 37%] generated/linopy.expressions.QuadraticExpression.to_matrix
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 38%] generated/linopy.expressions.QuadraticExpression.to_polars
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 38%] generated/linopy.expressions.QuadraticExpression.vars
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 39%] generated/linopy.expressions.merge
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 39%] generated/linopy.io.read_netcdf
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 40%] generated/linopy.model.Model
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 40%] generated/linopy.model.Model.add_constraints
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 40%] generated/linopy.model.Model.add_expressions
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 41%] generated/linopy.model.Model.add_objective
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 41%] generated/linopy.model.Model.add_piecewise_formulation
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 42%] generated/linopy.model.Model.add_sos_constraints
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 42%] generated/linopy.model.Model.add_variables
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 43%] generated/linopy.model.Model.apply_sos_reformulation
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 43%] generated/linopy.model.Model.compute_infeasibilities
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 44%] generated/linopy.model.Model.constraints
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 44%] generated/linopy.model.Model.copy
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 45%] generated/linopy.model.Model.dual
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 45%] generated/linopy.model.Model.expressions
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 46%] generated/linopy.model.Model.format_infeasibilities
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 46%] generated/linopy.model.Model.is_linear
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 47%] generated/linopy.model.Model.is_quadratic
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 47%] generated/linopy.model.Model.objective
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 47%] generated/linopy.model.Model.reformulate_sos_constraints
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 48%] generated/linopy.model.Model.remove_constraints
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 48%] generated/linopy.model.Model.remove_expressions
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 49%] generated/linopy.model.Model.remove_objective
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 49%] generated/linopy.model.Model.remove_sos_constraints
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 50%] generated/linopy.model.Model.remove_variables
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 50%] generated/linopy.model.Model.sense
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 51%] generated/linopy.model.Model.solution
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 51%] generated/linopy.model.Model.solve
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 52%] generated/linopy.model.Model.status
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 52%] generated/linopy.model.Model.termination_condition
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 53%] generated/linopy.model.Model.to_cuopt
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 53%] generated/linopy.model.Model.to_file
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 53%] generated/linopy.model.Model.to_netcdf
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 54%] generated/linopy.model.Model.type
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 54%] generated/linopy.model.Model.undo_sos_reformulation
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 55%] generated/linopy.model.Model.variables
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 55%] generated/linopy.objective.Objective
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 56%] generated/linopy.objective.Objective.expression
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 56%] generated/linopy.objective.Objective.is_linear
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 57%] generated/linopy.objective.Objective.is_quadratic
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 57%] generated/linopy.objective.Objective.sense
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 58%] generated/linopy.objective.Objective.value
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 58%] generated/linopy.options
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 59%] generated/linopy.piecewise.PiecewiseFormulation
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 59%] generated/linopy.piecewise.PiecewiseFormulation.constraints
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 60%] generated/linopy.piecewise.PiecewiseFormulation.convexity
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 60%] generated/linopy.piecewise.PiecewiseFormulation.method
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 60%] generated/linopy.piecewise.PiecewiseFormulation.variables
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 61%] generated/linopy.piecewise.Slopes
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 61%] generated/linopy.piecewise.breakpoints
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 62%] generated/linopy.piecewise.segments
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 62%] generated/linopy.piecewise.tangent_lines
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 63%] generated/linopy.remote.RemoteHandler
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 63%] generated/linopy.solvers.CBC
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 64%] generated/linopy.solvers.COPT
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 64%] generated/linopy.solvers.Cplex
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 65%] generated/linopy.solvers.GLPK
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 65%] generated/linopy.solvers.Gurobi
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 66%] generated/linopy.solvers.Highs
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 66%] generated/linopy.solvers.Knitro
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 67%] generated/linopy.solvers.LicenseStatus
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 67%] generated/linopy.solvers.MindOpt
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 67%] generated/linopy.solvers.Mosek
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 68%] generated/linopy.solvers.SCIP
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 68%] generated/linopy.solvers.Solver
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 69%] generated/linopy.solvers.Solver.close
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 69%] generated/linopy.solvers.Solver.from_model
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 70%] generated/linopy.solvers.Solver.from_name
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 70%] generated/linopy.solvers.Solver.is_available
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 71%] generated/linopy.solvers.Solver.license_status
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 71%] generated/linopy.solvers.Solver.report
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 72%] generated/linopy.solvers.Solver.runtime_features
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 72%] generated/linopy.solvers.Solver.solution
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 73%] generated/linopy.solvers.Solver.solve
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 73%] generated/linopy.solvers.Solver.solver_model
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 73%] generated/linopy.solvers.Solver.status
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 74%] generated/linopy.solvers.Solver.supported_features
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 74%] generated/linopy.solvers.Solver.supports
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 75%] generated/linopy.solvers.Solver.update_solver_model
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 75%] generated/linopy.solvers.SolverFeature
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 76%] generated/linopy.solvers.Xpress
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 76%] generated/linopy.solvers.available_solvers
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 77%] generated/linopy.solvers.cuOpt
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 77%] generated/linopy.solvers.cuPDLPx
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 78%] generated/linopy.solvers.licensed_solvers
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 78%] generated/linopy.variables.Variable
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 79%] generated/linopy.variables.Variable.fix
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 79%] generated/linopy.variables.Variable.lower
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 80%] generated/linopy.variables.Variable.relax
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 80%] generated/linopy.variables.Variable.solution
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 80%] generated/linopy.variables.Variable.sum
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 81%] generated/linopy.variables.Variable.to_linexpr
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 81%] generated/linopy.variables.Variable.to_polars
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 82%] generated/linopy.variables.Variable.type
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 82%] generated/linopy.variables.Variable.unfix
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 83%] generated/linopy.variables.Variable.unrelax
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 83%] generated/linopy.variables.Variable.update
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 84%] generated/linopy.variables.Variable.upper
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 84%] generated/linopy.variables.Variable.where
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 85%] generated/linopy.variables.Variables
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 85%] generated/linopy.variables.Variables.binaries
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 86%] generated/linopy.variables.Variables.continuous
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 86%] generated/linopy.variables.Variables.fix
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 87%] generated/linopy.variables.Variables.integers
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 87%] generated/linopy.variables.Variables.lower
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 87%] generated/linopy.variables.Variables.relax
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 88%] generated/linopy.variables.Variables.semi_continuous
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 88%] generated/linopy.variables.Variables.solution
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 89%] generated/linopy.variables.Variables.sos
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 89%] generated/linopy.variables.Variables.unfix
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 90%] generated/linopy.variables.Variables.unrelax
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 90%] generated/linopy.variables.Variables.upper
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 91%] gpu-acceleration
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 91%] gurobi-double-logging
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 92%] index
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 92%] infeasible-model
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:566: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  if srcfile.endswith(format):
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[IPKernelApp] WARNING | Unknown error in handling startup files:
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/jinja2/runtime.py:303: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  return __obj(*args, **kwargs)
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 93%] manipulating-models
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:566: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  if srcfile.endswith(format):
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[IPKernelApp] WARNING | Unknown error in handling startup files:
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/jinja2/runtime.py:303: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  return __obj(*args, **kwargs)
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 93%] migrating-from-pyomo
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:566: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  if srcfile.endswith(format):
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[IPKernelApp] WARNING | Unknown error in handling startup files:
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/jinja2/runtime.py:303: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  return __obj(*args, **kwargs)
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 93%] migrating-to-v1
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 94%] piecewise-inequality-bounds-tutorial
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:566: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  if srcfile.endswith(format):
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[IPKernelApp] WARNING | Unknown error in handling startup files:
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/jinja2/runtime.py:303: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  return __obj(*args, **kwargs)
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 94%] piecewise-linear-constraints
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 95%] piecewise-linear-constraints-tutorial
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:566: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  if srcfile.endswith(format):
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[IPKernelApp] WARNING | Unknown error in handling startup files:
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/jinja2/runtime.py:303: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  return __obj(*args, **kwargs)
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 95%] prerequisites
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 96%] release_notes
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 96%] solve-on-oetc
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:566: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  if srcfile.endswith(format):
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/jinja2/runtime.py:303: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  return __obj(*args, **kwargs)
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 97%] solve-on-remote
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:566: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  if srcfile.endswith(format):
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbformat/validator.py:434: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.
+  _validate(nbdict, ref, version, version_minor, relax_add_props)
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/jinja2/runtime.py:303: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  return __obj(*args, **kwargs)
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 97%] sos-constraints
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 98%] sudoku
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:566: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  if srcfile.endswith(format):
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[IPKernelApp] WARNING | Unknown error in handling startup files:
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/jinja2/runtime.py:303: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  return __obj(*args, **kwargs)
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 98%] syntax
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 99%] testing-framework
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:566: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  if srcfile.endswith(format):
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[IPKernelApp] WARNING | Unknown error in handling startup files:
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/jinja2/runtime.py:303: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  return __obj(*args, **kwargs)
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [ 99%] transport-tutorial
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:566: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  if srcfile.endswith(format):
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[IPKernelApp] WARNING | Unknown error in handling startup files:
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/jinja2/runtime.py:303: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  return __obj(*args, **kwargs)
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [100%] user-guide
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+reading sources... [100%] using-solvers
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:566: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  if srcfile.endswith(format):
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[IPKernelApp] WARNING | Unknown error in handling startup files:
+Running HiGHS 1.15.1 (git hash: 04024d7): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+Running HiGHS 1.15.1 (git hash: 04024d7): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/jinja2/runtime.py:303: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  return __obj(*args, **kwargs)
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1314: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+/home/azureuser/linopy-gpu/dev-scripts/cuopt/.venv-docs/lib/python3.11/site-packages/nbsphinx/__init__.py:1345: RemovedInSphinx10Warning: Sphinx 10 will drop support for representing paths as strings. Use "pathlib.Path" or "os.fspath" instead.
+  file_ext = env.doc2path(env.docname, base=None)[len(env.docname):]
+
+/home/azureuser/linopy-gpu/doc/api.rst:432:<autosummary>:1: WARNING: Inline emphasis start-string without end-string. [docutils]
+/home/azureuser/linopy-gpu/doc/api.rst:432:<autosummary>:1: WARNING: Inline emphasis start-string without end-string. [docutils]
+/home/azureuser/linopy-gpu/doc/api.rst:432:<autosummary>:1: WARNING: Inline emphasis start-string without end-string. [docutils]
+/home/azureuser/linopy-gpu/doc/api.rst:440:<autosummary>:1: WARNING: Inline emphasis start-string without end-string. [docutils]
+/home/azureuser/linopy-gpu/linopy/alignment.py:docstring of linopy.alignment.align:22: WARNING: Bullet list ends without a blank line; unexpected unindent. [docutils]
+/home/azureuser/linopy-gpu/doc/generated/linopy.constraints.CSRConstraint.rst:77:<autosummary>:1: WARNING: Inline emphasis start-string without end-string. [docutils]
+/home/azureuser/linopy-gpu/doc/generated/linopy.constraints.CSRConstraint.rst:77:<autosummary>:1: WARNING: Inline emphasis start-string without end-string. [docutils]
+/home/azureuser/linopy-gpu/doc/generated/linopy.constraints.CSRConstraint.rst:77:<autosummary>:1: WARNING: Inline emphasis start-string without end-string. [docutils]
+/home/azureuser/linopy-gpu/doc/generated/linopy.constraints.CSRConstraint.rst:77:<autosummary>:1: WARNING: Inline emphasis start-string without end-string. [docutils]
+/home/azureuser/linopy-gpu/doc/generated/linopy.constraints.CSRConstraint.rst:77:<autosummary>:1: WARNING: Inline emphasis start-string without end-string. [docutils]
+/home/azureuser/linopy-gpu/linopy/constraints.py:docstring of linopy.constraints.CSRConstraint.coeffs:1: WARNING: Inline emphasis start-string without end-string. [docutils]
+/home/azureuser/linopy-gpu/linopy/constraints.py:docstring of linopy.constraints.CSRConstraint.dual:1: WARNING: Inline emphasis start-string without end-string. [docutils]
+/home/azureuser/linopy-gpu/linopy/constraints.py:docstring of linopy.constraints.CSRConstraint.rhs:1: WARNING: Inline emphasis start-string without end-string. [docutils]
+/home/azureuser/linopy-gpu/linopy/constraints.py:docstring of linopy.constraints.CSRConstraint.vars:1: WARNING: Inline emphasis start-string without end-string. [docutils]
+/home/azureuser/linopy-gpu/linopy/model.py:docstring of linopy.model.Model.solve:53: WARNING: Inline literal start-string without end-string. [docutils]
+<unknown>:1: WARNING: duplicate object description of linopy.piecewise.PiecewiseFormulation.convexity, other instance in generated/linopy.piecewise.PiecewiseFormulation, use :no-index: for one of them
+<unknown>:1: WARNING: duplicate object description of linopy.piecewise.PiecewiseFormulation.method, other instance in generated/linopy.piecewise.PiecewiseFormulation, use :no-index: for one of them
+/home/azureuser/linopy-gpu/doc/generated/linopy.remote.RemoteHandler.rst:26:<autosummary>:1: WARNING: Inline emphasis start-string without end-string. [docutils]
+/home/azureuser/linopy-gpu/doc/generated/linopy.remote.RemoteHandler.rst:26:<autosummary>:1: WARNING: Inline strong start-string without end-string. [docutils]
+looking for now-outdated files... none found
+pickling environment... done
+checking consistency... done
+preparing documents... done
+copying assets... 
+copying static files... 
+Writing evaluated template result to /home/azureuser/linopy-gpu/doc/_build/phase5check/_static/basic.css
+Writing evaluated template result to /home/azureuser/linopy-gpu/doc/_build/phase5check/_static/language_data.js
+Writing evaluated template result to /home/azureuser/linopy-gpu/doc/_build/phase5check/_static/documentation_options.js
+Writing evaluated template result to /home/azureuser/linopy-gpu/doc/_build/phase5check/_static/copybutton.js
+copying static files: done
+copying extra files... 
+copying extra files: done
+copying assets: done
+writing output... [  0%] api
+writing output... [  1%] benchmark
+writing output... [  1%] contributing
+writing output... [  2%] coordinate-alignment
+writing output... [  2%] create-a-model
+writing output... [  3%] create-a-model-with-coordinates
+writing output... [  3%] creating-constraints
+writing output... [  4%] creating-expressions
+writing output... [  4%] creating-variables
+writing output... [  5%] design/convention
+writing output... [  5%] design/goals
+writing output... [  6%] design/legacy-removal
+writing output... [  6%] energy-resource-build
+writing output... [  7%] generated/linopy.ABSENT
+writing output... [  7%] generated/linopy.EvolvingAPIWarning
+writing output... [  7%] generated/linopy.PerformanceWarning
+writing output... [  8%] generated/linopy.align
+writing output... [  8%] generated/linopy.constants.PWL_CONVEXITIES
+writing output... [  9%] generated/linopy.constants.PWL_CONVEXITY
+writing output... [  9%] generated/linopy.constants.PWL_METHOD
+writing output... [ 10%] generated/linopy.constants.PWL_METHODS
+writing output... [ 10%] generated/linopy.constants.Result
+writing output... [ 11%] generated/linopy.constants.Solution
+writing output... [ 11%] generated/linopy.constants.SolverReport
+writing output... [ 12%] generated/linopy.constants.SolverStatus
+writing output... [ 12%] generated/linopy.constants.Status
+writing output... [ 13%] generated/linopy.constants.TerminationCondition
+writing output... [ 13%] generated/linopy.constraints.CSRConstraint
+writing output... [ 13%] generated/linopy.constraints.CSRConstraint.coeffs
+writing output... [ 14%] generated/linopy.constraints.CSRConstraint.dual
+writing output... [ 14%] generated/linopy.constraints.CSRConstraint.ncons
+writing output... [ 15%] generated/linopy.constraints.CSRConstraint.nterm
+writing output... [ 15%] generated/linopy.constraints.CSRConstraint.rhs
+writing output... [ 16%] generated/linopy.constraints.CSRConstraint.sign
+writing output... [ 16%] generated/linopy.constraints.CSRConstraint.to_polars
+writing output... [ 17%] generated/linopy.constraints.CSRConstraint.vars
+writing output... [ 17%] generated/linopy.constraints.Constraint
+writing output... [ 18%] generated/linopy.constraints.Constraint.coeffs
+writing output... [ 18%] generated/linopy.constraints.Constraint.dual
+writing output... [ 19%] generated/linopy.constraints.Constraint.lhs
+writing output... [ 19%] generated/linopy.constraints.Constraint.rhs
+writing output... [ 20%] generated/linopy.constraints.Constraint.sign
+writing output... [ 20%] generated/linopy.constraints.Constraint.to_polars
+writing output... [ 20%] generated/linopy.constraints.Constraint.update
+writing output... [ 21%] generated/linopy.constraints.Constraint.vars
+writing output... [ 21%] generated/linopy.constraints.Constraints
+writing output... [ 22%] generated/linopy.constraints.Constraints.coeffs
+writing output... [ 22%] generated/linopy.constraints.Constraints.dual
+writing output... [ 23%] generated/linopy.constraints.Constraints.equalities
+writing output... [ 23%] generated/linopy.constraints.Constraints.inequalities
+writing output... [ 24%] generated/linopy.constraints.Constraints.rhs
+writing output... [ 24%] generated/linopy.constraints.Constraints.sign
+writing output... [ 25%] generated/linopy.constraints.Constraints.to_matrix
+writing output... [ 25%] generated/linopy.constraints.Constraints.vars
+writing output... [ 26%] generated/linopy.expressions.Expressions
+writing output... [ 26%] generated/linopy.expressions.Expressions.add
+writing output... [ 27%] generated/linopy.expressions.Expressions.remove
+writing output... [ 27%] generated/linopy.expressions.Expressions.solution
+writing output... [ 27%] generated/linopy.expressions.LinearExpression
+writing output... [ 28%] generated/linopy.expressions.LinearExpression.coeffs
+writing output... [ 28%] generated/linopy.expressions.LinearExpression.const
+writing output... [ 29%] generated/linopy.expressions.LinearExpression.from_tuples
+writing output... [ 29%] generated/linopy.expressions.LinearExpression.groupby
+writing output... [ 30%] generated/linopy.expressions.LinearExpression.has_terms
+writing output... [ 30%] generated/linopy.expressions.LinearExpression.name
+writing output... [ 31%] generated/linopy.expressions.LinearExpression.nterm
+writing output... [ 31%] generated/linopy.expressions.LinearExpression.rolling
+writing output... [ 32%] generated/linopy.expressions.LinearExpression.solution
+writing output... [ 32%] generated/linopy.expressions.LinearExpression.sum
+writing output... [ 33%] generated/linopy.expressions.LinearExpression.to_polars
+writing output... [ 33%] generated/linopy.expressions.LinearExpression.vars
+writing output... [ 33%] generated/linopy.expressions.LinearExpression.where
+writing output... [ 34%] generated/linopy.expressions.QuadraticExpression
+writing output... [ 34%] generated/linopy.expressions.QuadraticExpression.coeffs
+writing output... [ 35%] generated/linopy.expressions.QuadraticExpression.const
+writing output... [ 35%] generated/linopy.expressions.QuadraticExpression.has_terms
+writing output... [ 36%] generated/linopy.expressions.QuadraticExpression.name
+writing output... [ 36%] generated/linopy.expressions.QuadraticExpression.nterm
+writing output... [ 37%] generated/linopy.expressions.QuadraticExpression.solution
+writing output... [ 37%] generated/linopy.expressions.QuadraticExpression.to_matrix
+writing output... [ 38%] generated/linopy.expressions.QuadraticExpression.to_polars
+writing output... [ 38%] generated/linopy.expressions.QuadraticExpression.vars
+writing output... [ 39%] generated/linopy.expressions.merge
+writing output... [ 39%] generated/linopy.io.read_netcdf
+writing output... [ 40%] generated/linopy.model.Model
+writing output... [ 40%] generated/linopy.model.Model.add_constraints
+writing output... [ 40%] generated/linopy.model.Model.add_expressions
+writing output... [ 41%] generated/linopy.model.Model.add_objective
+writing output... [ 41%] generated/linopy.model.Model.add_piecewise_formulation
+writing output... [ 42%] generated/linopy.model.Model.add_sos_constraints
+writing output... [ 42%] generated/linopy.model.Model.add_variables
+writing output... [ 43%] generated/linopy.model.Model.apply_sos_reformulation
+writing output... [ 43%] generated/linopy.model.Model.compute_infeasibilities
+writing output... [ 44%] generated/linopy.model.Model.constraints
+writing output... [ 44%] generated/linopy.model.Model.copy
+writing output... [ 45%] generated/linopy.model.Model.dual
+writing output... [ 45%] generated/linopy.model.Model.expressions
+writing output... [ 46%] generated/linopy.model.Model.format_infeasibilities
+writing output... [ 46%] generated/linopy.model.Model.is_linear
+writing output... [ 47%] generated/linopy.model.Model.is_quadratic
+writing output... [ 47%] generated/linopy.model.Model.objective
+writing output... [ 47%] generated/linopy.model.Model.reformulate_sos_constraints
+writing output... [ 48%] generated/linopy.model.Model.remove_constraints
+writing output... [ 48%] generated/linopy.model.Model.remove_expressions
+writing output... [ 49%] generated/linopy.model.Model.remove_objective
+writing output... [ 49%] generated/linopy.model.Model.remove_sos_constraints
+writing output... [ 50%] generated/linopy.model.Model.remove_variables
+writing output... [ 50%] generated/linopy.model.Model.sense
+writing output... [ 51%] generated/linopy.model.Model.solution
+writing output... [ 51%] generated/linopy.model.Model.solve
+writing output... [ 52%] generated/linopy.model.Model.status
+writing output... [ 52%] generated/linopy.model.Model.termination_condition
+writing output... [ 53%] generated/linopy.model.Model.to_cuopt
+writing output... [ 53%] generated/linopy.model.Model.to_file
+writing output... [ 53%] generated/linopy.model.Model.to_netcdf
+writing output... [ 54%] generated/linopy.model.Model.type
+writing output... [ 54%] generated/linopy.model.Model.undo_sos_reformulation
+writing output... [ 55%] generated/linopy.model.Model.variables
+writing output... [ 55%] generated/linopy.objective.Objective
+writing output... [ 56%] generated/linopy.objective.Objective.expression
+writing output... [ 56%] generated/linopy.objective.Objective.is_linear
+writing output... [ 57%] generated/linopy.objective.Objective.is_quadratic
+writing output... [ 57%] generated/linopy.objective.Objective.sense
+writing output... [ 58%] generated/linopy.objective.Objective.value
+writing output... [ 58%] generated/linopy.options
+writing output... [ 59%] generated/linopy.piecewise.PiecewiseFormulation
+writing output... [ 59%] generated/linopy.piecewise.PiecewiseFormulation.constraints
+writing output... [ 60%] generated/linopy.piecewise.PiecewiseFormulation.convexity
+writing output... [ 60%] generated/linopy.piecewise.PiecewiseFormulation.method
+writing output... [ 60%] generated/linopy.piecewise.PiecewiseFormulation.variables
+writing output... [ 61%] generated/linopy.piecewise.Slopes
+writing output... [ 61%] generated/linopy.piecewise.breakpoints
+writing output... [ 62%] generated/linopy.piecewise.segments
+writing output... [ 62%] generated/linopy.piecewise.tangent_lines
+writing output... [ 63%] generated/linopy.remote.RemoteHandler
+writing output... [ 63%] generated/linopy.solvers.CBC
+writing output... [ 64%] generated/linopy.solvers.COPT
+writing output... [ 64%] generated/linopy.solvers.Cplex
+writing output... [ 65%] generated/linopy.solvers.GLPK
+writing output... [ 65%] generated/linopy.solvers.Gurobi
+writing output... [ 66%] generated/linopy.solvers.Highs
+writing output... [ 66%] generated/linopy.solvers.Knitro
+writing output... [ 67%] generated/linopy.solvers.LicenseStatus
+writing output... [ 67%] generated/linopy.solvers.MindOpt
+writing output... [ 67%] generated/linopy.solvers.Mosek
+writing output... [ 68%] generated/linopy.solvers.SCIP
+writing output... [ 68%] generated/linopy.solvers.Solver
+writing output... [ 69%] generated/linopy.solvers.Solver.close
+writing output... [ 69%] generated/linopy.solvers.Solver.from_model
+writing output... [ 70%] generated/linopy.solvers.Solver.from_name
+writing output... [ 70%] generated/linopy.solvers.Solver.is_available
+writing output... [ 71%] generated/linopy.solvers.Solver.license_status
+writing output... [ 71%] generated/linopy.solvers.Solver.report
+writing output... [ 72%] generated/linopy.solvers.Solver.runtime_features
+writing output... [ 72%] generated/linopy.solvers.Solver.solution
+writing output... [ 73%] generated/linopy.solvers.Solver.solve
+writing output... [ 73%] generated/linopy.solvers.Solver.solver_model
+writing output... [ 73%] generated/linopy.solvers.Solver.status
+writing output... [ 74%] generated/linopy.solvers.Solver.supported_features
+writing output... [ 74%] generated/linopy.solvers.Solver.supports
+writing output... [ 75%] generated/linopy.solvers.Solver.update_solver_model
+writing output... [ 75%] generated/linopy.solvers.SolverFeature
+writing output... [ 76%] generated/linopy.solvers.Xpress
+writing output... [ 76%] generated/linopy.solvers.available_solvers
+writing output... [ 77%] generated/linopy.solvers.cuOpt
+writing output... [ 77%] generated/linopy.solvers.cuPDLPx
+writing output... [ 78%] generated/linopy.solvers.licensed_solvers
+writing output... [ 78%] generated/linopy.variables.Variable
+writing output... [ 79%] generated/linopy.variables.Variable.fix
+writing output... [ 79%] generated/linopy.variables.Variable.lower
+writing output... [ 80%] generated/linopy.variables.Variable.relax
+writing output... [ 80%] generated/linopy.variables.Variable.solution
+writing output... [ 80%] generated/linopy.variables.Variable.sum
+writing output... [ 81%] generated/linopy.variables.Variable.to_linexpr
+writing output... [ 81%] generated/linopy.variables.Variable.to_polars
+writing output... [ 82%] generated/linopy.variables.Variable.type
+writing output... [ 82%] generated/linopy.variables.Variable.unfix
+writing output... [ 83%] generated/linopy.variables.Variable.unrelax
+writing output... [ 83%] generated/linopy.variables.Variable.update
+writing output... [ 84%] generated/linopy.variables.Variable.upper
+writing output... [ 84%] generated/linopy.variables.Variable.where
+writing output... [ 85%] generated/linopy.variables.Variables
+writing output... [ 85%] generated/linopy.variables.Variables.binaries
+writing output... [ 86%] generated/linopy.variables.Variables.continuous
+writing output... [ 86%] generated/linopy.variables.Variables.fix
+writing output... [ 87%] generated/linopy.variables.Variables.integers
+writing output... [ 87%] generated/linopy.variables.Variables.lower
+writing output... [ 87%] generated/linopy.variables.Variables.relax
+writing output... [ 88%] generated/linopy.variables.Variables.semi_continuous
+writing output... [ 88%] generated/linopy.variables.Variables.solution
+writing output... [ 89%] generated/linopy.variables.Variables.sos
+writing output... [ 89%] generated/linopy.variables.Variables.unfix
+writing output... [ 90%] generated/linopy.variables.Variables.unrelax
+writing output... [ 90%] generated/linopy.variables.Variables.upper
+writing output... [ 91%] gpu-acceleration
+writing output... [ 91%] gurobi-double-logging
+writing output... [ 92%] index
+writing output... [ 92%] infeasible-model
+writing output... [ 93%] manipulating-models
+writing output... [ 93%] migrating-from-pyomo
+writing output... [ 93%] migrating-to-v1
+writing output... [ 94%] piecewise-inequality-bounds-tutorial
+writing output... [ 94%] piecewise-linear-constraints
+writing output... [ 95%] piecewise-linear-constraints-tutorial
+writing output... [ 95%] prerequisites
+writing output... [ 96%] release_notes
+writing output... [ 96%] solve-on-oetc
+writing output... [ 97%] solve-on-remote
+writing output... [ 97%] sos-constraints
+writing output... [ 98%] sudoku
+writing output... [ 98%] syntax
+writing output... [ 99%] testing-framework
+writing output... [ 99%] transport-tutorial
+writing output... [100%] user-guide
+writing output... [100%] using-solvers
+
+generating indices... genindex py-modindex done
+copying linked files... 
+copying notebooks ... [  6%] coordinate-alignment.ipynb
+copying notebooks ... [ 11%] create-a-model.ipynb
+copying notebooks ... [ 17%] create-a-model-with-coordinates.ipynb
+copying notebooks ... [ 22%] creating-constraints.ipynb
+copying notebooks ... [ 28%] creating-expressions.ipynb
+copying notebooks ... [ 33%] creating-variables.ipynb
+copying notebooks ... [ 39%] energy-resource-build.ipynb
+copying notebooks ... [ 44%] infeasible-model.ipynb
+copying notebooks ... [ 50%] manipulating-models.ipynb
+copying notebooks ... [ 56%] migrating-from-pyomo.ipynb
+copying notebooks ... [ 61%] piecewise-inequality-bounds-tutorial.ipynb
+copying notebooks ... [ 67%] piecewise-linear-constraints-tutorial.ipynb
+copying notebooks ... [ 72%] solve-on-oetc.ipynb
+copying notebooks ... [ 78%] solve-on-remote.ipynb
+copying notebooks ... [ 83%] sudoku.ipynb
+copying notebooks ... [ 89%] testing-framework.ipynb
+copying notebooks ... [ 94%] transport-tutorial.ipynb
+copying notebooks ... [100%] using-solvers.ipynb
+
+Writing evaluated template result to /home/azureuser/linopy-gpu/doc/_build/phase5check/_static/nbsphinx-code-cells.css
+writing additional pages... search done
+copying images... [  6%] benchmark.png
+copying images... [ 11%] _build/phase5check/.doctrees/nbsphinx/create-a-model-with-coordinates_14_0.svg
+copying images... [ 17%] _build/phase5check/.doctrees/nbsphinx/energy-resource-build_5_0.svg
+copying images... [ 22%] _build/phase5check/.doctrees/nbsphinx/energy-resource-build_10_0.svg
+copying images... [ 28%] _build/phase5check/.doctrees/nbsphinx/energy-resource-build_14_0.svg
+copying images... [ 33%] _build/phase5check/.doctrees/nbsphinx/energy-resource-build_30_1.svg
+copying images... [ 39%] _build/phase5check/.doctrees/nbsphinx/manipulating-models_2_1.svg
+copying images... [ 44%] _build/phase5check/.doctrees/nbsphinx/manipulating-models_6_1.svg
+copying images... [ 50%] _build/phase5check/.doctrees/nbsphinx/manipulating-models_10_1.svg
+copying images... [ 56%] _build/phase5check/.doctrees/nbsphinx/manipulating-models_15_1.svg
+copying images... [ 61%] _build/phase5check/.doctrees/nbsphinx/manipulating-models_20_1.svg
+copying images... [ 67%] _build/phase5check/.doctrees/nbsphinx/manipulating-models_23_1.svg
+copying images... [ 72%] _build/phase5check/.doctrees/nbsphinx/piecewise-inequality-bounds-tutorial_8_0.svg
+copying images... [ 78%] _build/phase5check/.doctrees/nbsphinx/piecewise-linear-constraints-tutorial_4_0.svg
+copying images... [ 83%] _build/phase5check/.doctrees/nbsphinx/piecewise-linear-constraints-tutorial_12_0.svg
+copying images... [ 89%] _build/phase5check/.doctrees/nbsphinx/piecewise-linear-constraints-tutorial_15_0.svg
+copying images... [ 94%] _build/phase5check/.doctrees/nbsphinx/piecewise-linear-constraints-tutorial_18_0.svg
+copying images... [100%] _build/phase5check/.doctrees/nbsphinx/sudoku_9_1.svg
+
+dumping search index in English (code: en)... done
+dumping object inventory... done
+build succeeded, 19 warnings.
+
+The HTML pages are in doc/_build/phase5check.
+SPHINX_EXIT=0

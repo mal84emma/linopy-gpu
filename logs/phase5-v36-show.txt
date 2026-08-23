@@ -1,0 +1,36 @@
+commit 8fb66cc36f61e4f720332cf4780e1c4ab8909a64
+Author: Claude Opus 5 <noreply@anthropic.com>
+Date:   Sun Aug 23 06:57:43 2026 +0000
+
+    Add comments explaining unsupported features
+    
+    Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>
+
+diff --git a/linopy/solvers.py b/linopy/solvers.py
+index 83995be..fd243d4 100644
+--- a/linopy/solvers.py
++++ b/linopy/solvers.py
+@@ -4587,0 +4588,2 @@ class cuOpt(Solver[None]):
++    # SOS and indicator constraints are absent from cuOpt itself, so their flags
++    # are omitted below and `_validate_model` refuses such models outright.
+@@ -4617,0 +4620,6 @@ class cuOpt(Solver[None]):
++        # The file io_apis are excluded, not merely unimplemented: solution-file
++        # output and linopy's explicit coordinate names are unverified against
++        # cuOpt's parser, and the file path inverts the Q convention (triangular
++        # .lp vs symmetric .mps). To solve an existing .mps/.lp file directly,
++        # use cuOpt's own API (`cuopt.linear_programming`); linopy support is a
++        # planned follow-up.
+@@ -4639,0 +4648,3 @@ class cuOpt(Solver[None]):
++        # Guarded here rather than left to cuOpt: handed a quadratic objective
++        # together with integer variables it silently mis-solves the MIQP
++        # instead of reporting an error.
+@@ -4806,0 +4818,4 @@ class cuOpt(Solver[None]):
++        # A usable PDLP warm start needs method=1, pdlp_solver_mode=1 and
++        # presolve=0 set simultaneously, because the payload is in presolved
++        # coordinates. `set_initial_primal_solution` must never be called: it
++        # crashes and poisons the CUDA context for the process (upstream bug).
+@@ -4876,2 +4891,2 @@ class cuOpt(Solver[None]):
+-            # for them, and cuOpt returns `-c - A'y` for maximised models with
+-            # `<=` rows.
++            # for them, and cuOpt's reduced cost sign is wrong upstream for
++            # maximised models with `<=` rows (it returns `-c - A'y`).

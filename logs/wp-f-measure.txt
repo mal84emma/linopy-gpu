@@ -1,0 +1,154 @@
+Setting parameter method to 3
+cuOpt version: 26.8.0, git hash: 400863c1, host arch: x86_64, device archs: 70-real,75-real,80-real,86-real,90a-real,100f-real,120a-real,120
+CPU: AMD EPYC 7V12 64-Core Processor, threads (physical/logical): 8/8, RAM (available/total): 49.57 / 54.92 GiB
+CUDA 12.9, device: Tesla T4 (ID 0), VRAM: 15.57 GiB
+CUDA device UUID: cdac016f-6819-79e4-fc96-90d93ab607ab
+Problem has a quadratic objective. Solving with barrier.
+Transforming 3 nonzero lower bound
+Presolved problem: 2 constraints 5 variables 7 nonzeros
+Skipping Ruiz equilibration (row norm ratio 2.0, column norm ratio 2.0 < 5e4, Q coeff ratio 4.0 < 100)
+Barrier solver started at 0.00 seconds
+Barrier solver: 2 constraints, 5 variables, 7 nonzeros
+
+
+Quadratic objective matrix  : 5 nonzeros
+Upper bounds                : 3
+Density estimator time      : 0.00s
+Linear system               : augmented
+cuDSS Version               : 0.7.1
+cuDSS Threading layer       : libcudss_mtlayer_gomp.so.0
+Reordering algorithm        : AMD
+Reordering time             : 0.01s
+Symbolic factorization time : 0.01s
+Total symbolic time         : 0.02s
+Symbolic nonzeros in factor : 9.00e+00
+
+
+                  Objective                         Infeasibility        Time
+Iter   Primal              Dual                Primal   Dual    Compl.   Elapsed
+  0   +1.395482637132e+03 -1.616580298345e+04 1.71e+00 1.64e+00 8.97e+00 0.0
+  1   +4.540246324666e+01 -3.686798929813e+03 1.71e-01 1.64e-01 1.62e+01 0.0
+  2   +7.505195922409e+00 -5.424762485731e+02 2.43e-02 2.33e-02 1.37e+01 0.0
+  3   -1.388856011258e+00 -8.149159368502e+01 3.41e-03 3.26e-03 8.29e+00 0.0
+  4   -2.131971169197e+00 -1.048223105860e+01 3.52e-04 3.36e-04 6.76e-01 0.0
+  5   -2.142747357360e+00 -2.976919311769e+00 3.52e-05 3.36e-05 6.69e-02 0.0
+  6   -2.142856044903e+00 -2.226254662143e+00 3.52e-06 3.36e-06 6.68e-03 0.0
+  7   -2.142857131878e+00 -2.151196797160e+00 3.52e-07 3.36e-07 6.68e-04 0.0
+  8   -2.142857142748e+00 -2.143691107300e+00 3.52e-08 3.36e-08 6.68e-05 0.0
+  9   -2.142857142856e+00 -2.142940539292e+00 3.52e-09 3.36e-09 6.68e-06 0.0
+ 10   -2.142857142857e+00 -2.142865482501e+00 3.52e-10 3.36e-10 6.68e-07 0.0
+ 11   -2.142857142857e+00 -2.142857976822e+00 3.52e-11 3.36e-11 6.68e-08 0.0
+ 12   -2.142857142857e+00 -2.142857226254e+00 3.52e-12 3.36e-12 6.68e-09 0.0
+
+
+Optimal solution found in 12 iterations and 0.046s
+Objective -2.14285714e+00
+Primal infeasibility (abs/rel): 1.37e-10/3.52e-12
+Dual infeasibility   (abs/rel): 3.43e-10/3.36e-12
+Complementarity gap  (abs/rel): 2.10e-08/6.68e-09
+
+
+Barrier finished in 0.05 seconds
+linopy.__file__ = /home/azureuser/linopy-gpu/dev-scripts/cuopt/worktrees/wp-f/linopy/__init__.py
+
+==============================================================================
+V1-13a  three-variable QP, min and max
+==============================================================================
+
+--- sense=min ---
+M.c = [-3. -1.  2.]
+M.Q =
+ [[2. 1. 0.]
+ [1. 4. 0.]
+ [0. 0. 1.]]
+cuopt objective = -4.285714285714278
+highs objective = -4.285714285714258
+|dobj| = 1.9539925233402755e-14
+  x0: cuopt=1.5714285714510208 highs=1.5714284795918432 |d|=9.185918e-08
+  x1: cuopt=-0.14285714277003514 highs=-0.14285711632653308 |d|=2.644350e-08
+  x2: cuopt=-1.9999999988989874 highs=-1.9999998000000208 |d|=1.988990e-07
+  dual con0: cuopt=array(1.0747338998e-10) highs=array(0.) |d|=np.float64(1.0747338997919952e-10)
+  dual con1: cuopt=array(-1.3020987557e-10) highs=array(0.) |d|=np.float64(1.30209875571091e-10)
+
+--- sense=max ---
+M.c = [ 3.  1. -2.]
+M.Q =
+ [[-2. -1.  0.]
+ [-1. -4.  0.]
+ [ 0.  0. -1.]]
+cuopt objective = 4.285714285714278
+highs objective = 4.285714285714258
+|dobj| = 1.9539925233402755e-14
+  x0: cuopt=1.5714285714510208 highs=1.5714284795918432 |d|=9.185918e-08
+  x1: cuopt=-0.14285714277003514 highs=-0.14285711632653308 |d|=2.644350e-08
+  x2: cuopt=-1.9999999988989874 highs=-1.9999998000000208 |d|=1.988990e-07
+  dual con0: cuopt=array(-1.0747338998e-10) highs=array(-0.) |d|=np.float64(1.0747338997919952e-10)
+  dual con1: cuopt=array(1.3020987557e-10) highs=array(-0.) |d|=np.float64(1.30209875571091e-10)
+
+==============================================================================
+V1-13c  wrong convention (Q_cuopt = M.Q) on the same model
+==============================================================================
+production (0.5*M.Q) objective = -4.285714285714278
+naive     (      M.Q) objective = -2.1428571428571104
+wrong status = Optimal optimal
+relative difference = 0.5000000000000067
+
+==============================================================================
+V1-13b  quadratic_model (degenerate) -- x block + objective only
+==============================================================================
+cuopt objective = 3.23384535631667e-08
+highs objective = 2.4999994899963244e-12
+|dobj| = 3.2335953563676704e-08
+cuopt x = [5.686690915e-05 5.686690915e-05 5.686690915e-05 5.686690915e-05
+ 5.686690915e-05 5.686690915e-05 5.686690915e-05 5.686690915e-05
+ 5.686690915e-05 5.686690915e-05]
+highs x = [4.99999949e-07 4.99999949e-07 4.99999949e-07 4.99999949e-07
+ 4.99999949e-07 4.99999949e-07 4.99999949e-07 4.99999949e-07
+ 4.99999949e-07 4.99999949e-07]
+max|dx| = 5.6366909201372436e-05
+cuopt y = [155.9791994094 155.9791994094 155.9791994094 155.9791994094
+ 155.9791994094 155.9791994094 155.9791994094 155.9791994094
+ 155.9791994094 155.9791994094]  (NOT compared -- underdetermined)
+highs y = [9.9999995 9.9999995 9.9999995 9.9999995 9.9999995 9.9999995 9.9999995
+ 9.9999995 9.9999995 9.9999995]
+max|dy| = 145.97919990937172
+
+==============================================================================
+V1-13b  quadratic_model_cross_terms -- FULL primal
+==============================================================================
+cuopt objective = 77.50000038766152
+highs objective = 77.50000000000122
+|dobj| = 3.876602931995876e-07
+cuopt x = [1.5000000448 1.5000000448 1.5000000448 1.5000000448 1.5000000448
+ 1.5000000448 1.5000000448 1.5000000448 1.5000000448 1.5000000448]
+highs x = [1.50000035 1.50000035 1.50000035 1.50000035 1.50000035 1.50000035
+ 1.50000035 1.50000035 1.50000035 1.50000035]
+max|dx| = 3.051790284924749e-07
+cuopt y = [8.4999999939 8.4999999939 8.4999999939 8.4999999939 8.4999999939
+ 8.4999999939 8.4999999939 8.4999999939 8.4999999939 8.4999999939]
+highs y = [8.49999965 8.49999965 8.49999965 8.49999965 8.49999965 8.49999965
+ 8.49999965 8.49999965 8.49999965 8.49999965]
+max|dy| = 3.439451763398438e-07
+
+==============================================================================
+V1-6b  quadratic_model minus con0 -- x only
+==============================================================================
+status, condition = ok optimal
+cuopt objective = 7.589716418676626e-15
+highs objective = 0.0
+round(obj,3) = 0.0
+cuopt x = [2.6433121464e-08 2.7670695507e-08 2.7670695507e-08 2.7670695507e-08
+ 2.7670695507e-08 2.7670695507e-08 2.7670695507e-08 2.7670695507e-08
+ 2.7670695507e-08 2.7670695507e-08]
+highs x = [0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+max|dx| = 2.7670695506533364e-08
+(x.round(3) == 0).all() = True
+cuopt y = [0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]  (NOT compared)
+
+==============================================================================
+V1-14  MIQP
+==============================================================================
+model.type = IQP
+NotImplementedError: cuOpt does not support quadratic objectives together with integer variables. Use a solver that supports MIQP (gurobi, xpress, mosek).
+
+DONE

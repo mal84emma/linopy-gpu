@@ -1,0 +1,3 @@
+parent solve: optimal
+child exit code = -14  (0=solved, 3=wrong condition, 4=exception, -14=SIGALRM i.e. HUNG)
+OUTER_EXIT=0

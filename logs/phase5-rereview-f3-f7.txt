@@ -1,0 +1,23 @@
+########## F3: test_to_cuopt under --run-gpu ##########
+=============================================== test session starts ================================================
+platform linux -- Python 3.11.15, pytest-9.1.1, pluggy-1.6.0 -- /home/azureuser/linopy-gpu/.venv/bin/python3
+cachedir: .pytest_cache
+rootdir: /home/azureuser/linopy-gpu
+configfile: pyproject.toml
+plugins: anyio-4.14.2, cov-7.1.0
+collecting ... collected 106 items / 102 deselected / 4 selected
+
+test/test_io.py::test_to_cupdlpx[legacy] SKIPPED (cuPDLPx not installed)                                     [ 25%]
+test/test_io.py::test_to_cupdlpx[v1] SKIPPED (cuPDLPx not installed)                                         [ 50%]
+test/test_io.py::test_to_cuopt[legacy] PASSED                                                                [ 75%]
+test/test_io.py::test_to_cuopt[v1] PASSED                                                                    [100%]
+
+============================================= short test summary info ==============================================
+SKIPPED [2] test/test_io.py:551: cuPDLPx not installed
+=================================== 2 passed, 2 skipped, 102 deselected in 2.00s ===================================
+PYTEST_EXIT=0
+
+########## F7: the new per-solver skip reasons (-rs) ##########
+SKIPPED [2] test/test_optimization.py:1125: cuOpt's own warm start needs three simultaneous non-default settings and a payload in presolved coordinates, so linopy does not offer it.
+78 passed, 2 skipped, 1 warning in 8.19s
+PYTEST_EXIT=0

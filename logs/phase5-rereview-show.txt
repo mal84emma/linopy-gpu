@@ -1,0 +1,207 @@
+commit b0b18f4936f391056dfb31c8266577ef129b215e
+Author: Claude Opus 5 <noreply@anthropic.com>
+Date:   Sun Aug 23 10:21:18 2026 +0000
+
+    Address review findings
+    
+    Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>
+
+diff --git a/doc/gpu-acceleration.rst b/doc/gpu-acceleration.rst
+index 4eb01a5..4bef492 100644
+--- a/doc/gpu-acceleration.rst
++++ b/doc/gpu-acceleration.rst
+@@ -40,7 +40,7 @@ The extra is **Linux-only** (there are no macOS or Windows wheels) and requires
+ 
+     m.solve("cuopt")
+ 
+-    # the same solve, without creating an unused problem file
++    # the same solve, without the file IO warning
+     m.solve("cuopt", io_api="direct")
+ 
+     # solver options are passed on as keyword arguments
+@@ -52,13 +52,13 @@ The extra is **Linux-only** (there are no macOS or Windows wheels) and requires
+ - Linear Programming (LP) and Mixed-Integer Programming (MIP)
+ - Convex quadratic objectives (QP), solved with the GPU barrier method
+ - Continuous, binary, integer and semi-continuous variables
+-- Inequality, equality and ranged constraints
++- Inequality and equality constraints
+ - Duals for LP models; MIP gap and dual bound reported via ``model.solver.report``
+ - Open source (Apache 2.0 license)
+ 
+ **Limitations:**
+ 
+-- Only the direct API is supported. Passing ``io_api=None`` or a file ``io_api`` (``lp``, ``lp-polars``, ``mps``) still solves, but the model is built through the direct API and a warning is emitted; the problem file is written, never read, and removed again. Pass ``io_api="direct"`` to skip writing it.
++- Only the direct API is supported. Passing ``io_api=None`` or a file ``io_api`` (``lp``, ``lp-polars``, ``mps``) still solves, but the model is built through the direct API and a warning is emitted. An empty temporary problem file is created and removed either way; ``io_api="direct"`` only skips the warning.
+ - ``keep_files=True`` is not supported: it makes linopy ask the solver for a solution file, which cuOpt cannot write, so the solve raises ``NotImplementedError``
+ - Quadratic objectives combined with integer variables (MIQP) are not supported and are rejected with a ``NotImplementedError`` before the solve. cuOpt does not refuse such a model itself — it returns an empty solution, which is indistinguishable from a failed solve — so linopy checks up front.
+ - A quadratic objective must be convex for minimisation (concave for maximisation). cuOpt detects a Hessian that is not positive semi-definite and reports ``NumericalError``, which linopy surfaces as the ``internal_solver_error`` termination condition rather than a wrong answer. The same applies to a quadratic objective on an unbounded model.
+diff --git a/linopy/solvers.py b/linopy/solvers.py
+index fd243d4..ad220cc 100644
+--- a/linopy/solvers.py
++++ b/linopy/solvers.py
+@@ -295,6 +295,14 @@ def _cuopt_solve_queue() -> queue.SimpleQueue[_CuoptJob]:
+     return jobs
+ 
+ 
++if hasattr(os, "register_at_fork"):  # POSIX only; cuOpt itself is Linux-only
++    # A forked child inherits the cached queue but not its daemon worker, so a
++    # cuOpt solve in the child would wait on `job.done` forever. Clearing the
++    # cache starts a fresh worker there, which fails fast with CUDA's real
++    # "cannot re-initialise after fork" error instead of hanging.
++    os.register_at_fork(after_in_child=_cuopt_solve_queue.cache_clear)
++
++
+ def _run_cuopt_with_keyboard_interrupt(solve: Callable[[], Any]) -> Any:
+     """
+     Run a cuOpt solve while keeping Ctrl-C responsive.
+@@ -4629,8 +4637,8 @@ class cuOpt(Solver[None]):
+             )
+         logger.warning(
+             "cuOpt does not support file IO. Building the model through the "
+-            "direct API instead; pass io_api='direct' to skip creating the "
+-            "problem file."
++            "direct API instead; pass io_api='direct' to skip this warning. "
++            "An empty temporary problem file is created and removed either way."
+         )
+         # Model.solve creates the problem file before building and unlinks only
+         # what it gets back through `_problem_fn`, so hand the unused file back
+@@ -4668,7 +4676,7 @@ class cuOpt(Solver[None]):
+         self._cache_model_labels(model)
+ 
+     @staticmethod
+-    def _build_solver_model(model: Model) -> Any:
++    def _build_solver_model(model: Model) -> cuopt.linear_programming.DataModel:
+         """Build a cuopt DataModel that mirrors the linopy `model`."""
+         M = model.matrices
+         # cuOpt is always handed a minimisation: set_maximize(True) is the only
+@@ -4753,7 +4761,7 @@ class cuOpt(Solver[None]):
+ 
+     def _solve(
+         self,
+-        dm: Any,
++        dm: cuopt.linear_programming.DataModel,
+         solution_fn: Path | None = None,
+         log_fn: Path | None = None,
+         warmstart_fn: Path | None = None,
+@@ -4925,7 +4933,11 @@ class cuOpt(Solver[None]):
+             ),
+         )
+ 
+-    def _set_solver_params(self, settings: Any, log_fn: Path | None = None) -> None:
++    def _set_solver_params(
++        self,
++        settings: cuopt.linear_programming.SolverSettings,
++        log_fn: Path | None = None,
++    ) -> None:
+         """
+         Set solver options on a cuopt SolverSettings object.
+ 
+diff --git a/test/test_cuopt_interrupt.py b/test/test_cuopt_interrupt.py
+index c677e08..42db622 100644
+--- a/test/test_cuopt_interrupt.py
++++ b/test/test_cuopt_interrupt.py
+@@ -1,12 +1,16 @@
+ from __future__ import annotations
+ 
+ import _thread
++import contextlib
++import os
++import select
++import signal
+ import threading
+ import time
+ 
+ import pytest
+ 
+-from linopy.solvers import _run_cuopt_with_keyboard_interrupt
++from linopy.solvers import _cuopt_solve_queue, _run_cuopt_with_keyboard_interrupt
+ 
+ 
+ class DummySolve:
+@@ -59,3 +63,41 @@ def test_run_cuopt_reraises_solver_errors() -> None:
+ 
+     with pytest.raises(RuntimeError, match="solver failed"):
+         _run_cuopt_with_keyboard_interrupt(boom)
++
++
++@pytest.mark.skipif(not hasattr(os, "fork"), reason="fork is POSIX only")
++def test_solve_queue_starts_a_fresh_worker_after_fork() -> None:
++    """
++    A forked child inherits the cached queue but not its daemon worker.
++
++    Without the at-fork ``cache_clear`` the child hands its job to a queue
++    nobody reads and waits on ``job.done`` forever; it then never writes to the
++    pipe and the parent's ``select`` timeout below fails the test.
++    """
++    assert _run_cuopt_with_keyboard_interrupt(lambda: "parent") == "parent"
++
++    read_fd, write_fd = os.pipe()
++    pid = os.fork()
++    if pid == 0:  # child -- never returns
++        exit_code = 1
++        try:
++            os.close(read_fd)
++            cleared = _cuopt_solve_queue.cache_info().currsize == 0
++            solved = _run_cuopt_with_keyboard_interrupt(lambda: "child") == "child"
++            if cleared and solved:
++                os.write(write_fd, b"ok")
++                exit_code = 0
++        finally:
++            os._exit(exit_code)
++
++    os.close(write_fd)
++    try:
++        ready, _, _ = select.select([read_fd], [], [], 30)
++        assert ready, "the forked child never finished its solve"
++        assert os.read(read_fd, 8) == b"ok"
++        assert os.waitstatus_to_exitcode(os.waitpid(pid, 0)[1]) == 0
++    finally:
++        os.close(read_fd)
++        with contextlib.suppress(ChildProcessError, ProcessLookupError):
++            os.kill(pid, signal.SIGKILL)
++            os.waitpid(pid, 0)
+diff --git a/test/test_io.py b/test/test_io.py
+index 7c37a7d..2580c5d 100644
+--- a/test/test_io.py
++++ b/test/test_io.py
+@@ -554,6 +554,13 @@ def test_to_cupdlpx(model: Model) -> None:
+     assert cu is not None
+ 
+ 
++@pytest.mark.skipif("cuopt" not in available_solvers, reason="cuOpt not installed")
++def test_to_cuopt(model: Model) -> None:
++    dm = model.to_cuopt()
++    assert len(dm.get_objective_coefficients()) > 0
++    assert len(dm.get_constraint_lower_bounds()) > 0
++
++
+ def test_model_set_names_in_solver_io_default() -> None:
+     assert Model().set_names_in_solver_io is True
+ 
+diff --git a/test/test_optimization.py b/test/test_optimization.py
+index db22283..9cf39dc 100644
+--- a/test/test_optimization.py
++++ b/test/test_optimization.py
+@@ -1114,12 +1114,15 @@ def test_basis_and_warmstart(
+     io_api: str,
+     explicit_coordinate_names: bool,
+ ) -> None:
+-    if solver in ("cupdlpx", "cuopt"):
+-        pytest.skip(
+-            "cuPDLPx does not yet support warmstart in the Python API. cuOpt's own "
+-            "warm start needs three simultaneous non-default settings and a payload "
+-            "in presolved coordinates, so linopy does not offer it either."
+-        )
++    no_warmstart_reasons = {
++        "cupdlpx": "cuPDLPx does not yet support warmstart in the Python API.",
++        "cuopt": (
++            "cuOpt's own warm start needs three simultaneous non-default settings "
++            "and a payload in presolved coordinates, so linopy does not offer it."
++        ),
++    }
++    if solver in no_warmstart_reasons:
++        pytest.skip(no_warmstart_reasons[solver])
+ 
+     basis_fn = tmp_path / "basis.bas"
+     model.solve(
+EXIT=0

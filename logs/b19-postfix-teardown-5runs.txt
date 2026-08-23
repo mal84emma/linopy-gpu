@@ -1,0 +1,5 @@
+run 1: EXIT=0 | [A] releases on a foreign thread: 0/5 A (routing) : PASS B (gc path) : PASS 
+run 2: EXIT=0 | [A] releases on a foreign thread: 0/5 A (routing) : PASS B (gc path) : PASS 
+run 3: EXIT=0 | [A] releases on a foreign thread: 0/5 A (routing) : PASS B (gc path) : PASS 
+run 4: EXIT=0 | [A] releases on a foreign thread: 0/5 A (routing) : PASS B (gc path) : PASS 
+run 5: EXIT=0 | [A] releases on a foreign thread: 0/5 A (routing) : PASS B (gc path) : PASS 

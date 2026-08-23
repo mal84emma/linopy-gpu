@@ -1,0 +1,13 @@
+########## V3-3: uv pip compile --python-platform windows / macos / linux (control) ##########
+----- platform=windows -----
+EXIT=0
+packages=25
+cuopt-cu12 occurrences=0
+----- platform=macos -----
+EXIT=0
+packages=23
+cuopt-cu12 occurrences=0
+----- platform=linux -----
+EXIT=0
+packages=66
+cuopt-cu12 occurrences=20

@@ -1,0 +1,102 @@
+......................................................................................................
+testing solvers: gurobi, highs, scip, cplex, xpress, copt, cuopt
+testing quadratic solvers: gurobi, highs, scip, cplex, xpress, knitro, mosek, mindopt, copt
+.
+testing solvers: gurobi, highs, scip, cplex, xpress, copt, cuopt
+testing quadratic solvers: gurobi, highs, scip, cplex, xpress, knitro, mosek, mindopt, copt
+..... [  3%]
+............................................................................................................ [  6%]
+............................................................................................................ [  9%]
+............................................................................................................ [ 12%]
+............................................................................................................ [ 15%]
+............................................................................................................ [ 18%]
+............................................................................................................ [ 21%]
+............................................................................................................ [ 24%]
+............................................................................................................ [ 27%]
+..........................................................ssssssssssssssssssssssssssssssssssssssss.......... [ 30%]
+............................................................................................................ [ 33%]
+............................................................................................................ [ 36%]
+............................................................................................................ [ 39%]
+............................................................................................................ [ 42%]
+............................................................................................................ [ 45%]
+............................................................................................................ [ 48%]
+............................................................................................................ [ 51%]
+............................................................................................................ [ 54%]
+............................................................................................................ [ 57%]
+..............................................................ss....ss....ss....ss....ss....ss........ss.... [ 60%]
+ss....ss....ss....ss....ss.................................................................................. [ 63%]
+............................................................................................................ [ 66%]
+............................................................................................................ [ 69%]
+............................................................................................................ [ 72%]
+......................................ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss [ 75%]
+ssssssssss........................................ssssssssssssssssssssssssssssssssssssssss.................. [ 78%]
+............................................................................................................ [ 81%]
+.................................s.......................................s.................................. [ 84%]
+............................................................................................................ [ 87%]
+............................................................................................................ [ 91%]
+............................................................................................................ [ 94%]
+............................................................................................................ [ 97%]
+................................................................ssssssssssssssssssssssssssssssssssssssss     [100%]
+================================================= warnings summary =================================================
+test/test_optimization.py: 82 warnings
+  /home/azureuser/linopy-gpu/test/test_optimization.py:312: DeprecationWarning: Variable.lower setter is deprecated and will be removed in a future release; use Variable.update(lower=...) instead.
+    y.lower = 9
+
+test/test_optimization.py: 82 warnings
+  /home/azureuser/linopy-gpu/test/test_optimization.py:313: DeprecationWarning: Constraint.lhs setter is deprecated and will be removed in a future release; use Constraint.update(lhs=...) instead.
+    c.lhs = 2 * x + y
+
+test/test_optimization.py::test_default_setting[legacy-xpress-lp-False]
+  /home/azureuser/linopy-gpu/linopy/solvers.py:3104: LicenseWarning: Using the Community license in this session. If you have a full Xpress license, pass the full path to your license file to xpress.init(). If you want to use the FICO Community license and no longer want to see this message, use the following code before using the xpress module:
+    xpress.init('/home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages/xpresslibs/bin/community-xpauth.xpr')
+    m = self._env_stack.enter_context(xpress.problem())
+
+test/test_optimization.py: 72 warnings
+  /home/azureuser/linopy-gpu/test/test_optimization.py:1271: DeprecationWarning: Solver.solve_problem is deprecated and will be removed in a future release. Use Solver.from_name(name, model, ...).solve(...) or Model.solve(...) instead.
+    result = solver_.solve_problem(problem_fn=problem_fn, solution_fn=solution_fn)
+
+test/test_optimization.py: 72 warnings
+  /home/azureuser/linopy-gpu/linopy/solvers.py:1148: DeprecationWarning: Solver.solve_problem_from_file is deprecated and will be removed in a future release. Use Solver.from_name(name, model, problem_fn=..., ...).solve(...) instead.
+    return self.solve_problem_from_file(
+
+test/test_optimization.py: 72 warnings
+  /home/azureuser/linopy-gpu/test/test_optimization.py:1278: DeprecationWarning: Solver.solve_problem is deprecated and will be removed in a future release. Use Solver.from_name(name, model, ...).solve(...) or Model.solve(...) instead.
+    solver_.solve_problem(solution_fn=solution_fn)
+
+test/test_optimization.py: 72 warnings
+  /home/azureuser/linopy-gpu/test/test_optimization.py:1287: DeprecationWarning: Solver.solve_problem is deprecated and will be removed in a future release. Use Solver.from_name(name, model, ...).solve(...) or Model.solve(...) instead.
+    solver_.solve_problem(problem_fn=solution_fn)
+
+test/test_optimization.py: 36 warnings
+  /home/azureuser/linopy-gpu/test/test_optimization.py:1308: DeprecationWarning: Solver.solve_problem is deprecated and will be removed in a future release. Use Solver.from_name(name, model, ...).solve(...) or Model.solve(...) instead.
+    solver_.solve_problem(model=model)
+
+test/test_optimization.py: 44 warnings
+  /home/azureuser/linopy-gpu/linopy/solvers.py:1138: DeprecationWarning: Solver.solve_problem_from_model is deprecated and will be removed in a future release. Use Solver.from_name(name, model, io_api='direct', ...).solve(...) instead.
+    return self.solve_problem_from_model(
+
+test/test_optimization.py::test_solver_classes_direct[legacy-highs-direct-False]
+test/test_optimization.py::test_solver_classes_direct[legacy-gurobi-direct-False]
+test/test_optimization.py::test_solver_classes_direct[legacy-xpress-direct-False]
+test/test_optimization.py::test_solver_classes_direct[legacy-cuopt-direct-False]
+test/test_optimization.py::test_solver_classes_direct[v1-highs-direct-False]
+test/test_optimization.py::test_solver_classes_direct[v1-gurobi-direct-False]
+test/test_optimization.py::test_solver_classes_direct[v1-xpress-direct-False]
+test/test_optimization.py::test_solver_classes_direct[v1-cuopt-direct-False]
+  /home/azureuser/linopy-gpu/test/test_optimization.py:1298: DeprecationWarning: Solver.solve_problem is deprecated and will be removed in a future release. Use Solver.from_name(name, model, ...).solve(...) or Model.solve(...) instead.
+    result = solver_.solve_problem(model=model)
+
+test/test_optimization.py::test_solver_classes_direct[legacy-highs-direct-False]
+test/test_optimization.py::test_solver_classes_direct[legacy-gurobi-direct-False]
+test/test_optimization.py::test_solver_classes_direct[legacy-xpress-direct-False]
+test/test_optimization.py::test_solver_classes_direct[legacy-cuopt-direct-False]
+test/test_optimization.py::test_solver_classes_direct[v1-highs-direct-False]
+test/test_optimization.py::test_solver_classes_direct[v1-gurobi-direct-False]
+test/test_optimization.py::test_solver_classes_direct[v1-xpress-direct-False]
+test/test_optimization.py::test_solver_classes_direct[v1-cuopt-direct-False]
+  /home/azureuser/linopy-gpu/test/test_optimization.py:1305: DeprecationWarning: Solver.solve_problem is deprecated and will be removed in a future release. Use Solver.from_name(name, model, ...).solve(...) or Model.solve(...) instead.
+    solver_.solve_problem()
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+3334 passed, 226 skipped, 549 warnings in 479.13s (0:07:59)
+EXIT=0

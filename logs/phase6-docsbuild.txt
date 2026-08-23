@@ -1,0 +1,20 @@
+=== Phase 6 docs build, cuOpt NOT installed ===
+venv: dev-scripts/cuopt/.venv-docs (python -c 'import cuopt' -> ModuleNotFoundError)
+cmd:  PATH=.venv-docs/bin:$PATH .venv-docs/bin/sphinx-build -b html doc doc/_build/phase6check
+result: build succeeded, 19 warnings   (baseline logs/05-baseline-docs.txt: build succeeded, 19 warnings)
+
+--- diff of sphinx WARNING/ERROR sets (paths normalised, IPKernelApp noise excluded) ---
+1,4c1,4
+< doc/api.rst:431:<autosummary>:1: WARNING: Inline emphasis start-string without end-string. [docutils]
+< doc/api.rst:431:<autosummary>:1: WARNING: Inline emphasis start-string without end-string. [docutils]
+< doc/api.rst:431:<autosummary>:1: WARNING: Inline emphasis start-string without end-string. [docutils]
+< doc/api.rst:439:<autosummary>:1: WARNING: Inline emphasis start-string without end-string. [docutils]
+---
+> doc/api.rst:432:<autosummary>:1: WARNING: Inline emphasis start-string without end-string. [docutils]
+> doc/api.rst:432:<autosummary>:1: WARNING: Inline emphasis start-string without end-string. [docutils]
+> doc/api.rst:432:<autosummary>:1: WARNING: Inline emphasis start-string without end-string. [docutils]
+> doc/api.rst:440:<autosummary>:1: WARNING: Inline emphasis start-string without end-string. [docutils]
+
+--- rendered cuOpt surfaces present ---
+linopy.model.Model.to_cuopt.html
+linopy.solvers.cuOpt.html

@@ -1,0 +1,103 @@
+=== Phase-6 RE-REVIEW loop 2 verdicts — a8fb35b ===
+Scope check: git diff b0b18f4 a8fb35b touches 4 files, +54/-35, and every hunk
+maps to S1, S2, S3, N1 or N3. Nothing else changed. N2 correctly absent (D18).
+
+S1  FIXED.  doc/prerequisites.rst:81-82, immediately after the install block:
+      "The extra installs ``cuopt-cu12``, the build for CUDA 12 drivers; the bare
+       ``cuopt`` package on PyPI is an unrelated project."
+    Exactly the remedy I proposed, at the position I proposed. Renders in
+    prerequisites.html between the code block and the cuPDLPx paragraph; reads
+    as prose, not as an orphaned aside. Both halves of the charter requirement
+    (cu12/cu13 caveat + bare-`cuopt` warning) now sit on the install page.
+
+S2  FIXED.  doc/gpu-acceleration.rst:133 and :140 both gained a cuOpt
+    parenthetical:
+      :133  "... (compute capability 6.0 or higher recommended; cuOpt requires
+             compute capability 7.0 or higher — see above)"
+      :140  "... require CUDA 11.0 or later (cuOpt requires a CUDA 12 driver,
+             version 525.60.13 or newer — see above)"
+    "see above" is accurate: the cuOpt section is :14-81, the Prerequisites
+    section :125+. Nothing said about the other GPU solvers was altered, so the
+    generic guidance still holds for cuPDLPx and Xpress. Both render.
+
+S3  FIXED as specified. All four prescribed blocks migrated, verified in place:
+      1. _build_file 6-line comment -> new _build_file docstring :4635-4644.
+         Keeps the A1.1 pointer intact and in ONE block (`.lp`, `.mps` and
+         `cuopt.linear_programming` all inside it). Base Solver._build_file
+         already carries a docstring (:898), so the override having one is
+         sibling-consistent.
+      2. `sign` block 5 -> 2 lines (:4693-4694), operative warning kept
+         ("do not replace it with cuPDLPx's `if MAXIMIZE: dual = -dual`"),
+         prose folded into the class Notes (:4593-4595).
+      3. LP/MILP enum-collision paragraph 7 -> 1 line, full text into a new
+         _solve Notes section (:4804-4815).
+      4. Settings/worker block 5 -> 2 lines, remainder into
+         _cuopt_solve_queue's docstring (:277-281).
+    Zero behaviour change PROVEN, not eyeballed: docstring-stripped ast.dump at
+    include_attributes=False is byte-equal for linopy/solvers.py across the
+    amend (539291 == 539291).
+    Zero facts deleted: a token-set audit over every comment and docstring in
+    the file lists 9 lost tokens, all rewrite artefacts —
+      Building/Key/NOT  -> rephrased ("Settings are built", "Keyed on", "Not a")
+      negates/results/back./convention./duals. -> the claims they belonged to
+        ("`_solve` negates the results back", "duals already match HiGHS")
+        are pre-existing sentences still present in the class Notes :4589-4593
+      thread-safe -> destination says "leaks per-thread OpenMP state" and
+        "solves arriving on new threads abort the process" (equivalent, sharper)
+    Density 18.7% -> 14.0% (73/391 -> 55/394), re-measured with my own
+    AST-span method. CORRECTION TO MY OWN REPORT: my "roughly halves the gap"
+    was wrong — the gap to cuPDLPx closes 16.5pp -> 11.8pp, i.e. 28.5%. The fix
+    agent's arithmetic is right and its flagging it was the correct call. The
+    delivered work IS my prescription (my four blocks, my ~22-line estimate);
+    the shortfall is in my prediction, not in the fix. I am NOT re-opening S3:
+    the remaining 55 lines are 17 blocks each covering a distinct upstream
+    defect or convention, I found no further near-duplicate, and D18's
+    instruction not to chase a number beyond the four blocks is the right one.
+    Accepted end state: cuOpt stays the file's most-commented class at ~6x the
+    next one, deliberately and on the record.
+
+N1  FIXED, and my premise was the thing that was wrong. Verified independently:
+      grep '^    Notes$' linopy/solvers.py -> 1 hit, the cuOpt class itself.
+      AST sweep of all linopy/**/*.py for any docstring carrying BOTH an
+      Attributes and a Notes section header -> exactly one: solvers.py:4561
+      cuOpt, now ['Attributes', 'Notes'].
+    So no sibling ordering precedent exists, and my "all 12 close with
+    Attributes" was ordering-silent because Attributes is their only section.
+    The fix agent's correction is accepted in full.
+    Canon confirmed from source: numpydoc 1.10.0 NumpyDocString.sections orders
+    Parameters -> Attributes -> Methods -> Returns -> ... -> Notes.
+    Rendering verified: in generated/linopy.solvers.cuOpt.html the
+    solver_options definition (offset 8497) precedes the Notes heading (8541);
+    the "(see Notes)" forward reference at :4577 still points forward.
+
+N3  FIXED, guard logic checked path by path (test/test_cuopt_interrupt.py:94-109):
+      select timeout / bad read     -> reaped False -> kill+reap  (correct: alive)
+      waitpid raises                -> reaped False -> kill suppressed (safe)
+      waitpid OK, exitcode assert FAILS -> reaped True -> NO kill  (the hazard,
+                                       now closed; no zombie either)
+      happy path                    -> reaped True -> NO kill
+    `reaped = True` is placed after waitpid returns and BEFORE the exit-code
+    assert — the only correct position; after the assert would reopen the bug.
+    8/8 tests pass.
+
+--- NEW (nit, optional) ---
+N4  linopy/solvers.py:271-281 — the NVIDIA/cuopt#1768 URL count fell 3 -> 2 in
+    the S3 migration (now :337 in _dispose_on_cuopt_worker and :4986 in close).
+    The migrated block's copy lived in _solve; its replacement (:4854-4855)
+    points readers at _cuopt_solve_queue, whose docstring names the
+    `kmp_alloc.cpp` assertion and "that upstream bug" but carries no link — so
+    it is the only member of the worker-thread trio without one.
+    Not a deleted fact (the claim and the URL both survive in-file); pointer
+    hygiene only. Remedy if wanted: attach the URL to "that upstream bug" at
+    :276. Fine to ship as-is.
+
+--- REGRESSION SANITY ---
+ruff check + ruff format --check clean; mypy 28 == baseline 28, all Xpress,
+0 in any cuOpt region; pytest test/test_cuopt_interrupt.py -q = 8 passed.
+Docs rebuild in the cuOpt-free venv: build succeeded, 19 warnings, warning set
+identical to 05-baseline-docs.txt apart from the api.rst +1 line shift.
+GPU suite deliberately not re-run: the solvers.py delta is AST-identical modulo
+docstrings, so no GPU-observable behaviour can have changed.
+Leak check at a8fb35b: both commands empty. 17 files, +2071/-11.
+
+GATE-6 VERDICT: CLEAN.

@@ -1,0 +1,27 @@
+F2 -- fork-after-solve, reviewer-style reproducer (dev-scripts/cuopt/fork_repro.py),
+adapted from phase5-fork-after-solve.txt. Run on wp/wp-fix5.
+
+=== BEFORE (os.register_at_fork line replaced by `pass`) ===
+linopy.__file__ = /home/azureuser/linopy-gpu/dev-scripts/cuopt/worktrees/wp-fix5/linopy/__init__.py
+parent solve: optimal
+child exit code = -14  (0=solved, 3=wrong condition, 4=exception, -14=SIGALRM i.e. HUNG)
+OUTER_EXIT=0
+
+=== AFTER (fix active) ===
+linopy.__file__ = /home/azureuser/linopy-gpu/dev-scripts/cuopt/worktrees/wp-fix5/linopy/__init__.py
+parent solve: optimal
+  CHILD RuntimeError: CUDA error at: /__w/rmm/rmm/cpp/src/cuda_stream.cpp:20: cudaErrorInitializationError initialization error
+child exit code = 4  (0=solved, 3=wrong condition, 4=exception, -14=SIGALRM i.e. HUNG)
+OUTER_EXIT=0
+
+=== CPU regression test, fix active ===
+$ pytest test/test_cuopt_interrupt.py -q
+........                                                                     [100%]
+8 passed in 1.46s
+
+=== CPU regression test, fix reverted (non-vacuity check) ===
+$ pytest test/test_cuopt_interrupt.py::test_solve_queue_starts_a_fresh_worker_after_fork -q
+test/test_cuopt_interrupt.py:96: AssertionError
+FAILED ...[legacy] - AssertionError: ...
+FAILED ...[v1] - AssertionError: the forked child never finished its solve
+2 failed in 60.63s (0:01:00)          <- 2 x the 30 s select() timeout, i.e. real hangs

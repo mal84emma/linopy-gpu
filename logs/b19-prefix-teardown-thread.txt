@@ -1,0 +1,18 @@
+[A0] native model released on thread: foreign-close-0
+[A1] native model released on thread: foreign-close-1
+[A2] native model released on thread: foreign-close-2
+[A3] native model released on thread: foreign-close-3
+[A4] native model released on thread: foreign-close-4
+
+[A] releasing threads: ['foreign-close-0', 'foreign-close-1', 'foreign-close-2', 'foreign-close-3', 'foreign-close-4']
+[A] releases on a foreign thread: 5/5
+Traceback (most recent call last):
+  File "/home/azureuser/linopy-gpu/dev-scripts/cuopt/worktrees/wp-b19/dev-scripts/b19_teardown_thread.py", line 120, in <module>
+    main()
+  File "/home/azureuser/linopy-gpu/dev-scripts/cuopt/worktrees/wp-b19/dev-scripts/b19_teardown_thread.py", line 113, in main
+    ok_b = check_b(n)
+           ^^^^^^^^^^
+  File "/home/azureuser/linopy-gpu/dev-scripts/cuopt/worktrees/wp-b19/dev-scripts/b19_teardown_thread.py", line 80, in check_b
+    real = solvers._dispose_on_cuopt_worker
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'linopy.solvers' has no attribute '_dispose_on_cuopt_worker'

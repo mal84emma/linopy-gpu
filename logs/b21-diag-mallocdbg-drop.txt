@@ -1,0 +1,636 @@
+MODE=drop NREPS=12 NCHURN=2000 pid=621009
+env: MALLOC_CHECK_='3' MALLOC_PERTURB_='165' PYTHONMALLOC=None LD_PRELOAD='/lib/x86_64-linux-gnu/libc_malloc_debug.so.0'
+  canaries[start]: 0 corrupted of 2000
+[rep   0] t=    0.0s mode=drop
+Restricted license - for non-production use only - expires 2027-11-29
+### Could not find a valid license.
+    Your machine ID is 78-a6-6c-e8-9a.
+    Please contact licensing@artelys.com or your local distributor to obtain a license.
+    If you already have a license, please execute `get_machine_ID -v` and send the output to support.
+    Go to http://www.artelys.com/knitro for a Knitro student version license or trial.
+MindOpt 2.3.0 | 182d0f81, Jan 28 2026, 19:33:31 | x86_64 - Ubuntu 22.04.5 LTS (Jammy Jellyfish)
+Start license validation (current time : 23-AUG-2026 04:06:04 UTC+0000).
+[INFO ] Looking for license file ...
+[INFO ] Environment variable MINDOPT_LICENSE_PATH not defined
+[INFO ] License file not found in ENV 'MINDOPT_LICENSE_PATH'
+[INFO ] License file not found in '/home/azureuser/mindopt/'
+[INFO ] License file not found in '/home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages'
+[INFO ] Looking for floating license configuration ...
+[INFO ] Environment variable MINDOPT_LICENSE_PATH not defined
+[INFO ] Floating license configuration not found in ENV 'MINDOPT_LICENSE_PATH'
+[INFO ] Floating license configuration not found in '/home/azureuser/mindopt/'
+[INFO ] Floating license configuration not found in '/home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages'
+[INFO ] Looking for community license ...
+[INFO ] Environment variable MINDOPT_LICENSE_PATH not defined
+[INFO ] Community license not found in ENV 'MINDOPT_LICENSE_PATH'
+[INFO ] Community license not found in '/home/azureuser/mindopt/'
+[INFO ] Community license not found in '/home/azureuser/linopy-gpu/.venv/lib/python3.11/site-packages'
+[WARN ] No license file is found.
+[ERROR] No valid license was found. Please visit https://opt.aliyun.com/doc/latest/en/html/installation/license.html to apply for and set up your license
+License validation terminated. Time : 0.000s
+
+2026-08-23 04:06:05 [INFO] checks license for COPT v8.0.6 20260807
+2026-08-23 04:06:05 [WARN] no license files in current working folder: /home/azureuser/linopy-gpu
+2026-08-23 04:06:05 [WARN] no license files in binary folder: /home/azureuser/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/bin
+2026-08-23 04:06:05 [WARN] no license files in HOME folder: /home/azureuser/copt
+2026-08-23 04:06:05 [INFO] empty environment variable: COPT_LICENSE_DIR
+2026-08-23 04:06:05 [WARN] no license files in EV 'COPT_LICENSE_DIR': 
+
+No license found. Starting COPT with size limitations for non-commercial use
+Please apply for a license from www.shanshu.ai/copt
+
+Cardinal Optimizer v8.0.6. Build date Aug  7 2026
+Copyright Cardinal Operations 2026. All Rights Reserved
+
+PSLP declares problem as infeasible.
+Optimization potentially failed: 
+Status: warning
+Termination condition: infeasible
+Solution: 0 primals, 0 duals
+Objective: nan
+Solver: cuopt
+Runtime: nans
+Solver model: available
+Solver message: PrimalInfeasible
+
+PSLP declares problem as infeasible or unbounded.
+Optimization potentially failed: 
+Status: warning
+Termination condition: infeasible_or_unbounded
+Solution: 0 primals, 0 duals
+Objective: nan
+Solver: cuopt
+Runtime: nans
+Solver model: available
+Solver message: UnboundedOrInfeasible
+
+Optimization potentially failed: 
+Status: warning
+Termination condition: infeasible
+Solution: 0 primals, 0 duals
+Objective: nan
+Solver: cuopt
+Runtime: 0.00s
+MIP gap: 0.00e+00
+Dual bound: inf
+Solver model: available
+Solver message: Infeasible
+
+Optimization solution is sub-optimal: 
+Status: ok
+Termination condition: suboptimal
+Solution: 60 primals, 0 duals
+Objective: -2.60e+03
+Solver: cuopt
+Runtime: 0.15s
+MIP gap: 5.47e-02
+Dual bound: -2.74e+03
+Solver model: available
+Solver message: FeasibleFound
+
+  canaries[rep0]: 0 corrupted of 2000
+          churn ops=8000 rss=332646
+[rep   1] t=    6.1s mode=drop
+PSLP declares problem as infeasible.
+Optimization potentially failed: 
+Status: warning
+Termination condition: infeasible
+Solution: 0 primals, 0 duals
+Objective: nan
+Solver: cuopt
+Runtime: nans
+Solver model: available
+Solver message: PrimalInfeasible
+
+PSLP declares problem as infeasible or unbounded.
+Optimization potentially failed: 
+Status: warning
+Termination condition: infeasible_or_unbounded
+Solution: 0 primals, 0 duals
+Objective: nan
+Solver: cuopt
+Runtime: nans
+Solver model: available
+Solver message: UnboundedOrInfeasible
+
+Optimization potentially failed: 
+Status: warning
+Termination condition: infeasible
+Solution: 0 primals, 0 duals
+Objective: nan
+Solver: cuopt
+Runtime: 0.00s
+MIP gap: 0.00e+00
+Dual bound: inf
+Solver model: available
+Solver message: Infeasible
+
+Optimization solution is sub-optimal: 
+Status: ok
+Termination condition: suboptimal
+Solution: 60 primals, 0 duals
+Objective: -2.62e+03
+Solver: cuopt
+Runtime: 0.16s
+MIP gap: 4.78e-02
+Dual bound: -2.74e+03
+Solver model: available
+Solver message: FeasibleFound
+
+  canaries[rep1]: 0 corrupted of 2000
+          churn ops=8000 rss=334133
+[rep   2] t=    9.9s mode=drop
+PSLP declares problem as infeasible.
+Optimization potentially failed: 
+Status: warning
+Termination condition: infeasible
+Solution: 0 primals, 0 duals
+Objective: nan
+Solver: cuopt
+Runtime: nans
+Solver model: available
+Solver message: PrimalInfeasible
+
+PSLP declares problem as infeasible or unbounded.
+Optimization potentially failed: 
+Status: warning
+Termination condition: infeasible_or_unbounded
+Solution: 0 primals, 0 duals
+Objective: nan
+Solver: cuopt
+Runtime: nans
+Solver model: available
+Solver message: UnboundedOrInfeasible
+
+Optimization potentially failed: 
+Status: warning
+Termination condition: infeasible
+Solution: 0 primals, 0 duals
+Objective: nan
+Solver: cuopt
+Runtime: 0.00s
+MIP gap: 0.00e+00
+Dual bound: inf
+Solver model: available
+Solver message: Infeasible
+
+Optimization solution is sub-optimal: 
+Status: ok
+Termination condition: suboptimal
+Solution: 60 primals, 0 duals
+Objective: -2.62e+03
+Solver: cuopt
+Runtime: 0.17s
+MIP gap: 4.78e-02
+Dual bound: -2.74e+03
+Solver model: available
+Solver message: FeasibleFound
+
+  canaries[rep2]: 0 corrupted of 2000
+          churn ops=8000 rss=334124
+[rep   3] t=   13.7s mode=drop
+PSLP declares problem as infeasible.
+Optimization potentially failed: 
+Status: warning
+Termination condition: infeasible
+Solution: 0 primals, 0 duals
+Objective: nan
+Solver: cuopt
+Runtime: nans
+Solver model: available
+Solver message: PrimalInfeasible
+
+PSLP declares problem as infeasible or unbounded.
+Optimization potentially failed: 
+Status: warning
+Termination condition: infeasible_or_unbounded
+Solution: 0 primals, 0 duals
+Objective: nan
+Solver: cuopt
+Runtime: nans
+Solver model: available
+Solver message: UnboundedOrInfeasible
+
+Optimization potentially failed: 
+Status: warning
+Termination condition: infeasible
+Solution: 0 primals, 0 duals
+Objective: nan
+Solver: cuopt
+Runtime: 0.00s
+MIP gap: 0.00e+00
+Dual bound: inf
+Solver model: available
+Solver message: Infeasible
+
+Optimization solution is sub-optimal: 
+Status: ok
+Termination condition: suboptimal
+Solution: 60 primals, 0 duals
+Objective: -2.62e+03
+Solver: cuopt
+Runtime: 0.16s
+MIP gap: 4.78e-02
+Dual bound: -2.74e+03
+Solver model: available
+Solver message: FeasibleFound
+
+  canaries[rep3]: 0 corrupted of 2000
+          churn ops=8000 rss=334149
+[rep   4] t=   17.3s mode=drop
+PSLP declares problem as infeasible.
+Optimization potentially failed: 
+Status: warning
+Termination condition: infeasible
+Solution: 0 primals, 0 duals
+Objective: nan
+Solver: cuopt
+Runtime: nans
+Solver model: available
+Solver message: PrimalInfeasible
+
+PSLP declares problem as infeasible or unbounded.
+Optimization potentially failed: 
+Status: warning
+Termination condition: infeasible_or_unbounded
+Solution: 0 primals, 0 duals
+Objective: nan
+Solver: cuopt
+Runtime: nans
+Solver model: available
+Solver message: UnboundedOrInfeasible
+
+Optimization potentially failed: 
+Status: warning
+Termination condition: infeasible
+Solution: 0 primals, 0 duals
+Objective: nan
+Solver: cuopt
+Runtime: 0.00s
+MIP gap: 0.00e+00
+Dual bound: inf
+Solver model: available
+Solver message: Infeasible
+
+Optimization solution is sub-optimal: 
+Status: ok
+Termination condition: suboptimal
+Solution: 60 primals, 0 duals
+Objective: -2.62e+03
+Solver: cuopt
+Runtime: 0.14s
+MIP gap: 4.78e-02
+Dual bound: -2.74e+03
+Solver model: available
+Solver message: FeasibleFound
+
+  canaries[rep4]: 0 corrupted of 2000
+          churn ops=8000 rss=334445
+[rep   5] t=   20.9s mode=drop
+PSLP declares problem as infeasible.
+Optimization potentially failed: 
+Status: warning
+Termination condition: infeasible
+Solution: 0 primals, 0 duals
+Objective: nan
+Solver: cuopt
+Runtime: nans
+Solver model: available
+Solver message: PrimalInfeasible
+
+PSLP declares problem as infeasible or unbounded.
+Optimization potentially failed: 
+Status: warning
+Termination condition: infeasible_or_unbounded
+Solution: 0 primals, 0 duals
+Objective: nan
+Solver: cuopt
+Runtime: nans
+Solver model: available
+Solver message: UnboundedOrInfeasible
+
+Optimization potentially failed: 
+Status: warning
+Termination condition: infeasible
+Solution: 0 primals, 0 duals
+Objective: nan
+Solver: cuopt
+Runtime: 0.00s
+MIP gap: 0.00e+00
+Dual bound: inf
+Solver model: available
+Solver message: Infeasible
+
+Optimization solution is sub-optimal: 
+Status: ok
+Termination condition: suboptimal
+Solution: 60 primals, 0 duals
+Objective: -2.56e+03
+Solver: cuopt
+Runtime: 0.13s
+MIP gap: 7.16e-02
+Dual bound: -2.74e+03
+Solver model: available
+Solver message: FeasibleFound
+
+  canaries[rep5]: 0 corrupted of 2000
+          churn ops=8000 rss=334587
+[rep   6] t=   24.6s mode=drop
+PSLP declares problem as infeasible.
+Optimization potentially failed: 
+Status: warning
+Termination condition: infeasible
+Solution: 0 primals, 0 duals
+Objective: nan
+Solver: cuopt
+Runtime: nans
+Solver model: available
+Solver message: PrimalInfeasible
+
+PSLP declares problem as infeasible or unbounded.
+Optimization potentially failed: 
+Status: warning
+Termination condition: infeasible_or_unbounded
+Solution: 0 primals, 0 duals
+Objective: nan
+Solver: cuopt
+Runtime: nans
+Solver model: available
+Solver message: UnboundedOrInfeasible
+
+Optimization potentially failed: 
+Status: warning
+Termination condition: infeasible
+Solution: 0 primals, 0 duals
+Objective: nan
+Solver: cuopt
+Runtime: 0.00s
+MIP gap: 0.00e+00
+Dual bound: inf
+Solver model: available
+Solver message: Infeasible
+
+Optimization solution is sub-optimal: 
+Status: ok
+Termination condition: suboptimal
+Solution: 60 primals, 0 duals
+Objective: -2.61e+03
+Solver: cuopt
+Runtime: 0.14s
+MIP gap: 5.06e-02
+Dual bound: -2.74e+03
+Solver model: available
+Solver message: FeasibleFound
+
+  canaries[rep6]: 0 corrupted of 2000
+          churn ops=8000 rss=334501
+[rep   7] t=   28.2s mode=drop
+PSLP declares problem as infeasible.
+Optimization potentially failed: 
+Status: warning
+Termination condition: infeasible
+Solution: 0 primals, 0 duals
+Objective: nan
+Solver: cuopt
+Runtime: nans
+Solver model: available
+Solver message: PrimalInfeasible
+
+PSLP declares problem as infeasible or unbounded.
+Optimization potentially failed: 
+Status: warning
+Termination condition: infeasible_or_unbounded
+Solution: 0 primals, 0 duals
+Objective: nan
+Solver: cuopt
+Runtime: nans
+Solver model: available
+Solver message: UnboundedOrInfeasible
+
+Optimization potentially failed: 
+Status: warning
+Termination condition: infeasible
+Solution: 0 primals, 0 duals
+Objective: nan
+Solver: cuopt
+Runtime: 0.00s
+MIP gap: 0.00e+00
+Dual bound: inf
+Solver model: available
+Solver message: Infeasible
+
+Optimization solution is sub-optimal: 
+Status: ok
+Termination condition: suboptimal
+Solution: 60 primals, 0 duals
+Objective: -2.60e+03
+Solver: cuopt
+Runtime: 0.13s
+MIP gap: 5.51e-02
+Dual bound: -2.74e+03
+Solver model: available
+Solver message: FeasibleFound
+
+  canaries[rep7]: 0 corrupted of 2000
+          churn ops=8000 rss=334734
+[rep   8] t=   31.9s mode=drop
+PSLP declares problem as infeasible.
+Optimization potentially failed: 
+Status: warning
+Termination condition: infeasible
+Solution: 0 primals, 0 duals
+Objective: nan
+Solver: cuopt
+Runtime: nans
+Solver model: available
+Solver message: PrimalInfeasible
+
+PSLP declares problem as infeasible or unbounded.
+Optimization potentially failed: 
+Status: warning
+Termination condition: infeasible_or_unbounded
+Solution: 0 primals, 0 duals
+Objective: nan
+Solver: cuopt
+Runtime: nans
+Solver model: available
+Solver message: UnboundedOrInfeasible
+
+Optimization potentially failed: 
+Status: warning
+Termination condition: infeasible
+Solution: 0 primals, 0 duals
+Objective: nan
+Solver: cuopt
+Runtime: 0.00s
+MIP gap: 0.00e+00
+Dual bound: inf
+Solver model: available
+Solver message: Infeasible
+
+Optimization solution is sub-optimal: 
+Status: ok
+Termination condition: suboptimal
+Solution: 60 primals, 0 duals
+Objective: -2.62e+03
+Solver: cuopt
+Runtime: 0.16s
+MIP gap: 4.78e-02
+Dual bound: -2.74e+03
+Solver model: available
+Solver message: FeasibleFound
+
+  canaries[rep8]: 0 corrupted of 2000
+          churn ops=8000 rss=335081
+[rep   9] t=   35.5s mode=drop
+PSLP declares problem as infeasible.
+Optimization potentially failed: 
+Status: warning
+Termination condition: infeasible
+Solution: 0 primals, 0 duals
+Objective: nan
+Solver: cuopt
+Runtime: nans
+Solver model: available
+Solver message: PrimalInfeasible
+
+PSLP declares problem as infeasible or unbounded.
+Optimization potentially failed: 
+Status: warning
+Termination condition: infeasible_or_unbounded
+Solution: 0 primals, 0 duals
+Objective: nan
+Solver: cuopt
+Runtime: nans
+Solver model: available
+Solver message: UnboundedOrInfeasible
+
+Optimization potentially failed: 
+Status: warning
+Termination condition: infeasible
+Solution: 0 primals, 0 duals
+Objective: nan
+Solver: cuopt
+Runtime: 0.00s
+MIP gap: 0.00e+00
+Dual bound: inf
+Solver model: available
+Solver message: Infeasible
+
+Optimization solution is sub-optimal: 
+Status: ok
+Termination condition: suboptimal
+Solution: 60 primals, 0 duals
+Objective: -2.61e+03
+Solver: cuopt
+Runtime: 0.15s
+MIP gap: 5.06e-02
+Dual bound: -2.74e+03
+Solver model: available
+Solver message: FeasibleFound
+
+  canaries[rep9]: 0 corrupted of 2000
+          churn ops=8000 rss=335090
+[rep  10] t=   39.2s mode=drop
+PSLP declares problem as infeasible.
+Optimization potentially failed: 
+Status: warning
+Termination condition: infeasible
+Solution: 0 primals, 0 duals
+Objective: nan
+Solver: cuopt
+Runtime: nans
+Solver model: available
+Solver message: PrimalInfeasible
+
+PSLP declares problem as infeasible or unbounded.
+Optimization potentially failed: 
+Status: warning
+Termination condition: infeasible_or_unbounded
+Solution: 0 primals, 0 duals
+Objective: nan
+Solver: cuopt
+Runtime: nans
+Solver model: available
+Solver message: UnboundedOrInfeasible
+
+Optimization potentially failed: 
+Status: warning
+Termination condition: infeasible
+Solution: 0 primals, 0 duals
+Objective: nan
+Solver: cuopt
+Runtime: 0.00s
+MIP gap: 0.00e+00
+Dual bound: inf
+Solver model: available
+Solver message: Infeasible
+
+Optimization solution is sub-optimal: 
+Status: ok
+Termination condition: suboptimal
+Solution: 60 primals, 0 duals
+Objective: -2.60e+03
+Solver: cuopt
+Runtime: 0.14s
+MIP gap: 5.30e-02
+Dual bound: -2.74e+03
+Solver model: available
+Solver message: FeasibleFound
+
+  canaries[rep10]: 0 corrupted of 2000
+          churn ops=8000 rss=334762
+[rep  11] t=   42.8s mode=drop
+PSLP declares problem as infeasible.
+Optimization potentially failed: 
+Status: warning
+Termination condition: infeasible
+Solution: 0 primals, 0 duals
+Objective: nan
+Solver: cuopt
+Runtime: nans
+Solver model: available
+Solver message: PrimalInfeasible
+
+PSLP declares problem as infeasible or unbounded.
+Optimization potentially failed: 
+Status: warning
+Termination condition: infeasible_or_unbounded
+Solution: 0 primals, 0 duals
+Objective: nan
+Solver: cuopt
+Runtime: nans
+Solver model: available
+Solver message: UnboundedOrInfeasible
+
+Optimization potentially failed: 
+Status: warning
+Termination condition: infeasible
+Solution: 0 primals, 0 duals
+Objective: nan
+Solver: cuopt
+Runtime: 0.00s
+MIP gap: 0.00e+00
+Dual bound: inf
+Solver model: available
+Solver message: Infeasible
+
+Optimization solution is sub-optimal: 
+Status: ok
+Termination condition: suboptimal
+Solution: 60 primals, 0 duals
+Objective: -2.61e+03
+Solver: cuopt
+Runtime: 0.14s
+MIP gap: 5.06e-02
+Dual bound: -2.74e+03
+Solver model: available
+Solver message: FeasibleFound
+
+  canaries[rep11]: 0 corrupted of 2000
+          churn ops=8000 rss=335262
+FINAL churn pass
+  canaries[final]: 0 corrupted of 2000
+TOTAL canary corruptions: 0
+OK mode=drop reps=12 elapsed=46.9s
+EXIT=0

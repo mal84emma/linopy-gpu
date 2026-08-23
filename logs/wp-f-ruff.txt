@@ -1,0 +1,6 @@
+=== ruff check . ===
+All checks passed!
+RUFF_CHECK_EXIT=0
+=== ruff format --check (touched python files) ===
+4 files already formatted
+RUFF_FORMAT_EXIT=0

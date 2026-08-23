@@ -1,0 +1,7 @@
+ARM=pinsettings NTRIALS=3
+B21_PIN=1 B21_SETTINGS_ON_WORKER=1
+PYTHONMALLOC=unset extra=[-p b21_pin_plugin]
+git: 26546ee porcelain=0
+run1: EXIT=139 Fatal=1 | 
+run2: EXIT=139 Fatal=1 | 
+run3: EXIT=1 Fatal=0 | 46 failed, 8736 passed, 700 skipped, 827 warnings, 28 errors in 731.95s (0:12:11)

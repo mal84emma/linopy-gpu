@@ -1,0 +1,55 @@
+==============================================================================
+1. copy-vs-reference for each set_* linopy calls (fresh temporaries)
+==============================================================================
+field                        in dtype   held dtype same buffer?  owned
+A_values                     float64    float64    False         True
+A_indices                    int32      int32      False         True
+A_offsets                    int32      int32      False         True
+constraint_lower_bounds      float64    float64    False         True
+constraint_upper_bounds      float64    float64    False         True
+variable_lower_bounds        float64    float64    False         True
+variable_upper_bounds        float64    float64    False         True
+objective_coefficients       float64    float64    False         True
+variable_types               <U1        <U1        True          True
+
+-- mutate every array we passed in, then read the DataModel back --
+A_values                     unchanged after caller mutation: True
+A_indices                    unchanged after caller mutation: True
+A_offsets                    unchanged after caller mutation: True
+constraint_lower_bounds      unchanged after caller mutation: True
+constraint_upper_bounds      unchanged after caller mutation: True
+variable_lower_bounds        unchanged after caller mutation: True
+variable_upper_bounds        unchanged after caller mutation: True
+objective_coefficients       unchanged after caller mutation: True
+variable_types               unchanged after caller mutation: False
+
+==============================================================================
+2. does set_data_model_view() read from DataModel-owned buffers?
+==============================================================================
+variable_types dtype BEFORE Solve-time cast : dtype('<U1')
+variable_types dtype AFTER  Solve-time cast : dtype('S1')
+  itemsize <U1 -> S1 : 4 -> 1 bytes/elem
+  (set_data_model_view passes <const char*> with count = n_elements, so a 4-byte/elem
+   <U1 buffer would be MIS-READ; the S1 cast is what makes the count correct)
+set_data_model_view() -> ok
+
+==============================================================================
+3. invariants of `cuOpt._build_solver_model` output, per model shape
+==============================================================================
+charter_lp_2x2           n_vars=    2 n_rows=    2 nnz=     4 | len(lb,ub,vt)=(2,2,2) len(cl,cu)=(2,2) offsets[-1]=4 idx.max=1 | INVARIANTS OK
+                         all C-contiguous+aligned=True arrays that are VIEWS (base is not None): none | dtypes=['float64', 'int32', 'int32', 'float64', 'float64', 'float64', 'float64', 'float64', '<U1']
+milp_20_integer          n_vars=   20 n_rows=    1 nnz=    20 | len(lb,ub,vt)=(20,20,20) len(cl,cu)=(1,1) offsets[-1]=20 idx.max=19 | INVARIANTS OK
+                         all C-contiguous+aligned=True arrays that are VIEWS (base is not None): none | dtypes=['float64', 'int32', 'int32', 'float64', 'float64', 'float64', 'float64', 'float64', '<U1']
+binary_30                n_vars=   30 n_rows=    1 nnz=    30 | len(lb,ub,vt)=(30,30,30) len(cl,cu)=(1,1) offsets[-1]=30 idx.max=29 | INVARIANTS OK
+                         all C-contiguous+aligned=True arrays that are VIEWS (base is not None): none | dtypes=['float64', 'int32', 'int32', 'float64', 'float64', 'float64', 'float64', 'float64', '<U1']
+equality_8               n_vars=    8 n_rows=    1 nnz=     8 | len(lb,ub,vt)=(8,8,8) len(cl,cu)=(1,1) offsets[-1]=8 idx.max=7 | INVARIANTS OK
+                         all C-contiguous+aligned=True arrays that are VIEWS (base is not None): none | dtypes=['float64', 'int32', 'int32', 'float64', 'float64', 'float64', 'float64', 'float64', '<U1']
+no_constraints_padrow    n_vars=    1 n_rows=    1 nnz=     1 | len(lb,ub,vt)=(1,1,1) len(cl,cu)=(1,1) offsets[-1]=1 idx.max=0 | INVARIANTS OK
+                         all C-contiguous+aligned=True arrays that are VIEWS (base is not None): none | dtypes=['float64', 'int32', 'int32', 'float64', 'float64', 'float64', 'float64', 'float64', '<U1']
+random_lp_200x100        n_vars=  200 n_rows=  100 nnz= 20000 | len(lb,ub,vt)=(200,200,200) len(cl,cu)=(100,100) offsets[-1]=20000 idx.max=199 | INVARIANTS OK
+                         all C-contiguous+aligned=True arrays that are VIEWS (base is not None): none | dtypes=['float64', 'int32', 'int32', 'float64', 'float64', 'float64', 'float64', 'float64', '<U1']
+mixed_binary_cont        n_vars=   12 n_rows=    7 nnz=    18 | len(lb,ub,vt)=(12,12,12) len(cl,cu)=(7,7) offsets[-1]=18 idx.max=11 | INVARIANTS OK
+                         all C-contiguous+aligned=True arrays that are VIEWS (base is not None): none | dtypes=['float64', 'int32', 'int32', 'float64', 'float64', 'float64', 'float64', 'float64', '<U1']
+
+DONE probe 1
+EXIT=0

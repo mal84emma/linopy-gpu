@@ -1,0 +1,8 @@
+parent solve: optimal
+parent threads: ['MainThread', 'linopy-cuopt-solve']
+_cuopt_solve_queue cache_info: CacheInfo(hits=0, misses=1, maxsize=None, currsize=1)
+  CHILD threads: ['MainThread']
+  CHILD cache_info (cached => no worker was started here): CacheInfo(hits=0, misses=1, maxsize=None, currsize=1)
+  CHILD after cache_clear(): RuntimeError: CUDA error at: /__w/rmm/rmm/cpp/src/cuda_stream.cpp:20: cudaErrorInitializationError initialization error
+variant B child exit code = 4
+EXIT=0

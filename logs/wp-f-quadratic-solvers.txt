@@ -1,0 +1,6 @@
+linopy.__file__ = /home/azureuser/linopy-gpu/dev-scripts/cuopt/worktrees/wp-f/linopy/__init__.py
+quadratic_solvers = ['gurobi', 'highs', 'scip', 'cplex', 'xpress', 'knitro', 'mosek', 'mindopt', 'copt', 'cuopt']
+available_solvers = ['gurobi', 'highs', 'scip', 'cplex', 'xpress', 'knitro', 'mosek', 'mindopt', 'copt', 'cuopt']
+cuopt in quadratic_solvers = True
+cuOpt features = ['DIRECT_API', 'GPU_ACCELERATION', 'GPU_ONLY', 'INTEGER_VARIABLES', 'MIP_DUAL_BOUND_REPORT', 'QUADRATIC_OBJECTIVE', 'SEMI_CONTINUOUS_VARIABLES', 'SOLUTION_FILE_NOT_NEEDED']
+EXIT=0

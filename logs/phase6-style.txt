@@ -1,0 +1,80 @@
+=== Phase 6.6a style conformance — measurements ===
+
+Comment density (# lines / non-blank lines), linopy/solvers.py
+  cuOpt class        4556-4981   73/391   18.7%
+  cuPDLPx class      4293-4554    5/225    2.2%
+  Highs class        1681-2041    1/317    0.3%
+  Gurobi class       2048-2482    2/385    0.5%
+  Mosek class        3482-4007    5/462    1.1%
+  Xpress class       2750-3247    0/448    0.0%
+  cuopt worker helpers 257-342    9/71    12.7%
+  _run_highs_with_keyboard_interrupt 191-255  0/54  0.0%
+  whole file             1-5118 118/4445   2.7%
+  -> cuOpt class holds 62% of the file's comment lines in 8% of its lines.
+
+Comment blocks in the cuOpt class: 21 (charter grants 9 deliberate WP-G sites)
+  4596-4597  4611-4614  4628-4633  4643-4645  4656-4658  4682-4686
+  4701-4706  4730-4734  4737-4739  4796-4802  4807  4819  4826-4829
+  4841-4845  4852-4855  4877-4878  4889-4891  4895  4898-4900
+  4963-4964  4974-4976
+
+Test-file comment density (repo range 0.0%-40.4%)
+  test_cuopt.py            72/989   7.3%   (moddoc yes, 40/60 funcs documented)
+  test_cuopt_interrupt.py   0/79    0.0%   (no moddoc — matches its direct
+                                            precedent test_highs_keyboard_interrupt.py,
+                                            one of 21/56 test files without one)
+  test_optimization.py     41/1149  3.6%
+  test_solvers.py           6/633   0.9%
+
+Linters (tracked tree, unmodified)
+  ruff 0.15.20 check linopy test        -> All checks passed!
+  ruff format --check linopy test       -> 89 files already formatted
+  mypy linopy                           -> 28 errors in 1 file (linopy/solvers.py)
+    baseline logs/b19-mypy-base.txt     -> 28 errors in 1 file
+    all 28 are in the Xpress region (:3149-3214); grep for
+    solvers.py:(25x|3xx|4[5-9]xx) in the cuopt regions -> no hits
+
+Class-shape comparison (order of members)
+  cuPDLPx: display_name, features, is_available, _license_probe, _run_file,
+           _build_direct, _build_solver_model, _run_direct, _solve,
+           _set_solver_params
+  cuOpt:   display_name, features, _DEFAULT_METHOD, is_available,
+           _license_probe, _build_file, _build_direct, _build_solver_model,
+           _run_direct, _solve, _set_solver_params, close
+  Divergences, both with an in-code reason and both documented in
+  doc/gpu-acceleration.rst: _build_file instead of _run_file (build-time
+  redirect rather than run-time netcdf re-read), and close() — cuOpt is the
+  only subclass to override it (base at :1251), for the worker-thread
+  teardown constraint at :4974-4976.
+  Private ClassVar precedent for _DEFAULT_METHOD: GLPK._OBJECTIVE_TOKEN
+  (:1534), Gurobi._GUROBI_VTYPE_MAP (:2211), Xpress._XPRESS_VTYPE_MAP (:2779).
+
+Naming / placement — all conform
+  TYPE_CHECKING `import cuopt` :177 (alphabetical, first)
+  `cuopt = _LazyModule("cuopt")` :397 (after cupdlpx :393)
+  SolverName.cuOpt = "cuopt" :496 (after cuPDLPx :495)
+  _SOLVER_PROBE_ORDER "cuopt" :5020 (after "cupdlpx", before "pips")
+  helpers _CuoptJob / _cuopt_solve_queue / _run_cuopt_with_keyboard_interrupt /
+  _dispose_on_cuopt_worker follow _run_highs_with_keyboard_interrupt (:191)
+  new imports: `queue` (:14 block), csr_array/vstack added to the existing
+  scipy.sparse line
+
+Error-message phrasing vs siblings — conform
+  ":4636  f\"Keyword argument `io_api` has to be one of {IO_APIS} or None\""
+        == base _build_file :903-905 verbatim
+  ":4661 cuOpt does not support quadratic objectives together with integer
+        variables. Use a solver that supports MIQP (gurobi, xpress, mosek)."
+        matches _validate_model :872-873 pattern
+  ":4668 explicit_coordinate_names warning" == cuPDLPx :4372-4373 verbatim
+  ":4834 Basis files are not supported by cuOpt. Ignoring." == cuPDLPx :4497
+  ":4831/:4838 \"is not yet implemented\" vs cuPDLPx's \"not yet implemented\"
+        — trivial wording drift only
+
+Test idiom — conform
+  pytestmark LINOPY_RUN_GPU_TESTS (test_cuopt.py:37) is the mechanism
+  conftest.py:48 exports for import-time parametrisation; SOLVER_REGISTRY
+  import is deliberate (it tests the back-compat shim at :350-351);
+  parametrize+ids idiom matches test_optimization.py; linopy's own
+  assertions (assert_linequal/assert_varequal) are for expression/model
+  equality and have no role in solve-result numerics — correctly absent.
+  test_io.py:557 test_to_cuopt mirrors test_to_cupdlpx (:554) exactly.

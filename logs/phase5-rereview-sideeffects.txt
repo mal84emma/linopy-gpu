@@ -1,0 +1,26 @@
+########## composition of the 24 cuopt-matching tests that run without --run-gpu ##########
+      2 test/test_cuopt_interrupt.py::test_run_cuopt_interrupt_reaches_the_main_thread
+      2 test/test_cuopt_interrupt.py::test_run_cuopt_reraises_solver_errors
+      2 test/test_cuopt_interrupt.py::test_run_cuopt_returns_the_solve_result
+      2 test/test_cuopt_interrupt.py::test_solve_queue_starts_a_fresh_worker_after_fork
+      2 test/test_io.py::test_to_cuopt
+      2 test/test_solvers.py::test_capability_shim_round_trips[cuopt]
+      2 test/test_solvers.py::test_solver_class_supports_feature[cuOpt-SolverFeature.DIRECT_API-True]
+      2 test/test_solvers.py::test_solver_class_supports_feature[cuOpt-SolverFeature.GPU_ONLY-True]
+      2 test/test_solvers.py::test_solver_class_supports_feature[cuOpt-SolverFeature.INTEGER_VARIABLES-True]
+      2 test/test_solvers.py::test_solver_class_supports_feature[cuOpt-SolverFeature.QUADRATIC_OBJECTIVE-True]
+      2 test/test_solvers.py::test_solver_class_supports_feature[cuOpt-SolverFeature.SEMI_CONTINUOUS_VARIABLES-True]
+      2 test/test_solvers.py::test_solver_class_supports_feature[cuOpt-SolverFeature.SOS_CONSTRAINTS-False]
+
+########## NEW global side effect: register_at_fork now runs on every linopy.solvers import ##########
+  cuopt imported at all?            False
+  solve-queue cache (never solved): CacheInfo(hits=0, misses=0, maxsize=None, currsize=0)
+   child ok, cache=CacheInfo(hits=0, misses=0, maxsize=None, currsize=0)
+  child exit code = 0 (0 = handler harmless)
+  cuopt imported after fork?        False
+SIDEEFFECT_EXIT=0
+
+########## multiprocessing (fork start method) still works after a cuOpt solve ##########
+  parent cuopt solve: optimal
+  forked workers solving with HiGHS after a parent cuOpt solve: ['optimal', 'optimal']
+MP_EXIT=0

@@ -1,0 +1,97 @@
+=== Phase-6 RE-REVIEW loop 2 — b0b18f4 -> a8fb35b ===
+date: 2026-08-23T11:05:22Z   tip: a8fb35b
+message/trailer preserved: 'Address review findings' + Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>
+
+--- delta scope (must be exactly S1/S2/S3/N1/N3) ---
+ doc/gpu-acceleration.rst     |  4 ++--
+ doc/prerequisites.rst        |  3 +++
+ linopy/solvers.py            | 68 +++++++++++++++++++++++++++++++++++++++-----------------------------
+ test/test_cuopt_interrupt.py | 14 ++++++++++----
+ 4 files changed, 54 insertions(+), 35 deletions(-)
+
+--- (1) structural proof the solvers.py delta is comments/docstrings only ---
+docstring-stripped ast.dump (include_attributes=False) b0b18f4 vs a8fb35b:
+  linopy/solvers.py            EQUAL   (dump len 539291 == 539291)
+  test/test_cuopt_interrupt.py DIFFERS (10545 vs 10884) — expected, N3 is a real code change
+
+--- (2) density re-measured, own method (AST class spans, non-blank denominator) ---
+                b0b18f4            a8fb35b
+  cuOpt        73/391 = 18.7%     55/394 = 14.0%
+  cuPDLPx       5/225 =  2.2%      5/225 =  2.2%
+  Highs         1/317 =  0.3%      1/317 =  0.3%
+  Gurobi        2/385 =  0.5%      2/385 =  0.5%
+  Mosek         5/462 =  1.1%      5/462 =  1.1%
+  Xpress        0/444 =  0.0%      0/444 =  0.0%
+  WHOLE FILE  118/4445 = 2.7%    100/4452 = 2.2%
+  gap to cuPDLPx 16.5pp -> 11.8pp = 28.5% of the gap closed.
+  18 comment lines removed; my prescribed four blocks, my ~22-line estimate.
+  My 'roughly halves' was an incorrect prediction; the agent's 28% is right.
+
+--- (3) V3-6(d) anchors in linopy/solvers.py + linopy/io.py @ a8fb35b ---
+  cuopt.linear_programming         13
+  pdlp_solver_mode                 1
+  set_initial_primal_solution      1
+  reduced cost                     1
+  SOS                              30
+  MIQP                             5
+  1300                             3
+  fork                             5
+  MIP (empty-duals comment)        1
+  bool (coercion comment)          1
+  A1.1 same-block: .lp + .mps + cuopt.linear_programming all inside the new
+  _build_file docstring, linopy/solvers.py:4635-4644 -> TRUE
+  => all 11 checks >= 1
+
+--- (4) fact-preservation token audit (all comments+docstrings, b0b18f4 vs a8fb35b) ---
+  distinct tokens 1282 -> 1289
+  LOST: Building Key NOT back. convention. duals. negates results thread-safe
+        all pure rewrite/punctuation artefacts; each underlying claim traced to
+        its new home (see phase6-rereview-findings.txt). 0 facts deleted.
+  NOTE: the NVIDIA/cuopt#1768 URL count went 3 -> 2 (now :337 and :4986).
+        The migrated _solve block's copy is gone; its replacement points at
+        _cuopt_solve_queue, whose docstring names kmp_alloc.cpp but not the
+        issue URL. Fact preserved in-file; pointer hygiene nit N4.
+
+--- (5) N1 sibling evidence, verified independently ---
+  grep '^    Notes$' linopy/solvers.py    -> 1 hit (:4587, the cuOpt class)
+  AST sweep of all linopy/**/*.py for a docstring carrying BOTH an
+  Attributes and a Notes SECTION HEADER (underline-anchored):
+    linopy/solvers.py:4561 cuOpt: ['Attributes', 'Notes']   <- the only one
+  => no in-repo ordering precedent exists. My 'all 12 close with Attributes'
+     was true but ordering-silent: Attributes is their ONLY section.
+  numpydoc 1.10.0 NumpyDocString.sections (canonical order):
+    Signature, Summary, Extended Summary, Parameters, Attributes, Methods,
+    Returns, ..., See Also, Notes, References, Examples
+  => Attributes precedes Notes in the canon. Resolution ACCEPTED.
+  Rendered check: generated/linopy.solvers.cuOpt.html -> solver_options
+  definition at offset 8497 precedes the 'Notes' heading at 8541.
+
+--- (6) regression sanity ---
+  ruff check linopy test        -> All checks passed!
+  ruff format --check           -> 89 files already formatted
+  mypy linopy                   -> 28 errors (baseline b19-mypy-base.txt: 28), all Xpress
+  pytest test/test_cuopt_interrupt.py -q -> 8 passed in 1.52s
+  GPU suite not re-run: solvers.py delta is AST-identical modulo docstrings.
+
+--- (7) docs rebuild, cuOpt-free venv ---
+  build succeeded, 19 warnings   (baseline: build succeeded, 19 warnings)
+  warning-set diff vs 05-baseline-docs.txt (IPKernelApp noise excluded):
+1,4c1,4
+< doc/api.rst:431:<autosummary>:1: WARNING: Inline emphasis start-string without end-string. [docutils]
+< doc/api.rst:431:<autosummary>:1: WARNING: Inline emphasis start-string without end-string. [docutils]
+< doc/api.rst:431:<autosummary>:1: WARNING: Inline emphasis start-string without end-string. [docutils]
+< doc/api.rst:439:<autosummary>:1: WARNING: Inline emphasis start-string without end-string. [docutils]
+---
+> doc/api.rst:432:<autosummary>:1: WARNING: Inline emphasis start-string without end-string. [docutils]
+> doc/api.rst:432:<autosummary>:1: WARNING: Inline emphasis start-string without end-string. [docutils]
+> doc/api.rst:432:<autosummary>:1: WARNING: Inline emphasis start-string without end-string. [docutils]
+> doc/api.rst:440:<autosummary>:1: WARNING: Inline emphasis start-string without end-string. [docutils]
+  ^ only the api.rst 431/439 -> 432/440 shift from the to_cuopt entry.
+  S1 rendered in prerequisites.html; S2 rendered in gpu-acceleration.html.
+
+--- (8) leak check @ a8fb35b ---
+$ git diff --name-only upstream/master...feat/cuopt-solver -- dev-scripts/ .claude/ PR_BODY.md
+<<< empty >>>
+$ ... | grep -Ei 'PROJECT_LEAD|HARNESS_REVIEW|-TEMPLATE|/logs/|/plans/|/worktrees/'
+<<< empty (grep rc=1) >>>
+  17 files, +2071/-11 (ESC-3 addendum 2: net +21 from the amend)

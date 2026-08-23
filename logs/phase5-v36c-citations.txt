@@ -1,0 +1,11 @@
+item1 direct-only io + A1.1      4620-4625  4620:comment 4621:comment 4622:comment 4623:comment 4624:comment 4625:comment
+item2 warm start                 4818-4821  4818:comment 4819:comment 4820:comment 4821:comment
+item3 reduced costs              4890-4892  4890:comment 4891:comment 4892:comment
+item4 SOS/indicator              4588-4589  4588:comment 4589:comment
+item5 MIQP                       4648-4650  4648:comment 4649:comment 4650:comment
+item6 1300                       4603-4606  4603:comment 4604:comment 4605:comment 4606:comment
+item7 MIP duals                  4881-4883  4881:comment 4882:comment 4883:comment
+item8 fork probe (docstring)     419-424  419:string/docstring 420:string/docstring 421:string/docstring 422:string/docstring 423:string/docstring 424:string/docstring
+item9 bool->int                  4951-4952  4951:comment 4952:comment
+MAPPED_ITEMS = 9
+NON_COMMENT_OR_DOCSTRING_CITATION_LINES = 0

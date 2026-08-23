@@ -1,0 +1,10 @@
+V0-3 registry features   : ['DIRECT_API', 'GPU_ACCELERATION', 'GPU_ONLY', 'INTEGER_VARIABLES', 'MIP_DUAL_BOUND_REPORT', 'QUADRATIC_OBJECTIVE', 'SEMI_CONTINUOUS_VARIABLES', 'SOLUTION_FILE_NOT_NEEDED']
+V0-3 declared  features  : ['DIRECT_API', 'GPU_ACCELERATION', 'GPU_ONLY', 'INTEGER_VARIABLES', 'MIP_DUAL_BOUND_REPORT', 'QUADRATIC_OBJECTIVE', 'SEMI_CONTINUOUS_VARIABLES', 'SOLUTION_FILE_NOT_NEEDED']
+V0-3 symmetric difference: [] -> len 0
+V0-3 display_name reg/cls: cuOpt / cuOpt
+V0-4 SolverName.cuOpt.name == 'cuOpt' cuOpt.__name__ == 'cuOpt' -> True
+V0-5 'cuopt' in available_solvers: True
+     available_solvers: ['gurobi', 'highs', 'scip', 'cplex', 'xpress', 'knitro', 'mosek', 'mindopt', 'copt', 'cuopt']
+V0-11c import cuopt occurrences in solvers.py:
+      line 177 : import cuopt
+      line 414 : ``import cuopt`` succeeds on hosts without a GPU by design -- its

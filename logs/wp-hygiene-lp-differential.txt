@@ -1,0 +1,32 @@
+linopy.__file__ = /home/azureuser/linopy-gpu/dev-scripts/cuopt/worktrees/wp-hygiene/linopy/__init__.py
+Running HiGHS 1.15.1 (git hash: 04024d7): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+LP linopy-problem-ib69mo5f has 2 rows; 2 cols; 4 nonzeros
+Coefficient ranges:
+  Matrix  [1e+00, 3e+00]
+  Cost    [1e+00, 1e+00]
+  Bound   [1e+01, 1e+01]
+  RHS     [4e+00, 6e+00]
+Presolving model
+2 rows, 2 cols, 4 nonzeros 0s
+2 rows, 2 cols, 4 nonzeros 0s
+Presolve reductions: rows 2(-0); columns 2(-0); nonzeros 4(-0) - Not reduced
+Problem not reduced by presolve: solving the LP
+Using dual simplex solver
+  Iteration        Objective     Infeasibilities num(sum)
+          0     0.0000000000e+00 Pr: 2(10) 0.0s
+          2     2.8000000000e+00 Pr: 0(0) 0.0s
+
+Model name          : linopy-problem-ib69mo5f
+Model status        : Optimal
+Simplex   iterations: 2
+Objective value     :  2.8000000000e+00
+P-D objective error :  0.0000000000e+00
+HiGHS run time      :          0.00
+cuopt : obj=2.800000048570494 primal=[np.float64(1.6000000533144454), np.float64(1.1999999952560483)] duals=[np.float64(0.39999999786526813), np.float64(0.19999999810373667)]
+highs : obj=2.8 primal=[np.float64(1.5999999999999999), np.float64(1.2)] duals=[np.float64(0.4), np.float64(0.19999999999999998)]
+|dobj|     = 4.857e-08  (tol 3.800e-06)  PASS
+max|dx|    = 5.331e-08  (tol 2.200e-06)  PASS
+max|ddual| = 2.135e-09  (tol 3.000e-07)  PASS
+V1-1 LP differential: PASS
+EXIT=0

@@ -1,0 +1,52 @@
+=== Phase 6.6 mechanical gap check: PR #516 vs feat/cuopt-solver ===
+date: 2026-08-23T10:44:40Z  branch tip: b0b18f4
+
+--- PR516 files ---
+CLAUDE.md
+README.md
+doc/contributing.rst
+doc/gpu-acceleration.rst
+doc/index.rst
+doc/prerequisites.rst
+doc/release_notes.rst
+linopy/io.py
+linopy/model.py
+linopy/solver_capabilities.py
+linopy/solvers.py
+pyproject.toml
+test/conftest.py
+test/test_optimization.py
+test/test_solvers.py
+--- branch files ---
+README.md
+doc/api.rst
+doc/contributing.rst
+doc/gpu-acceleration.rst
+doc/index.rst
+doc/prerequisites.rst
+doc/release_notes.rst
+examples/using-solvers.ipynb
+linopy/io.py
+linopy/model.py
+linopy/solvers.py
+pyproject.toml
+test/test_cuopt.py
+test/test_cuopt_interrupt.py
+test/test_io.py
+test/test_optimization.py
+test/test_solvers.py
+--- diff pr516 <-> branch ---
+1d0
+< CLAUDE.md
+2a2
+> doc/api.rst
+7a8
+> examples/using-solvers.ipynb
+10d10
+< linopy/solver_capabilities.py
+13c13,15
+< test/conftest.py
+---
+> test/test_cuopt.py
+> test/test_cuopt_interrupt.py
+> test/test_io.py

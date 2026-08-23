@@ -1,0 +1,29 @@
+=============================================== test session starts ================================================
+platform linux -- Python 3.11.15, pytest-9.1.1, pluggy-1.6.0 -- /home/azureuser/linopy-gpu/.venv/bin/python3
+cachedir: .pytest_cache
+rootdir: /home/azureuser/linopy-gpu/dev-scripts/cuopt/worktrees/wp-f
+configfile: pyproject.toml
+plugins: anyio-4.14.2, cov-7.1.0
+collecting ... collected 120 items / 102 deselected / 18 selected
+
+test/test_cuopt.py::test_quadratic_objective_is_registered[legacy] PASSED                                    [  5%]
+test/test_cuopt.py::test_quadratic_objective_is_registered[v1] PASSED                                        [ 11%]
+test/test_cuopt.py::test_quadratic_differential[legacy-min] PASSED                                           [ 16%]
+test/test_cuopt.py::test_quadratic_differential[legacy-max] PASSED                                           [ 22%]
+test/test_cuopt.py::test_quadratic_differential[v1-min] PASSED                                               [ 27%]
+test/test_cuopt.py::test_quadratic_differential[v1-max] PASSED                                               [ 33%]
+test/test_cuopt.py::test_naive_hessian_changes_the_answer[legacy] PASSED                                     [ 38%]
+test/test_cuopt.py::test_naive_hessian_changes_the_answer[v1] PASSED                                         [ 44%]
+test/test_cuopt.py::test_degenerate_quadratic_differential[legacy] PASSED                                    [ 50%]
+test/test_cuopt.py::test_degenerate_quadratic_differential[v1] PASSED                                        [ 55%]
+test/test_cuopt.py::test_cross_terms_quadratic_differential[legacy] PASSED                                   [ 61%]
+test/test_cuopt.py::test_cross_terms_quadratic_differential[v1] PASSED                                       [ 66%]
+test/test_cuopt.py::test_quadratic_model_without_constraint[legacy] PASSED                                   [ 72%]
+test/test_cuopt.py::test_quadratic_model_without_constraint[v1] PASSED                                       [ 77%]
+test/test_cuopt.py::test_integer_quadratic_is_refused[legacy-iqp] PASSED                                     [ 83%]
+test/test_cuopt.py::test_integer_quadratic_is_refused[legacy-miqp] PASSED                                    [ 88%]
+test/test_cuopt.py::test_integer_quadratic_is_refused[v1-iqp] PASSED                                         [ 94%]
+test/test_cuopt.py::test_integer_quadratic_is_refused[v1-miqp] PASSED                                        [100%]
+
+======================================== 18 passed, 102 deselected in 6.22s ========================================
+PYTEST_EXIT=0

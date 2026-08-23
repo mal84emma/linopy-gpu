@@ -1,0 +1,32 @@
+### V0-8 / V2-1: -k cuopt WITHOUT --run-gpu (runtime outcome)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+20 passed, 218 skipped, 9292 deselected, 4 warnings in 4.61s
+PYTEST_EXIT=0
+
+### test/test_cuopt.py WITHOUT --run-gpu
+ssssssssssss                                                                                                 [100%]
+120 skipped in 1.52s
+
+### collect-only counts (identical both ways -- gating is at runtime via skipif)
+no --run-gpu : 238/9530 tests collected (9292 deselected) in 3.52s
+test/test_cuopt_interrupt.py::test_run_cuopt_interrupt_reaches_the_main_thread[legacy]
+test/test_cuopt_interrupt.py::test_run_cuopt_interrupt_reaches_the_main_thread[v1]
+test/test_cuopt_interrupt.py::test_run_cuopt_reraises_solver_errors[legacy]
+test/test_cuopt_interrupt.py::test_run_cuopt_reraises_solver_errors[v1]
+test/test_cuopt_interrupt.py::test_run_cuopt_returns_the_solve_result[legacy]
+test/test_cuopt_interrupt.py::test_run_cuopt_returns_the_solve_result[v1]
+test/test_solvers.py::test_capability_shim_round_trips[legacy-cuopt]
+test/test_solvers.py::test_capability_shim_round_trips[v1-cuopt]
+test/test_solvers.py::test_solver_class_supports_feature[legacy-cuOpt-SolverFeature.DIRECT_API-True]
+test/test_solvers.py::test_solver_class_supports_feature[legacy-cuOpt-SolverFeature.GPU_ONLY-True]
+test/test_solvers.py::test_solver_class_supports_feature[legacy-cuOpt-SolverFeature.INTEGER_VARIABLES-True]
+test/test_solvers.py::test_solver_class_supports_feature[legacy-cuOpt-SolverFeature.QUADRATIC_OBJECTIVE-True]
+test/test_solvers.py::test_solver_class_supports_feature[legacy-cuOpt-SolverFeature.SEMI_CONTINUOUS_VARIABLES-True]
+test/test_solvers.py::test_solver_class_supports_feature[legacy-cuOpt-SolverFeature.SOS_CONSTRAINTS-False]
+test/test_solvers.py::test_solver_class_supports_feature[v1-cuOpt-SolverFeature.DIRECT_API-True]
+test/test_solvers.py::test_solver_class_supports_feature[v1-cuOpt-SolverFeature.GPU_ONLY-True]
+test/test_solvers.py::test_solver_class_supports_feature[v1-cuOpt-SolverFeature.INTEGER_VARIABLES-True]
+test/test_solvers.py::test_solver_class_supports_feature[v1-cuOpt-SolverFeature.QUADRATIC_OBJECTIVE-True]
+test/test_solvers.py::test_solver_class_supports_feature[v1-cuOpt-SolverFeature.SEMI_CONTINUOUS_VARIABLES-True]
+test/test_solvers.py::test_solver_class_supports_feature[v1-cuOpt-SolverFeature.SOS_CONSTRAINTS-False]

@@ -1,0 +1,27 @@
+########## regression: test/test_io.py --run-gpu -q ##########
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+99 passed, 7 skipped, 12 warnings in 8.32s
+PYTEST_EXIT=0
+
+########## V0-9 zero-diff surfaces, still 0 at b0b18f4 ##########
+diff lines = 0
+QUADRATIC_SOLVERS hits in the solvers.py diff = 0
+
+########## branch totals at the new tip (F4/V3-5 was accepted at the loop-1 figure of 1986) ##########
+ 17 files changed, 2050 insertions(+), 9 deletions(-)
+ADDED 2050 DELETED 9 | tests 1361 non-test 689
+
+########## hygiene ##########
+porcelain = 0 lines
+tracked dev-scripts = 0
+files outside the intended surface:
+doc/api.rst
+doc/contributing.rst
+doc/gpu-acceleration.rst
+doc/index.rst
+doc/prerequisites.rst
+doc/release_notes.rst
+examples/using-solvers.ipynb
+feef773d8fface670eda923095ee216de32a8fedf50b0561caaebe9687a3f820  dev-scripts/cuopt/logs/15-verification.md
+mode=444

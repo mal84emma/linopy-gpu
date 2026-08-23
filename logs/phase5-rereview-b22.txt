@@ -1,0 +1,12 @@
+### B22: does cuopt.linear_programming.DataModel erase to Any under this project's mypy config?
+--- mypy config: ignore_missing_imports = 1 (1 = set) ---
+/tmp/claude-1000/-home-azureuser-linopy-gpu/2132364e-7915-4b0a-9a60-1023cfcf0f17/scratchpad/b22probe.py:7: note: Revealed type is "Any"
+/tmp/claude-1000/-home-azureuser-linopy-gpu/2132364e-7915-4b0a-9a60-1023cfcf0f17/scratchpad/b22probe.py:8: note: Revealed type is "def (dm: Any) -> Any"
+Success: no issues found in 1 source file
+MYPY_EXIT=0
+
+### control: the same probe against a genuinely typed third-party class (numpy ships py.typed)
+/tmp/claude-1000/-home-azureuser-linopy-gpu/2132364e-7915-4b0a-9a60-1023cfcf0f17/scratchpad/b22control.py:5: note: Revealed type is "numpy.ndarray[tuple[Any, ...], numpy.dtype[Any]]"
+/tmp/claude-1000/-home-azureuser-linopy-gpu/2132364e-7915-4b0a-9a60-1023cfcf0f17/scratchpad/b22control.py:6: error: "ndarray[tuple[Any, ...], dtype[Any]]" has no attribute "this_attribute_does_not_exist"  [attr-defined]
+Found 1 error in 1 file (checked 1 source file)
+MYPY_EXIT=1

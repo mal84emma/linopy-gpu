@@ -1,0 +1,89 @@
+### NON-VACUITY: the post-fix test file run against PRE-FIX solvers.py (8fb66cc, no register_at_fork)
+### expectation: it must FAIL -- the child hands its job to a worker-less queue and never writes to the pipe
+=============================================== test session starts ================================================
+platform linux -- Python 3.11.15, pytest-9.1.1, pluggy-1.6.0 -- /home/azureuser/linopy-gpu/.venv/bin/python3
+cachedir: .pytest_cache
+rootdir: /tmp/claude-1000/-home-azureuser-linopy-gpu/2132364e-7915-4b0a-9a60-1023cfcf0f17/scratchpad/prefix-wt
+configfile: pyproject.toml
+plugins: anyio-4.14.2, cov-7.1.0
+collecting ... collected 2 items
+
+test/test_cuopt_interrupt.py::test_solve_queue_starts_a_fresh_worker_after_fork[legacy] FAILED               [ 50%]
+test/test_cuopt_interrupt.py::test_solve_queue_starts_a_fresh_worker_after_fork[v1] FAILED                   [100%]
+
+===================================================== FAILURES =====================================================
+____________________________ test_solve_queue_starts_a_fresh_worker_after_fork[legacy] _____________________________
+
+    @pytest.mark.skipif(not hasattr(os, "fork"), reason="fork is POSIX only")
+    def test_solve_queue_starts_a_fresh_worker_after_fork() -> None:
+        """
+        A forked child inherits the cached queue but not its daemon worker.
+    
+        Without the at-fork ``cache_clear`` the child hands its job to a queue
+        nobody reads and waits on ``job.done`` forever; it then never writes to the
+        pipe and the parent's ``select`` timeout below fails the test.
+        """
+        assert _run_cuopt_with_keyboard_interrupt(lambda: "parent") == "parent"
+    
+        read_fd, write_fd = os.pipe()
+        pid = os.fork()
+        if pid == 0:  # child -- never returns
+            exit_code = 1
+            try:
+                os.close(read_fd)
+                cleared = _cuopt_solve_queue.cache_info().currsize == 0
+                solved = _run_cuopt_with_keyboard_interrupt(lambda: "child") == "child"
+                if cleared and solved:
+                    os.write(write_fd, b"ok")
+                    exit_code = 0
+            finally:
+                os._exit(exit_code)
+    
+        os.close(write_fd)
+        try:
+            ready, _, _ = select.select([read_fd], [], [], 30)
+>           assert ready, "the forked child never finished its solve"
+E           AssertionError: the forked child never finished its solve
+E           assert []
+
+test/test_cuopt_interrupt.py:96: AssertionError
+______________________________ test_solve_queue_starts_a_fresh_worker_after_fork[v1] _______________________________
+
+    @pytest.mark.skipif(not hasattr(os, "fork"), reason="fork is POSIX only")
+    def test_solve_queue_starts_a_fresh_worker_after_fork() -> None:
+        """
+        A forked child inherits the cached queue but not its daemon worker.
+    
+        Without the at-fork ``cache_clear`` the child hands its job to a queue
+        nobody reads and waits on ``job.done`` forever; it then never writes to the
+        pipe and the parent's ``select`` timeout below fails the test.
+        """
+        assert _run_cuopt_with_keyboard_interrupt(lambda: "parent") == "parent"
+    
+        read_fd, write_fd = os.pipe()
+        pid = os.fork()
+        if pid == 0:  # child -- never returns
+            exit_code = 1
+            try:
+                os.close(read_fd)
+                cleared = _cuopt_solve_queue.cache_info().currsize == 0
+                solved = _run_cuopt_with_keyboard_interrupt(lambda: "child") == "child"
+                if cleared and solved:
+                    os.write(write_fd, b"ok")
+                    exit_code = 0
+            finally:
+                os._exit(exit_code)
+    
+        os.close(write_fd)
+        try:
+            ready, _, _ = select.select([read_fd], [], [], 30)
+>           assert ready, "the forked child never finished its solve"
+E           AssertionError: the forked child never finished its solve
+E           assert []
+
+test/test_cuopt_interrupt.py:96: AssertionError
+============================================= short test summary info ==============================================
+FAILED test/test_cuopt_interrupt.py::test_solve_queue_starts_a_fresh_worker_after_fork[legacy] - AssertionError: ...
+FAILED test/test_cuopt_interrupt.py::test_solve_queue_starts_a_fresh_worker_after_fork[v1] - AssertionError: the ...
+=========================================== 2 failed in 60.62s (0:01:00) ===========================================
+PYTEST_EXIT=1

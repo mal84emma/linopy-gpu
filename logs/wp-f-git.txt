@@ -1,0 +1,24 @@
+=== git log --pretty='%h | %an | %s' master..wp/wp-f ===
+213e3e8 | Claude Opus 5 | Add support for quadratic objectives
+794a8d7 | Claude Opus 5 | Add comment for release notes
+1cac3ad | Claude Opus 5 | Add to docs & add package dependency
+9c60cd8 | Claude Opus 5 | Update tests
+5bfe769 | Claude Opus 5 | Implement interface to cuOpt solver and required IO
+=== commit count ===
+5
+=== Co-Authored-By trailer count ===
+5
+=== merge count ===
+0
+=== git diff 794a8d7 wp/wp-f --stat ===
+ doc/gpu-acceleration.rst  |   6 +-
+ doc/release_notes.rst     |   2 +-
+ linopy/solvers.py         |  10 +++
+ test/test_cuopt.py        | 294 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++--
+ test/test_optimization.py |   8 ++-
+ test/test_solvers.py      |   1 +
+ 6 files changed, 312 insertions(+), 9 deletions(-)
+=== git status --porcelain ===
+(empty above = clean)
+=== tracked dev-scripts files ===
+0

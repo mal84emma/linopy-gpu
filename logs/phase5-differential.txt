@@ -1,0 +1,124 @@
+=========== V1-1  six-cell sign matrix (cuOpt vs live in-process HiGHS) ===========
+-- min <=  status=ok/optimal
+     cuopt dual=[-0.4 -0.2]  highs dual=[-0.4 -0.2]
+     cuopt x   =[1.59999999 1.2        0.        ]  highs x   =[1.6 1.2 0. ]
+     obj cuopt=-2.7999999944487737 highs=-2.8
+     max|dDual|=1.727e-09  max|dPrimal|=7.580e-09  |dObj|=5.551e-09
+  [PASS] V1-1[min-<=] sign: HiGHS dual sign neg, frozen matrix expects neg
+  [PASS] V1-1[min-<=] dual: max|d|=1.727e-09 vs rtol 1e-06/atol 1e-07
+  [PASS] V1-1[min-<=] primal: max|d|=7.580e-09
+  [PASS] V1-1[min-<=] obj: |d|=5.551e-09
+  [PASS] V1-1[min-<=] non-vacuous: min|highs dual|=2.000e-01 (a sign error is 2*|y|=4.000e-01)
+-- min >=  status=ok/optimal
+     cuopt dual=[0.4 0.2]  highs dual=[0.4 0.2]
+     cuopt x   =[1.60000006e+00 1.19999999e+00 5.54677264e-09]  highs x   =[1.6 1.2 0. ]
+     obj cuopt=2.800000055185323 highs=2.8
+     max|dDual|=2.473e-09  max|dPrimal|=5.554e-08  |dObj|=5.519e-08
+  [PASS] V1-1[min->=] sign: HiGHS dual sign pos, frozen matrix expects pos
+  [PASS] V1-1[min->=] dual: max|d|=2.473e-09 vs rtol 1e-06/atol 1e-07
+  [PASS] V1-1[min->=] primal: max|d|=5.554e-08
+  [PASS] V1-1[min->=] obj: |d|=5.519e-08
+  [PASS] V1-1[min->=] non-vacuous: min|highs dual|=2.000e-01 (a sign error is 2*|y|=4.000e-01)
+-- min =   status=ok/optimal
+     cuopt dual=[0.4 0.2]  highs dual=[0.4 0.2]
+     cuopt x   =[1.60000000e+00 1.20000000e+00 9.43371311e-09]  highs x   =[1.6 1.2 0. ]
+     obj cuopt=2.800000003773486 highs=2.8
+     max|dDual|=2.010e-09  max|dPrimal|=9.434e-09  |dObj|=3.773e-09
+  [PASS] V1-1[min-=] sign: HiGHS dual sign pos, frozen matrix expects pos
+  [PASS] V1-1[min-=] dual: max|d|=2.010e-09 vs rtol 1e-06/atol 1e-07
+  [PASS] V1-1[min-=] primal: max|d|=9.434e-09
+  [PASS] V1-1[min-=] obj: |d|=3.773e-09
+  [PASS] V1-1[min-=] non-vacuous: min|highs dual|=2.000e-01 (a sign error is 2*|y|=4.000e-01)
+-- max <=  status=ok/optimal
+     cuopt dual=[0.4 0.2]  highs dual=[0.4 0.2]
+     cuopt x   =[1.59999999 1.2        0.        ]  highs x   =[1.6 1.2 0. ]
+     obj cuopt=2.7999999944487737 highs=2.8
+     max|dDual|=1.727e-09  max|dPrimal|=7.580e-09  |dObj|=5.551e-09
+  [PASS] V1-1[max-<=] sign: HiGHS dual sign pos, frozen matrix expects pos
+  [PASS] V1-1[max-<=] dual: max|d|=1.727e-09 vs rtol 1e-06/atol 1e-07
+  [PASS] V1-1[max-<=] primal: max|d|=7.580e-09
+  [PASS] V1-1[max-<=] obj: |d|=5.551e-09
+  [PASS] V1-1[max-<=] non-vacuous: min|highs dual|=2.000e-01 (a sign error is 2*|y|=4.000e-01)
+-- max >=  status=ok/optimal
+     cuopt dual=[-0.4 -0.2]  highs dual=[-0.4 -0.2]
+     cuopt x   =[1.60000006e+00 1.19999999e+00 5.54677264e-09]  highs x   =[1.6 1.2 0. ]
+     obj cuopt=-2.800000055185323 highs=-2.8
+     max|dDual|=2.473e-09  max|dPrimal|=5.554e-08  |dObj|=5.519e-08
+  [PASS] V1-1[max->=] sign: HiGHS dual sign neg, frozen matrix expects neg
+  [PASS] V1-1[max->=] dual: max|d|=2.473e-09 vs rtol 1e-06/atol 1e-07
+  [PASS] V1-1[max->=] primal: max|d|=5.554e-08
+  [PASS] V1-1[max->=] obj: |d|=5.519e-08
+  [PASS] V1-1[max->=] non-vacuous: min|highs dual|=2.000e-01 (a sign error is 2*|y|=4.000e-01)
+-- max =   status=ok/optimal
+     cuopt dual=[-0.4 -0.2]  highs dual=[-0.4 -0.2]
+     cuopt x   =[1.60000000e+00 1.20000000e+00 9.43371311e-09]  highs x   =[1.6 1.2 0. ]
+     obj cuopt=-2.800000003773486 highs=-2.8
+     max|dDual|=2.010e-09  max|dPrimal|=9.434e-09  |dObj|=3.773e-09
+  [PASS] V1-1[max-=] sign: HiGHS dual sign neg, frozen matrix expects neg
+  [PASS] V1-1[max-=] dual: max|d|=2.010e-09 vs rtol 1e-06/atol 1e-07
+  [PASS] V1-1[max-=] primal: max|d|=9.434e-09
+  [PASS] V1-1[max-=] obj: |d|=3.773e-09
+  [PASS] V1-1[max-=] non-vacuous: min|highs dual|=2.000e-01 (a sign error is 2*|y|=4.000e-01)
+
+=========== V1-2  presolve-solvable max duals ===========
+-- n=2: cuopt dual=[1.80500292] highs dual=[1.80500292] obj 18.050029237453803/18.050029237453803
+  [PASS] V1-2[n=2] dual: max|d|=0.000e+00; a negation would be 3.610e+00
+-- n=10: cuopt dual=[1.80500292 0.75766278 0.35131023 0.3521183  0.33319602] highs dual=[1.80500292 0.75766278 0.35131023 0.3521183  0.33319602] obj 39.84232481881237/39.84232481881237
+  [PASS] V1-2[n=10] dual: max|d|=0.000e+00; a negation would be 3.610e+00
+
+=========== V1-4  MILP differential ===========
+-- min: obj cuopt=100.0 highs=100.0  dual.size=0  dual_bound=100.0 mip_gap=0.0
+  [PASS] V1-4[min] obj: |d|=0.000e+00
+  [PASS] V1-4[min] integrality: max frac=0.000e+00
+  [PASS] V1-4[min] dual.size==0: 0
+  [PASS] V1-4[min] dual_bound not None: 100.0
+  [PASS] V1-4[min] mip_gap not None: 0.0
+-- max: obj cuopt=140.0 highs=140.0  dual.size=0  dual_bound=140.0 mip_gap=0.0
+  [PASS] V1-4[max] obj: |d|=0.000e+00
+  [PASS] V1-4[max] integrality: max frac=0.000e+00
+  [PASS] V1-4[max] dual.size==0: 0
+  [PASS] V1-4[max] dual_bound not None: 140.0
+  [PASS] V1-4[max] mip_gap not None: 0.0
+
+=========== V1-13a  QP convention guard (M.c=[-3,-1,2], M.Q=[[2,1,0],[1,4,0],[0,0,1]]) ===========
+-- min: M.c=[-3. -1.  2.]  M.Q=
+[[2. 1. 0.]
+ [1. 4. 0.]
+ [0. 0. 1.]]
+  [PASS] V1-13a[min] M.c pinned: [-3. -1.  2.]
+  [PASS] V1-13a[min] M.Q pinned: 
+     obj cuopt=-4.285714285714278 highs=-4.285714285714258
+     x   cuopt=[ 1.57142857 -0.14285714 -2.        ]  highs=[ 1.57142848 -0.14285712 -1.9999998 ]   max|dx|=1.989e-07
+     con0: dual cuopt=1.0747338997919952e-10 highs=0.0  |d|=1.075e-10
+  [PASS] V1-13a[min] con0 dual: max|d|=1.075e-10
+     con1: dual cuopt=-1.30209875571091e-10 highs=0.0  |d|=1.302e-10
+  [PASS] V1-13a[min] con1 dual: max|d|=1.302e-10
+  [PASS] V1-13a[min] obj: |d|=1.954e-14
+  [PASS] V1-13a[min] primal: max|d|=1.989e-07
+  [PASS] V1-13a[min] naive-Q error would be: the wrong convention moves the objective by ~0.5 relative; measured margin here is 1.954e-14 absolute
+-- max: M.c=[ 3.  1. -2.]  M.Q=
+[[-2. -1.  0.]
+ [-1. -4.  0.]
+ [ 0.  0. -1.]]
+  [PASS] V1-13a[max] M.c pinned: [ 3.  1. -2.]
+  [PASS] V1-13a[max] M.Q pinned: 
+     obj cuopt=4.285714285714278 highs=4.285714285714258
+     x   cuopt=[ 1.57142857 -0.14285714 -2.        ]  highs=[ 1.57142848 -0.14285712 -1.9999998 ]   max|dx|=1.989e-07
+     con0: dual cuopt=-1.0747338997919952e-10 highs=-0.0  |d|=1.075e-10
+  [PASS] V1-13a[max] con0 dual: max|d|=1.075e-10
+     con1: dual cuopt=1.30209875571091e-10 highs=-0.0  |d|=1.302e-10
+  [PASS] V1-13a[max] con1 dual: max|d|=1.302e-10
+  [PASS] V1-13a[max] obj: |d|=1.954e-14
+  [PASS] V1-13a[max] primal: max|d|=1.989e-07
+  [PASS] V1-13a[max] naive-Q error would be: the wrong convention moves the objective by ~0.5 relative; measured margin here is 1.954e-14 absolute
+
+=========== V1-14  MIQP / IQP refused before cuOpt is touched ===========
+-- model.type=IQP  NotImplementedError: cuOpt does not support quadratic objectives together with integer variables. Use a solver that supports MIQP (gurobi, xpress, mosek).
+  [PASS] V1-14[IQP] raises w/ 'MIQP': cuOpt does not support quadratic objectives together with integer variables. Use a solver that supports MIQP (gurobi, xpress, mosek).
+  [PASS] V1-14[IQP] 0 solver calls: calls=[]
+-- model.type=MIQP  NotImplementedError: cuOpt does not support quadratic objectives together with integer variables. Use a solver that supports MIQP (gurobi, xpress, mosek).
+  [PASS] V1-14[MIQP] raises w/ 'MIQP': cuOpt does not support quadratic objectives together with integer variables. Use a solver that supports MIQP (gurobi, xpress, mosek).
+  [PASS] V1-14[MIQP] 0 solver calls: calls=[]
+
+########## TOTAL MISSES: 0 ##########
+EXIT=0
