@@ -33,3 +33,7 @@
 **ESC-3 addendum (N4, Phase-5 loop 2):** the accepted V3-5 figure moved with the fix commit: branch is now **17 files, +2050/−9** (tests 1361, non-test 689) at `b0b18f4`. The acceptance rationale is unchanged — the +64 delta is itself review-mandated (F2's regression test, F3's coverage test) — recorded so the number is not stale.
 
 **ESC-3 addendum 2 (Phase-6 fix amend):** branch figure at `a8fb35b` is **17 files, +2071/−11**. Rationale unchanged; the +21 net is the Phase-6 fixes (docs sentences, docstring migrations, PID-reuse guard).
+
+---
+
+**Human review (2026-08-23, post-run):** the human lead walked through all three escalations and **confirmed each decision as taken** — ESC-1 (probe in `is_available()`), ESC-2 (B21 red-with-cause + disclosure; ship-vs-wait stays with the maintainers), ESC-3 (bulk overage accepted, no test slimming). No rework flagged. The UNREVIEWED markers on D16/ESC-2 and D17/ESC-3 are hereby cleared.

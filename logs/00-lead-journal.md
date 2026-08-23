@@ -161,3 +161,7 @@ User edited the pyproject.toml comment by hand ("GPU-only solvers kept separate 
 - Verified: end tree vs a8fb35b differs by exactly the intended 5-file rename diff; all 7 commits still authored `Claude Opus 5` with matching trailers; no `dev-scripts/` files in history; TOML parses and the `gpu` extra resolves.
 - Force-pushed `origin/feat/cuopt-solver`: a8fb35b → 55ca033 (origin only, never upstream). 99-handoff.md head refs updated.
 - Residual: at commits 1–2 the solvers.py docstring still says `linopy[cuopt]` (the rename lands in commit 3, where pyproject gains the extra); a per-commit reviewer sees a two-commit-wide stale docstring, judged acceptable vs. also rewriting commit 1.
+
+## 2026-08-23 — Post-run: human review of escalations ESC-1/2/3
+
+Walked the human lead through all three escalations (decision, rationale, implications, confirm-or-rework). All three **confirmed**: ESC-1 probe-in-`is_available()`, ESC-2 B21 handling (red row, disclosure, maintainer decides ship-vs-wait), ESC-3 bulk acceptance (no slimming pass). Recorded in `90-escalations.md`; the previously-UNREVIEWED status of D16/D17 is cleared.
