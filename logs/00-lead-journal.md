@@ -151,3 +151,13 @@ sequential on an idle box, 2.50 M vars / 6.0 M cons: HiGHS-lp 3358.6 s, HiGHS-di
 and chose cold values with a note that repeat solves save ~2 s (CUDA init); `## Performance`
 section added to PR_BODY.md accordingly. Benchmark script and network file deliberately left
 uncommitted (throwaway per instruction).
+
+## 2026-08-23 — Post-run: extra renamed `cuopt` → `gpu` (user instruction)
+
+User edited the pyproject.toml comment by hand ("GPU-only solvers kept separate to avoid env clutter…", later refined mid-rebase to append "install manually" on the cupdlpx line — both preserved verbatim) and instructed: rename the optional-dependency group `cuopt` → `gpu`, move the commented-out cupdlpx entry into it, update all references, amend into the existing history.
+
+- References updated: pyproject.toml, `doc/gpu-acceleration.rst`, `doc/prerequisites.rst`, `doc/release_notes.rst`, `linopy/solvers.py` docstring, plus untracked `PR_BODY.md`. Leftover `linopy[cuopt]` strings exist only in untracked `doc/_build/` artifacts.
+- Mechanics: two fixups + `--autosquash` rebase. Most hunks folded into commit 3 ("Add to docs & add package dependency"); the release-note hunk had to go into commit 4 (its line doesn't exist at commit 3), so two commits were amended, each self-consistent. Two textual conflicts on the release-note line (reworded by commits 4→5) resolved with era-correct wording + the new extra name.
+- Verified: end tree vs a8fb35b differs by exactly the intended 5-file rename diff; all 7 commits still authored `Claude Opus 5` with matching trailers; no `dev-scripts/` files in history; TOML parses and the `gpu` extra resolves.
+- Force-pushed `origin/feat/cuopt-solver`: a8fb35b → 55ca033 (origin only, never upstream). 99-handoff.md head refs updated.
+- Residual: at commits 1–2 the solvers.py docstring still says `linopy[cuopt]` (the rename lands in commit 3, where pyproject gains the extra); a per-commit reviewer sees a two-commit-wide stale docstring, judged acceptable vs. also rewriting commit 1.
