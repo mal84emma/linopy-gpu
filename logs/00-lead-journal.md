@@ -117,3 +117,20 @@
 
 [2026-08-23T11:20Z] **60-conformance.md WRITTEN** by the Phase-5 reviewer (30141 bytes, template headings verbatim, all 49 rows with actuals + evidence pointers, C-R1..C-R30 map 0 unmapped, escalations verbatim). Two reviewer corrections accepted onto the record: (1) my "a8fb35b is behaviour-identical by AST equality" carry-over claim was PARTLY WRONG — true for solvers.py, false for test_cuopt_interrupt.py (N3 is a real logic change) and the two .rst files; the reviewer re-executed the moved evidence instead of accepting the claim (interrupt 8/8, F2 non-vacuity re-proven, docs 19=19) so Gate-5 CLEAN carries to a8fb35b on re-executed evidence. My error, its correction. (2) D17's stale +1986 figure — one-line correction appended to 30-decisions.md (ESC-3 addenda already carried +2071). Also recorded: frozen-plan-vs-D7 label drift on C-R21–C-R27 (mapped by substance, flagged not resolved). Final step: second harness-branch commit with the completed logs.
 [2026-08-23T11:20Z] **RUN COMPLETE.** Gates 0-7 passed (Gate 4 with the D16 GPU caveat on the record); Phase 8 delivered: feat/cuopt-solver @ a8fb35b pushed to origin, harness/cuopt published + updated, PR_BODY.md and 99-handoff.md written. Stopping here per §2.1: the PR is the human's to open.
+
+## 2026-08-23 — Post-run: KI12 filed upstream (user instruction)
+
+User instruction after run completion: investigate KI12 and raise it in PyPSA/linopy (duplicate-check
+first, replicate, file with evidence — same shape as the #1768 mandate). Dispatched one Opus agent.
+Outcome: **https://github.com/PyPSA/linopy/issues/903** filed. Duplicate check clean (five REST
+`search/issues` variants + recent-title skim, open+closed, 0 hits; `gh search` subcommand absent in
+this build, REST endpoint used as before). Not fixed upstream: line unchanged since PR #623,
+byte-identical at v0.9.1; upstream/master = 09c34dd. Replication re-executed against a fresh
+upstream/master worktree (verified via `linopy.__file__`), then worktree removed; working tree
+untouched. Repro: 3-var QP → copy reports LP/is_quadratic=False; HiGHS gives 0.75 on the original
+vs -14.0 on the copy, silently. Root cause as recorded in KI12: `linopy/io.py:1270` hard-codes
+`LinearExpression(...)` where `_copy_expr` above it correctly dispatches on `type(expr)`. Issue
+carries the AGENTS.md AI-note alert and follows the repo bug template. One brief correction from
+the agent: KI12's cited fix site `linopy/io.py:copy` is right — `Model.copy` in `model.py` is only
+an alias (`copy = copy`, model.py:2501). Logs updated: KI12 entry (filing record), 99-handoff §9
+item 4 marked done. Harness branch updated with these log changes (commit below).

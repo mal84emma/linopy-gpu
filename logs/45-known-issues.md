@@ -247,3 +247,12 @@ keeps using `.copy()`.
 A user-facing fix belongs in `linopy/io.py:copy` (pick `type(m.objective.expression)` the way
 `_copy_expr` already does for named expressions) with its own test in `test/test_io.py`; it is a
 separate change from cuOpt support and is left to the maintainers.
+
+**Reported upstream (2026-08-23, post-run, on the human lead's instruction):**
+https://github.com/PyPSA/linopy/issues/903. Filed by a dispatched agent after a clean duplicate
+check (five REST `search/issues` variants + two pages of recent titles, open and closed, zero hits)
+and after re-replicating against a fresh `upstream/master` (`09c34dd`) worktree — the offending
+line is unchanged since `Model.copy` landed in PR #623 and is byte-identical at `v0.9.1`. The issue
+follows the repo's `bug_report.yaml` structure, opens with the AGENTS.md `> [!NOTE]` AI-generated
+marking, and cites permalink `linopy/io.py#L1270` at `09c34dd`. It does not mention the cuOpt
+branch beyond "differential testing of quadratic-objective support".

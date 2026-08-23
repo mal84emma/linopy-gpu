@@ -75,5 +75,5 @@ All in `logs/45-known-issues.md`: KI1 (46F/28E pre-existing baseline failures, t
 1. Review §1 (the seven unreviewed decisions) and §2 row 1 — the B21 ship-vs-wait call is the one real product decision in this run.
 2. Read `PR_BODY.md`, write your own intent over the placeholder (AGENTS.md rule 2), trim anything you disagree with.
 3. Open the PR from `mal84emma/linopy-gpu:feat/cuopt-solver` → `PyPSA/linopy:master` when ready. If you want to link the harness branch from the PR, the note alert is yours to write (AGENTS.md rule 1).
-4. Consider filing the KI12 finding (`Model.copy()` drops quadratic objectives) as its own linopy issue — it is pre-existing on master and bites any QP user.
+4. ~~Consider filing the KI12 finding (`Model.copy()` drops quadratic objectives) as its own linopy issue~~ **Done post-run on your instruction: https://github.com/PyPSA/linopy/issues/903** (see KI12 in `45-known-issues.md` for the filing record).
 5. Optional: a test-slimming pass on `test/test_cuopt.py` (§2 row 2) if you prefer repo-norm density over this run's regression-guard density.
