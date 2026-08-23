@@ -165,3 +165,7 @@ User edited the pyproject.toml comment by hand ("GPU-only solvers kept separate 
 ## 2026-08-23 — Post-run: human review of escalations ESC-1/2/3
 
 Walked the human lead through all three escalations (decision, rationale, implications, confirm-or-rework). All three **confirmed**: ESC-1 probe-in-`is_available()`, ESC-2 B21 handling (red row, disclosure, maintainer decides ship-vs-wait), ESC-3 bulk acceptance (no slimming pass). Recorded in `90-escalations.md`; the previously-UNREVIEWED status of D16/D17 is cleared.
+
+## 2026-08-23 — Post-run: KI5 resolved by removing `to_cuopt` from api.rst (user instruction)
+
+Human lead ruled on KI5: api.rst listing none of the other `to_*` solver bridges is a deliberate choice, so the `model.Model.to_cuopt` line WP-E added was removed for consistency. One-line deletion, fixup into commit 3, autosquash rebase; `solvers.cuOpt` kept in the Implementations autosummary (cuPDLPx precedent). No rst cross-references to the removed entry existed; `doc/generated/` leftovers are untracked artifacts. Verified tree delta vs 55ca033 is exactly `doc/api.rst | 1 -`, all authors still `Claude Opus 5`. Force-pushed origin: 55ca033 → 7adc7e8. KI5 marked resolved-the-other-way in 45-known-issues.md; handoff head refs updated.

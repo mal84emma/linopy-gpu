@@ -63,6 +63,13 @@ WP-E added only `model.Model.to_cuopt`, which charter §6.6b names explicitly; t
 (`doc/generated/linopy.model.Model.to_cuopt.rst` generated, page rendered, zero new warnings), so
 the missing siblings are a documentation omission and not a Sphinx limitation.
 
+**Resolved the other way (2026-08-23, post-run, human instruction):** the human lead read the
+omission of the sibling bridges as a deliberate repo choice and had the `model.Model.to_cuopt`
+line removed from `doc/api.rst` for consistency (amended into commit 3; branch rewritten
+55ca033 → 7adc7e8). `solvers.cuOpt` stays in the *Implementations* list, where `solvers.cuPDLPx`
+is also listed. `Model.to_cuopt` itself is unchanged — it is now undocumented in the API
+reference exactly like every other `to_*` bridge.
+
 ## KI6 — `doc/prerequisites.rst` states "Python 3.9 or later"; `pyproject.toml` requires `>=3.11`
 
 *Phase 4, WP-E agent (Opus 5, `claude-opus-5[1m]`), 2026-08-22.* `doc/prerequisites.rst:8` tells
