@@ -1,0 +1,7 @@
+files differing between b0b18f4 and a8fb35b : ['doc/gpu-acceleration.rst', 'doc/prerequisites.rst', 'linopy/solvers.py', 'test/test_cuopt_interrupt.py']
+  doc/gpu-acceleration.rst: not Python -- AST test not applicable
+  doc/prerequisites.rst: not Python -- AST test not applicable
+  linopy/solvers.py: ast.dump(include_attributes=False), docstrings stripped -> equal = True (len 539291 vs 539291)
+  test/test_cuopt_interrupt.py: ast.dump(include_attributes=False), docstrings stripped -> equal = False (len 10545 vs 10884)
+AST_DIFFERING_PY_FILES = 1
+EXIT=0

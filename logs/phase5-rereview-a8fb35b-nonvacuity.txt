@@ -1,0 +1,9 @@
+### NON-VACUITY of the a8fb35b F2 test against PRE-FIX solvers.py (8fb66cc, no register_at_fork)
+imported linopy: /tmp/claude-1000/-home-azureuser-linopy-gpu/2132364e-7915-4b0a-9a60-1023cfcf0f17/scratchpad/prefix2-wt/linopy/__init__.py
+
+test/test_cuopt_interrupt.py:97: AssertionError
+============================================= short test summary info ==============================================
+FAILED test/test_cuopt_interrupt.py::test_solve_queue_starts_a_fresh_worker_after_fork[legacy] - AssertionError: ...
+FAILED test/test_cuopt_interrupt.py::test_solve_queue_starts_a_fresh_worker_after_fork[v1] - AssertionError: the ...
+2 failed in 60.62s (0:01:00)
+PYTEST_EXIT=1

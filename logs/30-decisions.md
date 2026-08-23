@@ -314,3 +314,5 @@ human-authorized upstream engagement).
 Then Phase-6 re-review (loop 2 of 3) scoped to the amended delta.
 
 **Escalated?** no.
+
+**D17 correction (2026-08-23):** the accepted V3-5 figure at the final tip `a8fb35b` is **+2071/−11 over 17 files** (was 1986 at acceptance time; +64 = review-mandated tests, +21 = Phase-6 fixes). Rationale unchanged. See ESC-3 addenda in 90-escalations.md.

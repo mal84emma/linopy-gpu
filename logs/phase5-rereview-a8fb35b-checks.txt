@@ -1,0 +1,15 @@
+########## ruff + mypy at a8fb35b (solvers.py comments changed) ##########
+All checks passed!
+RUFF_EXIT=0
+165 files already formatted
+Found 28 errors in 1 file (checked 30 source files)
+
+########## interrupt suite at a8fb35b (the N2 fix) ##########
+........                                                                                                     [100%]
+8 passed in 1.48s
+PYTEST_EXIT=0
+
+########## V3-4b counts on the two amended docs files ##########
+gpu-acceleration.rst: cuopt=37 pip-install=2 525.60.13=2
+prerequisites.rst:    cuopt=7 pip-install=1 525.60.13=1
+ranged-constraint (must be 0)=0
